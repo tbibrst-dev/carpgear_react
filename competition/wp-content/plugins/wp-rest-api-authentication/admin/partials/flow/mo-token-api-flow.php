@@ -207,7 +207,7 @@ function mo_api_auth_is_valid_request() {
 	if ( get_option( 'permalink_structure' ) === '' && isset( $url_and_params[1] ) ) {
 		$url_and_params[0] = $url_and_params[1];
 	}
-	if ( stripos( $url_and_params[0], '/wp/v2' ) === false ) {
+	/* if ( stripos( $url_and_params[0], '/wp/v2' ) === false ) {
 		if ( get_option( 'mo_rest_api_protect_migrate' ) ) {
 			$response = array(
 				'status'            => 'error',
@@ -218,7 +218,7 @@ function mo_api_auth_is_valid_request() {
 			wp_send_json( $response, 403 );
 		}
 		return true;
-	}
+	} */
 
 	if ( ! empty( $_GET['mo_rest_api_test_config'] ) ) { //phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Ignoring nonce validation as we are fetching data from URL and not form submission
 		if ( sanitize_text_field( wp_unslash( $_GET['mo_rest_api_test_config'] ) ) === 'basic_auth' ) { //phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Ignoring nonce validation as we are fetching data from URL and not form submission

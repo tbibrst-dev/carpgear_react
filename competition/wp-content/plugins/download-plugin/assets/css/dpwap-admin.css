@@ -210,8 +210,8 @@
 }
 
 #btn_upload {
-    position: absolute;
-    top: 14px;
+    position: relative;
+    top: 52px;
     left: 238px;
 }
 

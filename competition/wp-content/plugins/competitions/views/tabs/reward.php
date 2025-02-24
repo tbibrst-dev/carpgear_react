@@ -11,7 +11,7 @@
         <input type="hidden" name="step" value="reward" />
         <input type="hidden" name="total_reward" id="total_reward" value="1" />
         <input type="hidden" name="mode" value="<?php echo $mode; ?>" />
-        <input type="hidden" name="is_draft" value="1" />
+        <input type="hidden" name="is_draft" value="0" />
 
         <div class="row mb-3">
             <div class="col-6">

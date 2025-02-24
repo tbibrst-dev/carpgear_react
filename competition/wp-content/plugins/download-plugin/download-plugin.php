@@ -3,12 +3,12 @@
 *  Plugin Name: Download Plugin
 *  Plugin URI: http://metagauss.com
 *  Description: Download any plugin from your WordPress admin panel's Plugins page by just one click! Now, download themes, users, blog posts, pages, custom posts, comments, attachments and much more.
-*  Version: 2.2.2
+*  Version: 2.2.5
 *  Author: Download Plugin
 *  Author URI: https://profiles.wordpress.org/downloadplugin/
 *  Text Domain: download-plugin
 *  Requires at least: 4.8
-*  Tested up to: 6.5
+*  Tested up to: 6.7
 *  Requires PHP: 5.6
 */
 
@@ -19,7 +19,7 @@ if ( !defined( 'ABSPATH' ) ) {
 if( !is_admin() ) return;
 
 // plugin version
-define('DPWAP_VERSION', '2.2.2');
+define('DPWAP_VERSION', '2.2.5');
 // directory separator
 if ( !defined( 'DS' ) ) define( 'DS', DIRECTORY_SEPARATOR );
 // plugin file name

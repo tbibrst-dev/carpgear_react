@@ -117,7 +117,7 @@ $open_competitions = $wpdb->get_results($query, ARRAY_A);
                     <a href="<?php echo admin_url('admin.php?page=competitions_menu&remove_temp=' . $_REQUEST['id']); ?>"
                         id="cancel_btn"><button type="button" class="btn btn-sm btn-default">Cancel</button></a>
                     <button type="button"
-                        class="btn btn-sm btn-accent <?php echo (!empty($recordData['is_draft']) && $recordData['is_draft'] == 1) ? '' : 'd-none'; ?>"
+                        class="btn btn-sm btn-accent create_competition <?php echo (!empty($recordData['is_draft']) && $recordData['is_draft'] == 1) ? '' : 'd-none'; ?>"
                         id="save_as_draft_edit">Save As Draft</button>
                     <button type="button" class="btn btn-sm btn-accent edit_competition" id="save_comp">Save</button>
                 </div>
