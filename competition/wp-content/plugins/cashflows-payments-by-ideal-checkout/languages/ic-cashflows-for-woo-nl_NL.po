@@ -1,0 +1,237 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2021-07-26 15:52+0200\n"
+"PO-Revision-Date: 2021-07-26 15:53+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __(;__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: gateways/cashflows/abstract.cls.php:25
+msgid "Cashflows"
+msgstr "Cashflows"
+
+#: gateways/cashflows/abstract.cls.php:27
+msgid "The following options are required to use Cashflows"
+msgstr "De volgende opties zijn vereist om Cashflows te gebruiken"
+
+#: gateways/cashflows/abstract.cls.php:30
+msgid "Production - API Key"
+msgstr "Productie - API Key"
+
+#: gateways/cashflows/abstract.cls.php:32
+msgid ""
+"The API Key can be found on the <a href=\"https://portal.cashflows.com/"
+"\">Cashflows Portal</a>."
+msgstr ""
+"De API key kan gevonden worden op het <a href=\"https://portal.cashflows.com/"
+"\">Cashflows Portaal</a>."
+
+#: gateways/cashflows/abstract.cls.php:36
+msgid "Production - Configuration ID"
+msgstr "Productie - Configuratie ID"
+
+#: gateways/cashflows/abstract.cls.php:38
+msgid ""
+"The configuration ID can be found on the <a href=\"https://portal.cashflows."
+"com/\">Cashflows Portal</a>."
+msgstr ""
+"Het configuratie ID kan gevonden worden op het <a href=\"https://portal."
+"cashflows.com/\">Cashflows Portaal</a>."
+
+#: gateways/cashflows/abstract.cls.php:42
+msgid "Integration - API Key"
+msgstr "Integratie - API Key"
+
+#: gateways/cashflows/abstract.cls.php:44
+msgid ""
+"The API Key can be found on the <a href=\"https://portal-int.cashflows.com/"
+"\">Cashflows Portal</a>."
+msgstr ""
+"De API key kan gevonden worden op het <a href=\"https://portal-int.cashflows."
+"com/\">Cashflows Portaal</a>."
+
+#: gateways/cashflows/abstract.cls.php:48
+msgid "Integration - Configuration ID"
+msgstr "Integratie - Configuratie ID"
+
+#: gateways/cashflows/abstract.cls.php:50
+msgid ""
+"The configuration ID can be found on the <a href=\"https://portal-int."
+"cashflows.com/\">Cashflows Portal</a>."
+msgstr ""
+"Het configuratie ID kan gevonden worden op het <a href=\"https://portal-int."
+"cashflows.com/\">Cashflows Portaal</a>."
+
+#: gateways/cashflows/abstract.cls.php:54
+msgid "Integration mode"
+msgstr "Integratie modus"
+
+#: gateways/cashflows/abstract.cls.php:56
+msgid "Enable the Integration mode"
+msgstr "Activeer integratie/test modus"
+
+#: gateways/cashflows/abstract.cls.php:58
+msgid "Please make sure you are using the correct credentials."
+msgstr "Controleer of de correcte gegevens zijn ingevoerd."
+
+#: gateways/cashflows/abstract.cls.php:62
+msgid "Google Analytics for Cashflows"
+msgstr "Google Analytics in Cashflows"
+
+#: gateways/cashflows/abstract.cls.php:64
+msgid "Send the Google Analytics ID to CashFlows."
+msgstr "Stuur de Google Analytics ID naar Cashflows."
+
+#: gateways/cashflows/abstract.cls.php:66
+msgid ""
+"Send the content of the Google Analytics cookie to CashFlows. This can only "
+"be send if the Google Analytics is used and loaded."
+msgstr ""
+"Stuur de inhoudt van de Google Analytics cookie naar Cashflows. Dit kan "
+"alleen gedaan worden als Google Analytics actief en geladen is."
+
+#: gateways/cashflows/abstract.cls.php:70
+msgid "Additional customer data"
+msgstr "Additionele klant gegevens"
+
+#: gateways/cashflows/abstract.cls.php:72
+msgid "Enable to send additional customer data to Cashflows"
+msgstr "Stuur additionele klant gegevens naar Cashflows"
+
+#: gateways/cashflows/abstract.cls.php:74
+msgid ""
+"Send customer data to CashFlows<br>Customer data is optional, if you do turn "
+"on this option, please note this in the privacy statement."
+msgstr ""
+"Stuur klant gegevens naar Cashflows<br>Klant gegevens is optioneel, wanneer "
+"u deze activeerd, noteer dit ook in uw privacy statement."
+
+#: gateways/cashflows/abstract.cls.php:78
+msgid "Store Customer data"
+msgstr "Sla klantgegevens op"
+
+#: gateways/cashflows/abstract.cls.php:80
+msgid "If enabled CashFlows will store the Customer Data on their servers"
+msgstr "Na activatie zal Cashflows klant gegevens op hun servers opslaan"
+
+#: gateways/cashflows/abstract.inc.php:13
+msgid "Enable this method to receive transactions with Cashflows"
+msgstr "Activeer deze betaalmethode om betalingen te ontvangen met Cashflows"
+
+#: gateways/cashflows/abstract.inc.php:49
+msgid "Go to documentation"
+msgstr "Naar documentatie"
+
+#: gateways/cashflows/abstract.inc.php:53
+msgid "Enable/Disable"
+msgstr "Activeer/Deactiveer"
+
+#: gateways/cashflows/abstract.inc.php:55
+msgid "Enable Cashflows"
+msgstr "Activeer Cashflows"
+
+#: gateways/cashflows/abstract.inc.php:60
+msgid "Title"
+msgstr "Titel"
+
+#: gateways/cashflows/abstract.inc.php:62
+msgid "This controls the title which the user sees during checkout."
+msgstr "Geef de titel aan welke de klant tijdens het afrekenen ziet."
+
+#: gateways/cashflows/abstract.inc.php:68
+msgid "Customer Message"
+msgstr "Klant bericht"
+
+#: gateways/cashflows/abstract.inc.php:70
+msgid "Pay with"
+msgstr ""
+
+#: gateways/cashflows/abstract.inc.php:373
+msgid "Customer Reference added to the meta data"
+msgstr "Klant referentie toegevoegd aan de meta data"
+
+#: gateways/cashflows/abstract.inc.php:377
+msgid ""
+"Customer Reference could not be added to the current user, OR Current user "
+"is not logged in."
+msgstr ""
+"Klant referentie kon niet aan de huidige gebruiker toegevoegd worden, of de "
+"gebruiker is niet ingelogd."
+
+#: gateways/cashflows/abstract.inc.php:388
+msgid "Cashflows payment started with"
+msgstr "Cashflows betaling gestart met"
+
+#: gateways/cashflows/abstract.inc.php:388
+msgid "Using Paymentjob"
+msgstr "Met Paymentjob"
+
+#: gateways/cashflows/abstract.inc.php:403
+msgid "We didn't receive the Transaction URL, this is the response"
+msgstr "Geen transactie URL ontvangen, dit is het antwoord"
+
+#: gateways/cashflows/abstract.inc.php:416
+msgid "Unable to complete the transaction."
+msgstr "Transactie kon niet worden afgerond."
+
+#: gateways/cashflows/abstract.inc.php:438
+msgid "Customer Return: <b>Success</b> with Paymentjob"
+msgstr "Klant terugkomst: <b>Success</b> met Paymentjob"
+
+#: gateways/cashflows/abstract.inc.php:465
+msgid "Customer Return: <b>Cancelled</b> with Paymentjob"
+msgstr "Klant terugkomst: <b>Cancelled</b> met Paymentjob"
+
+#: gateways/cashflows/abstract.inc.php:469
+msgid "Customer Return: <b>Failure</b> with Paymentjob"
+msgstr "Klant terugkomst: <b>Failure</b> met Paymentjob"
+
+#: gateways/cashflows/abstract.inc.php:527
+msgid "Unable to fetch status from CashFlows Notify with Paymentjob"
+msgstr "Kon status niet ophalen van de Cashflows Notify met Paymentjob"
+
+#: gateways/cashflows/abstract.inc.php:545
+msgid "Status received from CashFlows Notify (status changed)"
+msgstr "Status ontvangen van Cashflows webhook (status aangepast)"
+
+#: gateways/cashflows/abstract.inc.php:545
+#: gateways/cashflows/abstract.inc.php:551
+#: gateways/cashflows/abstract.inc.php:556
+msgid "with Paymentjob"
+msgstr "met Paymentjob"
+
+#: gateways/cashflows/abstract.inc.php:545
+#: gateways/cashflows/abstract.inc.php:551
+#: gateways/cashflows/abstract.inc.php:556
+msgid "Payment-method"
+msgstr "Betaalmethode"
+
+#: gateways/cashflows/abstract.inc.php:551
+#: gateways/cashflows/abstract.inc.php:556
+msgid "Status received from CashFlows Notify"
+msgstr "Status ontvangen van Cashflows webhook"
+
+#: gateways/cashflows/abstract.inc.php:556
+msgid ""
+"But it seems another transaction was started already, no duplicate "
+"transactions can be finished"
+msgstr ""
+"Er is al een andere transactie gestart, geen dubbele transacties kunnen "
+"afgerond worden"
+
+#: gateways/cashflows/abstract.inc.php:607
+msgid "Refund succesfully done for Paymentjob"
+msgstr "Terugboeking succesvol voor Paymentjob"
+
+#: gateways/cashflows/abstract.inc.php:613
+msgid "Refund failed for Paymentjob"
+msgstr "Terugboeking mislukt voor Paymentjob"

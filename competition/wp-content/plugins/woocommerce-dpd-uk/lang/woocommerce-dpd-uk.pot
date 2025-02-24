@@ -1,0 +1,1298 @@
+# Copyright (C) 2024 Octolize
+# This file is distributed under the same license as the DPD UK & DPD Local Labels and Tracking plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: DPD UK & DPD Local Labels and Tracking 2.0.23\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woocommerce-dpd-uk\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-06-30T23:28:32+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.9.0\n"
+"X-Domain: woocommerce-dpd-uk\n"
+
+#. Plugin Name of the plugin
+msgid "DPD UK & DPD Local Labels and Tracking"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://octol.io/dpd-uk-plugin-site"
+msgstr ""
+
+#. Description of the plugin
+msgid "WooCommerce DPD UK integration."
+msgstr ""
+
+#. Author of the plugin
+msgid "Octolize"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://octol.io/dpd-uk-author"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:28
+msgid "Expak 1 Next Day"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:29
+msgid "Expak 1 By 1030"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:30
+msgid "Expak 1 By 12"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:31
+msgid "Expak 1 Saturday"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:32
+msgid "Expak 1 Sat By 1030"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:33
+msgid "Expak 1 Sat By 12"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:34
+msgid "Expak 1 Sunday"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:35
+msgid "Expak 1 Sun By 12"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:36
+msgid "Parcel Next Day"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:37
+msgid "Parcel By 1030"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:38
+msgid "Parcel By 12"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:39
+msgid "Parcel Saturday"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:40
+msgid "Parcel Sat By 1030"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:41
+msgid "Parcel Sat By 12"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:42
+msgid "Parcel Sunday"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:43
+msgid "Parcel Sun By 12"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:44
+msgid "Expak 5 Next Day"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:45
+msgid "Expak 5 By 1030"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:46
+msgid "Expak 5 By 12"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:47
+msgid "Expak 5 Saturday"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:48
+msgid "Expak 5 Sat By 1030"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:49
+msgid "Expak 5 Sat By 12"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:50
+msgid "Expak 5 Sunday"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:51
+msgid "Expak 5 Sun By 12"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:52
+msgid "Freight Next Day"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:53
+msgid "Freight By 1030"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:54
+msgid "Freight By 12"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:55
+msgid "Freight Saturday"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:56
+msgid "Freight Sat By 1030"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:57
+msgid "Freight Sat By 12"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:58
+msgid "Freight Sunday"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:59
+msgid "Freight Sun By 12"
+msgstr ""
+
+#: classes/class-api-data-dpd-local.php:62
+msgid "Parcel Ship to Shop"
+msgstr ""
+
+#. Translators: message text.
+#: classes/class-dpd-uk-api.php:376
+#: classes/class-dpd-uk-api.php:387
+msgid "DPD UK API message: %1$s"
+msgstr ""
+
+#: classes/class-flexible-printing-integration.php:45
+msgid "Printing error: %s"
+msgstr ""
+
+#: classes/class-flexible-printing-integration.php:85
+#: classes/views/order-metabox-content.php:268
+#: classes/views/order-metabox-content.php:287
+msgid "Print on: %s"
+msgstr ""
+
+#: classes/class-flexible-shipping-hooks.php:36
+#: classes/class-flexible-shipping-shipment.php:199
+#: classes/class-shipping-method.php:79
+#: classes/class-shipping-method.php:86
+msgid "DPD UK"
+msgstr ""
+
+#: classes/class-flexible-shipping-hooks.php:172
+#: classes/views/order-metabox-content.php:21
+msgid "Service"
+msgstr ""
+
+#: classes/class-flexible-shipping-hooks.php:175
+msgid "Please mind that sending the shipments via DPD UK Ship to Shop service requires the %1$sDPD UK Pickup Points WooCommerce plugin%2$s to be installed and active as well."
+msgstr ""
+
+#: classes/class-flexible-shipping-hooks.php:179
+msgid "List of DPD services available in this shipping zone."
+msgstr ""
+
+#: classes/class-flexible-shipping-hooks.php:184
+#: classes/views/order-metabox-content.php:106
+msgid "Liability"
+msgstr ""
+
+#: classes/class-flexible-shipping-hooks.php:185
+msgid "Check to add extended liability"
+msgstr ""
+
+#: classes/class-flexible-shipping-hooks.php:188
+msgid "Liability amount will automatically filled with order total."
+msgstr ""
+
+#: classes/class-flexible-shipping-hooks.php:192
+#: classes/views/order-metabox-content.php:147
+msgid "Consolidation"
+msgstr ""
+
+#: classes/class-flexible-shipping-hooks.php:193
+msgid "Check to consolidate parcels"
+msgstr ""
+
+#: classes/class-flexible-shipping-hooks.php:196
+msgid "Check this option if you want the parcels will consolidate together if being delivered to the same address."
+msgstr ""
+
+#: classes/class-flexible-shipping-hooks.php:200
+#: classes/views/order-metabox-content.php:179
+msgid "Reference 1"
+msgstr ""
+
+#: classes/class-flexible-shipping-hooks.php:203
+#: classes/class-flexible-shipping-hooks.php:209
+#: classes/class-flexible-shipping-hooks.php:216
+msgid "Notes on the label. Maximum of 25 characters."
+msgstr ""
+
+#: classes/class-flexible-shipping-hooks.php:206
+#: classes/views/order-metabox-content.php:197
+msgid "Reference 2"
+msgstr ""
+
+#: classes/class-flexible-shipping-hooks.php:213
+#: classes/views/order-metabox-content.php:215
+msgid "Reference 3"
+msgstr ""
+
+#: classes/class-flexible-shipping-hooks.php:220
+#: classes/views/order-metabox-content.php:233
+msgid "Parcel description"
+msgstr ""
+
+#: classes/class-flexible-shipping-hooks.php:223
+msgid "DPD Europe by Road service requires filling the Parcel Description field."
+msgstr ""
+
+#: classes/class-flexible-shipping-hooks.php:321
+msgid "None"
+msgstr ""
+
+#: classes/class-flexible-shipping-shipment.php:207
+msgid "Shipping saved."
+msgstr ""
+
+#: classes/class-flexible-shipping-shipment.php:211
+msgid "Shipping created."
+msgstr ""
+
+#: classes/class-flexible-shipping-shipment.php:216
+msgid "Shipping canceled."
+msgstr ""
+
+#: classes/class-flexible-shipping-shipment.php:220
+msgid "Unknown action: \""
+msgstr ""
+
+#: classes/class-flexible-shipping-shipment.php:322
+msgid "DPD UK Shipment %s was created."
+msgstr ""
+
+#: classes/class-flexible-shipping-shipment.php:368
+msgid "Invalid status: %s. Package already created?"
+msgstr ""
+
+#: classes/class-flexible-shipping-shipment.php:396
+msgid "DPD UK API error: %s"
+msgstr ""
+
+#: classes/class-flexible-shipping-shipment.php:412
+msgid "Invalid shipment status: %s. Shipment already canceled or manifest created?"
+msgstr ""
+
+#: classes/class-flexible-shipping-shipment.php:438
+msgid "DPD UK Shipment %s deleted."
+msgstr ""
+
+#. Translators: order number.
+#: classes/class-flexible-shipping-shipment.php:451
+msgid "The requested operation cannot be performed for the order #%1$d. Please create the shipment first and try again."
+msgstr ""
+
+#: classes/class-flexible-shipping-shipment.php:576
+msgid "Order %s"
+msgstr ""
+
+#: classes/class-plugin.php:61
+msgid "Get Pickup Points PRO WooCommerce"
+msgstr ""
+
+#: classes/class-plugin.php:63
+msgid "Selecting the DPD UK Pickup Points from the list or map"
+msgstr ""
+
+#: classes/class-plugin.php:64
+msgid "Nearest DPD UK Pickup Points suggestions"
+msgstr ""
+
+#: classes/class-plugin.php:65
+msgid "Saving the customer's choice to the order details"
+msgstr ""
+
+#: classes/class-plugin.php:66
+msgid "DPD UK Ship to Shop service integration"
+msgstr ""
+
+#: classes/class-plugin.php:67
+msgid "Pickup points display management"
+msgstr ""
+
+#: classes/class-plugin.php:68
+msgid "DPD, DHL, UPS pickup points supported"
+msgstr ""
+
+#: classes/class-plugin.php:69
+msgid "Popular themes & plugins compatible"
+msgstr ""
+
+#: classes/class-plugin.php:72
+msgid "Buy now"
+msgstr ""
+
+#: classes/class-plugin.php:137
+#: classes/class-plugin.php:144
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:198
+msgid "Settings"
+msgstr ""
+
+#: classes/class-plugin.php:138
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:194
+msgid "Docs"
+msgstr ""
+
+#: classes/class-plugin.php:139
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:191
+msgid "Support"
+msgstr ""
+
+#: classes/class-plugin.php:171
+msgid "DPD UK Pickup Points plugin compatibility"
+msgstr ""
+
+#: classes/class-plugin.php:173
+msgid "We have maintained the compatibility with the new %1$sDPD&nbsp;UK&nbsp;Pickup&nbsp;Points&nbsp;plugin%2$s we have just released. Combine them together, show your customers the DPD UK Pickup Points map to choose from and ship their orders flawlessly from now on with the DPD Ship to Shop service."
+msgstr ""
+
+#: classes/class-shipping-method.php:80
+msgid "DPD UK WooCommerce Integration. <a href=\"https://octol.io/dpd-uk-settings-docs\" target=\"_blank\">Refer to the instruction manual &rarr;</a>"
+msgstr ""
+
+#. Translators: Flexible Printing integration setting link.
+#: classes/class-shipping-method.php:157
+msgid "Automatically print on the thermal printer with %1$sPrint Node%2$s using CLP or EPL format. To change printing settings %3$sclick here%4$s."
+msgstr ""
+
+#: classes/class-shipping-method.php:167
+msgid "Printing settings will be available after enabling and saving settings."
+msgstr ""
+
+#. Translators: Flexible Printing link.
+#: classes/class-shipping-method.php:177
+msgid "Automatically print on the thermal printer with %1$sPrint Node%2$s using CLP or EPL format. Buy %3$sFlexible Printing &rarr;%4$s"
+msgstr ""
+
+#: classes/class-shipping-method.php:196
+msgid "Account"
+msgstr ""
+
+#: classes/class-shipping-method.php:198
+msgid "Select DPD API and enter MyDPD account details."
+msgstr ""
+
+#: classes/class-shipping-method.php:201
+msgid "API"
+msgstr ""
+
+#: classes/class-shipping-method.php:205
+msgid "DPD Local"
+msgstr ""
+
+#: classes/class-shipping-method.php:206
+msgid "DPD"
+msgstr ""
+
+#: classes/class-shipping-method.php:210
+msgid "Username"
+msgstr ""
+
+#: classes/class-shipping-method.php:217
+msgid "Password"
+msgstr ""
+
+#: classes/class-shipping-method.php:225
+msgid "Account number"
+msgstr ""
+
+#: classes/class-shipping-method.php:232
+msgid "Connection status"
+msgstr ""
+
+#: classes/class-shipping-method.php:234
+msgid "Connection status."
+msgstr ""
+
+#: classes/class-shipping-method.php:238
+msgid "Creating Shipments"
+msgstr ""
+
+#: classes/class-shipping-method.php:243
+msgid "Shipment Date Switch"
+msgstr ""
+
+#: classes/class-shipping-method.php:248
+msgid "Select hour"
+msgstr ""
+
+#: classes/class-shipping-method.php:249
+msgid "12 am"
+msgstr ""
+
+#: classes/class-shipping-method.php:250
+msgid "1 am"
+msgstr ""
+
+#: classes/class-shipping-method.php:251
+msgid "2 am"
+msgstr ""
+
+#: classes/class-shipping-method.php:252
+msgid "3 am"
+msgstr ""
+
+#: classes/class-shipping-method.php:253
+msgid "4 am"
+msgstr ""
+
+#: classes/class-shipping-method.php:254
+msgid "5 am"
+msgstr ""
+
+#: classes/class-shipping-method.php:255
+msgid "6 am"
+msgstr ""
+
+#: classes/class-shipping-method.php:256
+msgid "7 am"
+msgstr ""
+
+#: classes/class-shipping-method.php:257
+msgid "8 am"
+msgstr ""
+
+#: classes/class-shipping-method.php:258
+msgid "9 am"
+msgstr ""
+
+#: classes/class-shipping-method.php:259
+msgid "10 am"
+msgstr ""
+
+#: classes/class-shipping-method.php:260
+msgid "11 am"
+msgstr ""
+
+#: classes/class-shipping-method.php:261
+msgid "12 pm"
+msgstr ""
+
+#: classes/class-shipping-method.php:262
+msgid "1 pm"
+msgstr ""
+
+#: classes/class-shipping-method.php:263
+msgid "2 pm"
+msgstr ""
+
+#: classes/class-shipping-method.php:264
+msgid "3 pm"
+msgstr ""
+
+#: classes/class-shipping-method.php:265
+msgid "4 pm"
+msgstr ""
+
+#: classes/class-shipping-method.php:266
+msgid "5 pm"
+msgstr ""
+
+#: classes/class-shipping-method.php:267
+msgid "6 pm"
+msgstr ""
+
+#: classes/class-shipping-method.php:268
+msgid "7 pm"
+msgstr ""
+
+#: classes/class-shipping-method.php:269
+msgid "8 pm"
+msgstr ""
+
+#: classes/class-shipping-method.php:270
+msgid "9 pm"
+msgstr ""
+
+#: classes/class-shipping-method.php:271
+msgid "10 pm"
+msgstr ""
+
+#: classes/class-shipping-method.php:272
+msgid "11 pm"
+msgstr ""
+
+#: classes/class-shipping-method.php:274
+msgid "Select the hour after which the date of shipment will be set for the next day."
+msgstr ""
+
+#: classes/class-shipping-method.php:281
+msgid "Create shipments"
+msgstr ""
+
+#: classes/class-shipping-method.php:286
+msgid "Manually"
+msgstr ""
+
+#: classes/class-shipping-method.php:287
+msgid "Automatically"
+msgstr ""
+
+#: classes/class-shipping-method.php:289
+msgid "Choose to create shipments manually or automatically based on the order status."
+msgstr ""
+
+#: classes/class-shipping-method.php:296
+msgid "Order status"
+msgstr ""
+
+#: classes/class-shipping-method.php:301
+msgid "Select order status for automatic shipment creation."
+msgstr ""
+
+#: classes/class-shipping-method.php:305
+msgid "Complete order"
+msgstr ""
+
+#: classes/class-shipping-method.php:308
+msgid "Enable"
+msgstr ""
+
+#: classes/class-shipping-method.php:310
+msgid "Automatically change order status to completed after creating shipment."
+msgstr ""
+
+#: classes/class-shipping-method.php:317
+msgid "Printing options"
+msgstr ""
+
+#: classes/class-shipping-method.php:322
+msgid "Label format"
+msgstr ""
+
+#: classes/class-shipping-method.php:326
+msgid "HTML"
+msgstr ""
+
+#: classes/class-shipping-method.php:327
+msgid "CLP"
+msgstr ""
+
+#: classes/class-shipping-method.php:328
+msgid "EPL"
+msgstr ""
+
+#: classes/class-shipping-method.php:333
+msgid "\"Get label\" button behavior"
+msgstr ""
+
+#: classes/class-shipping-method.php:337
+msgid "Download a label file"
+msgstr ""
+
+#: classes/class-shipping-method.php:338
+msgid "Open in a new tab"
+msgstr ""
+
+#: classes/class-shipping-method.php:343
+msgid "Printing"
+msgstr ""
+
+#: classes/class-shipping-method.php:344
+msgid "Enable automatic printing"
+msgstr ""
+
+#: classes/class-shipping-method.php:352
+msgid "Email notifications"
+msgstr ""
+
+#: classes/class-shipping-method.php:357
+msgid "Tracking number"
+msgstr ""
+
+#: classes/class-shipping-method.php:358
+msgid "Add tracking link to customer emails"
+msgstr ""
+
+#: classes/class-shipping-method.php:361
+msgid "Add DPD tracking number and link to the WooCommerce confirmation emails."
+msgstr ""
+
+#: classes/class-shipping-method.php:369
+msgid "Sender details"
+msgstr ""
+
+#: classes/class-shipping-method.php:372
+msgid "Sender details are required to create shipments and list services."
+msgstr ""
+
+#: classes/class-shipping-method.php:378
+msgid "Organisation"
+msgstr ""
+
+#: classes/class-shipping-method.php:386
+msgid "Name and Surname"
+msgstr ""
+
+#: classes/class-shipping-method.php:394
+msgid "Street"
+msgstr ""
+
+#: classes/class-shipping-method.php:402
+msgid "Postcode"
+msgstr ""
+
+#: classes/class-shipping-method.php:410
+msgid "Town"
+msgstr ""
+
+#: classes/class-shipping-method.php:415
+msgid "Locality"
+msgstr ""
+
+#: classes/class-shipping-method.php:420
+msgid "County"
+msgstr ""
+
+#: classes/class-shipping-method.php:425
+msgid "Country"
+msgstr ""
+
+#: classes/class-shipping-method.php:434
+msgid "Phone"
+msgstr ""
+
+#: classes/class-shipping-method.php:442
+msgid "E-mail"
+msgstr ""
+
+#: classes/class-shipping-method.php:451
+msgid "Invoice details"
+msgstr ""
+
+#: classes/class-shipping-method.php:454
+msgid "Invoice details are required to create international shipments."
+msgstr ""
+
+#: classes/class-shipping-method.php:460
+msgid "Country of Origin"
+msgstr ""
+
+#: classes/class-shipping-method.php:464
+msgid "Declare which country your products were manufactured or produced in."
+msgstr ""
+
+#: classes/class-shipping-method.php:471
+msgid "FDA Registration No."
+msgstr ""
+
+#: classes/class-shipping-method.php:475
+msgid "Only required for Food and Drugs shipments to USA."
+msgstr ""
+
+#: classes/class-shipping-method.php:478
+msgid "Reason for Export"
+msgstr ""
+
+#: classes/class-shipping-method.php:482
+msgid "Sale"
+msgstr ""
+
+#: classes/class-shipping-method.php:483
+msgid "Return/Replacement"
+msgstr ""
+
+#: classes/class-shipping-method.php:484
+msgid "Gift"
+msgstr ""
+
+#: classes/class-shipping-method.php:489
+msgid "Terms of Delivery"
+msgstr ""
+
+#: classes/class-shipping-method.php:493
+msgid "DAP"
+msgstr ""
+
+#: classes/class-shipping-method.php:494
+msgid "DT1 (DDP)"
+msgstr ""
+
+#. Translators: docs link.
+#: classes/class-shipping-method.php:500
+msgid "Choose the form of international tax and duty settlement.%1$sLearn more about the %2$sdifference between DAP and DT1 (DDP) →%3$s"
+msgstr ""
+
+#: classes/class-shipping-method.php:510
+msgid "Shipper's VAT Number"
+msgstr ""
+
+#: classes/class-shipping-method.php:514
+msgid "Enter your GB VAT No. consisting of GB followed by 9 numerical digits, e.g. GB123456789. Only the GB registered VAT Numbers are allowed here - EU VAT Nos. are not."
+msgstr ""
+
+#: classes/class-shipping-method.php:520
+msgid "Shipper's EORI Number"
+msgstr ""
+
+#: classes/class-shipping-method.php:524
+msgid "Enter your GB EORI No. consisting of GB followed by 12 numerical digits, e.g. GB123456789000. Only the GB registered EORIs are allowed here - EU EORIs are not. If not EORI-registered, type in GBUNREG."
+msgstr ""
+
+#: classes/class-shipping-method.php:531
+msgid "Invoice Type"
+msgstr ""
+
+#: classes/class-shipping-method.php:535
+msgid "Proforma"
+msgstr ""
+
+#: classes/class-shipping-method.php:536
+msgid "Commercial"
+msgstr ""
+
+#: classes/class-shipping-method.php:541
+msgid "Products' details"
+msgstr ""
+
+#: classes/class-shipping-method.php:544
+msgid "Products' details are required to create international shipments."
+msgstr ""
+
+#: classes/class-shipping-method.php:550
+msgid "Country of Manufacture attribute"
+msgstr ""
+
+#. Translators: docs link.
+#: classes/class-shipping-method.php:558
+msgid "Select your products' 'Country of Manufacture' product attribute.%1$sDPD UK API accepts only the countries' ISO codes as the products'%2$s'Country of Manufacture' attribute's values.%3$sCheck %4$show to configure them properly →%5$s"
+msgstr ""
+
+#: classes/class-shipping-method.php:570
+msgid "Default Country of Manufacture"
+msgstr ""
+
+#: classes/class-shipping-method.php:574
+msgid "Country used by default when the product has no 'Country of Manufacture' attribute assigned."
+msgstr ""
+
+#: classes/class-shipping-method.php:581
+msgid "Commodity Code attribute"
+msgstr ""
+
+#: classes/class-shipping-method.php:587
+msgid "Select your products' 'Commodity Code' product attribute."
+msgstr ""
+
+#: classes/class-shipping-method.php:593
+msgid "Default Commodity Code"
+msgstr ""
+
+#: classes/class-shipping-method.php:596
+msgid "Code used by default when the product has no 'Commodity Code' attribute assigned."
+msgstr ""
+
+#: classes/class-shipping-method.php:637
+msgid "If you can not connect to the API, contact with your DPD UK account manager."
+msgstr ""
+
+#. Translators: link.
+#: classes/class-shipping-method.php:641
+msgid "If you do not have access to the API check our guide %1$sHow to get API access?%2$s"
+msgstr ""
+
+#: classes/class-shipping-method.php:653
+msgid "No attribute"
+msgstr ""
+
+#: classes/class-woocommerce-dpd-uk.php:50
+msgid "Koperta"
+msgstr ""
+
+#: classes/class-woocommerce-dpd-uk.php:51
+msgid "Paczka"
+msgstr ""
+
+#: classes/class-woocommerce-dpd-uk.php:52
+msgid "Paleta"
+msgstr ""
+
+#: classes/class-woocommerce-dpd-uk.php:135
+msgid "Order status changed automatically  - DPD UK plugin."
+msgstr ""
+
+#: classes/views/order-metabox-content.php:43
+msgid "Services not available: "
+msgstr ""
+
+#: classes/views/order-metabox-content.php:53
+msgid "Sending the shipments via DPD UK Ship to Shop service requires the %1$sDPD UK Pickup Points WooCommerce plugin%2$s to be installed and active as well."
+msgstr ""
+
+#: classes/views/order-metabox-content.php:62
+msgid "Number of packages"
+msgstr ""
+
+#: classes/views/order-metabox-content.php:84
+msgid "Total weight (kg)"
+msgstr ""
+
+#: classes/views/order-metabox-content.php:123
+msgid "Liability value"
+msgstr ""
+
+#: classes/views/order-metabox-content.php:161
+#: templates/woocommerce/shipping-method-after.php:2
+msgid "Delivery instructions"
+msgstr ""
+
+#: classes/views/order-metabox-content.php:248
+msgid "Get request"
+msgstr ""
+
+#: classes/views/order-metabox-content.php:253
+msgid "Shipment: "
+msgstr ""
+
+#: classes/views/order-metabox-content.php:256
+msgid "Get label"
+msgstr ""
+
+#: classes/views/order-metabox-content.php:299
+msgid "Create"
+msgstr ""
+
+#: classes/views/order-metabox-content.php:300
+msgid "Save"
+msgstr ""
+
+#: classes/views/settings-notice-api-connection.php:4
+msgid "DPD UK API Message: %s"
+msgstr ""
+
+#. Translators: support link.
+#: src/WPDesk/DpdUk/Api/Request/Exception/InvalidCurrencyException.php:26
+msgid "DPD UK accepts only GBP currency. Should you require any further information please contact us directly at %1$shttps://flexibleshipping.com/support/%2$s."
+msgstr ""
+
+#: src/WPDesk/DpdUk/Api/Request/Exception/InvalidNumberOfParcelsException.php:24
+msgid "Invalid number of parcels."
+msgstr ""
+
+#. Translators: support link.
+#: src/WPDesk/DpdUk/Api/Request/ShipmentRequestFactory.php:147
+msgid "This international shipment may include only 1 package. Should you require any further information please contact us directly at %1$shttps://flexibleshipping.com/support/%2$s or %3$slearn more about international shipping →%4$s"
+msgstr ""
+
+#: templates/woocommerce/email_after_order_table.php:13
+#: templates/woocommerce/order_details_after_order_table.php:14
+msgid "Shipment"
+msgstr ""
+
+#: templates/woocommerce/email_after_order_table.php:18
+#: templates/woocommerce/order_details_after_order_table.php:20
+msgid "Track shipment: "
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-octolize-tracker/src/OptInNotice/views/html-notice.php:12
+msgid "Help us improve Octolize plugins' experience"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-octolize-tracker/src/OptInNotice/views/html-notice.php:15
+msgid "Hi %1$s, with your helping hand we can build effective solutions, launch the new features and shape better plugins experience. By agreeing to anonymously share non-sensitive %2$susage data%3$s of our plugins, you will help us develop them in the right direction. No personal data is tracked or stored and you can opt-out any time. Will you give the thumbs up to our efforts?"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-octolize-tracker/src/OptInNotice/views/html-notice.php:22
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:41
+msgid "Allow"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-onboarding/src/Onboarding/PluginUpgrade/PluginUpgradeOnboardingFactory.php:107
+msgid "Thank you for updating %1$s!"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-onboarding/src/Onboarding/PluginUpgrade/PluginUpgradeOnboardingFactory.php:107
+msgid "It is really important to keep the plugins up to date. We have implemented some improvements and new functionalities. Find out what has changed:"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-onboarding/src/Onboarding/PluginUpgrade/PluginUpgradeOnboardingFactory.php:130
+msgid "I'm not interested"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-onboarding/src/Onboarding/PluginUpgrade/PluginUpgradeOnboardingFactory.php:130
+msgid "Thanks for letting me know"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-forms/templates/input-image.php:46
+msgid "Set image"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-forms/templates/input-image.php:57
+msgid "Remove image"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-forms/templates/input-image.php:82
+msgid "Select or Upload Media"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-forms/templates/input-image.php:86
+msgid "Use this media"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-forms/templates/product-select.php:22
+msgid "Search for a product&hellip;"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Disabled"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Emergency"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Alert"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Critical"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Error"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Warning"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Notice"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Info"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Debug"
+msgstr ""
+
+#. Translators: directory.
+#: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:23
+msgid "Can not enable WP Desk Debug log! Cannot create directory %s or this directory is not writeable!"
+msgstr ""
+
+#. Translators: directory.
+#: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:36
+msgid "Can not enable WP Desk Debug log! Cannot create file %s!"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ActivationForm/views/activation-form-content.php:32
+msgid "Plugin's API key has been successfully activated. You are now fully eligible to receive plugin updates and support."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ActivationForm/views/activation-form-content.php:34
+msgid "Plugin's API key has been successfully activated, but your subscription has expired. In order to receive the upcoming updates and support please renew your subscription."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ActivationForm/views/activation-form-content.php:37
+msgid "In order to receive the upcoming updates and support please enter the plugin's API key obtained after the purchase."
+msgstr ""
+
+#. Translators: my account link and docs link.
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ActivationForm/views/activation-form-content.php:42
+msgid "You can find it in %1$sMy Account / API Keys%2$s tab. %3$sLearn more about activating the API key →%4$s"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ActivationForm/views/activation-form-content.php:54
+msgid "Key: "
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ActivationForm/views/activation-form-content.php:66
+msgid "Deactivate license"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ActivationForm/views/activation-form-content.php:74
+msgid "Renew subscription →"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ActivationForm/views/activation-form-content.php:83
+msgid "Activate license"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ActivationForm/views/activation-form.php:76
+msgid "The action failed with an error: "
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ActivationForm/views/activation-form.php:79
+msgid "Enter license key"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginExternalBlocking.php:33
+msgid "<b>Warning!</b> You're blocking external requests which means you won't be able to get %s updates. Please add %s to %s."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:81
+msgid "Error while connecting to remote server %s. Please contact your hosting provider or try again later. Errors:  "
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:150
+msgid "Error while connecting to remote server %s. Please contact with your hosting provider. Cannot parse response. Response code: %s Message: %s"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:152
+msgid "Error while connecting to remote server %s. Please contact with your hosting provider. Cannot parse response: %s"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/Action/LicenseActivation.php:132
+msgid "Connection failed to the Subscription Key API server. Try again later."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/Action/LicenseActivation.php:141
+msgid "Plugin license activated. "
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/Action/LicenseDeactivation.php:31
+msgid "Plugin license deactivated. "
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/class-wpdesk-helper-list-table.php:27
+msgid "No WP Desk plugins found."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/class-wpdesk-helper-list-table.php:39
+msgid "Plugin"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/class-wpdesk-helper-list-table.php:39
+msgid "Subscription Status"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/class-wpdesk-helper-list-table.php:39
+msgid "Subscription Data"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/class-wpdesk-helper-list-table.php:56
+msgid "Deactivated"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/class-wpdesk-helper-list-table.php:58
+msgid "Activated"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/license-actions.php:14
+msgid "Key:"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/license-actions.php:25
+msgid "Email:"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/license-actions.php:41
+msgid "Activate"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/license-actions.php:47
+msgid "Deactivate"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/licenses.php:27
+msgid "WP Desk Subscriptions"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/licenses.php:37
+msgid "Get your subscription keys <a href=\"%s\" target=\"_blank\">here</a>. You can activate/deactivate API keys <strong>unlimited times on different domains</strong> as long as you have an active subscription."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/LicensePage.php:41
+msgid "Subscriptions"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/WpUpgrader/SubscriptionHandler.php:72
+msgid "Your plugin subscription has expired. In order to update the plugin please %1$srenew your subscription%2$s"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/WpUpgrader/SubscriptionHandler.php:74
+msgid "An active subscription API key is required to download the plugin updates. In order to update the plugin please %1$sactivate your API key%2$s"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/scripts.php:44
+msgid "Plugin deactivation"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/scripts.php:115
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:126
+msgid "Submit &amp; Deactivate"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:20
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:11
+msgid "You are deactivating %s plugin."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:29
+msgid "If you have a moment, please let us know why you are deactivating the plugin (anonymous feedback):"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:38
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:28
+msgid "The plugin suddenly stopped working"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:48
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:38
+msgid "The plugin broke my site"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:58
+msgid "I have found a better plugin"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:63
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:53
+msgid "What's the plugin's name?"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:73
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:63
+msgid "I only needed the plugin for a short period"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:83
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:73
+msgid "I no longer need the plugin"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:93
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:83
+msgid "It's a temporary deactivation. I'm just debugging an issue."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:103
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:93
+msgid "Other"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:108
+msgid "Please let us know how we can improve our plugin"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:117
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:107
+msgid "Cancel"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:120
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:110
+msgid "Skip &amp; Deactivate"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/OptOut.php:41
+msgid "You successfully opted out of collecting usage data by %1$s. If you change your mind, you can always opt in later in the plugin's quick links."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/PluginActionLinks.php:50
+msgid "Opt-in"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/PluginActionLinks.php:53
+msgid "Opt-out"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:23
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:15
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:19
+msgid "Hey %s,"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:26
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:18
+msgid "Please help us improve our plugins! If you opt-in, we will collect some non-sensitive data and usage information anonymously. If you skip this, that's okay! All plugins will work just fine."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:35
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:27
+msgid "Allow & Continue &rarr;"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:40
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:32
+msgid "Skip"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:47
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:39
+msgid "What permissions are being granted?"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:56
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:48
+msgid "Your Site Overview"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:59
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:51
+msgid "WP version, PHP info"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:67
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:59
+msgid "Plugin Usage"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:70
+msgid "Current settings and usage information of %1$s plugins"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:78
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:70
+msgid "Your Store Overview"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:81
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:73
+msgid "Anonymized and non-sensitive store usage information"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:91
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:83
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:27
+msgid "Find out more &raquo;"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:62
+msgid "Current settings and usage information of WP Desk plugins"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:19
+msgid " If you have a moment, please let us know why you are deactivating plugin (anonymous feedback):"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:48
+msgid "I found a better plugin"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:98
+msgid "Kindly tell us the reason so we can improve"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:22
+msgid "We need your help to improve <strong>WP Desk plugins</strong>, so they are more useful for you and the rest of <strong>30,000+ users</strong>. By collecting data on how you use our plugins, you will help us a lot. We will not collect any sensitive data, so you can feel safe."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-opt-out-notice.php:11
+msgid "You successfully opted out of collecting usage data by WP Desk. If you change your mind, you can always opt in later in the plugin's quick links."
+msgstr ""

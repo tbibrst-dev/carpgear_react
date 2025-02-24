@@ -1,0 +1,1 @@
+/srv/users/lottery/apps/lottery/lottery/competition/wp-content/plugins/query-monitor/wp-content/db.php

@@ -1,0 +1,1995 @@
+#competitions-plugin-container .header_content {
+  background-image: url(img/Frame17.png);
+  min-height: 65px;
+  top: 62px;
+  left: 195px;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px;
+  gap: 4px;
+  margin-bottom: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header_content h3 {
+  font-family: "Mozaic GEO";
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+  /* padding: 0; */
+  margin: 0;
+  text-transform: uppercase;
+  /* display: flex;
+    align-items: end;
+    justify-content: center; */
+  /* position: relative; */
+  /* top: 3.5px; */
+}
+
+#competitions-plugin-container {
+  padding: 20px 20px 0px 0px;
+  min-height: 87vh;
+}
+
+#competitions-plugin-container .header-text {
+  font-family: "Mozaic GEO";
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0f1010;
+  text-transform: uppercase;
+}
+
+.btn-group .btn-accent {
+  color: #0f1010;
+  background-color: #eec273;
+  border-color: #eec273;
+  --bs-btn-hover-color: #0f1010;
+  --bs-btn-hover-bg: #eec273;
+  --bs-btn-hover-border-color: #eec273;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #0f1010;
+  --bs-btn-active-bg: #eec273;
+  --bs-btn-active-border-color: #eec273;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #0f1010;
+  --bs-btn-disabled-bg: #eec273;
+  --bs-btn-disabled-border-color: #eec273;
+  font-family: "Mozaic GEO";
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.btn-accent {
+  color: #0f1010;
+  background-color: #ffbb41;
+  border-color: #ffbb41;
+  --bs-btn-hover-color: #0f1010;
+  --bs-btn-hover-bg: #ffbb41;
+  --bs-btn-hover-border-color: #ffbb41;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #0f1010;
+  --bs-btn-active-bg: #ffbb41;
+  --bs-btn-active-border-color: #ffbb41;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #0f1010;
+  --bs-btn-disabled-bg: #ffbb41;
+  --bs-btn-disabled-border-color: #ffbb41;
+  font-family: "Mozaic GEO";
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: right;
+  text-transform: uppercase;
+  padding: 3px 43px;
+}
+
+.btn-accent.create_btn {
+  padding: 5px 39px 2px;
+}
+
+.btn-black {
+  color: #ffffff;
+  background-color: #333838;
+  border-color: #333838;
+  --bs-btn-color: #ffffff;
+  --bs-btn-bg: #333838;
+  --bs-btn-border-color: #333838;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #333838;
+  --bs-btn-hover-border-color: #333838;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: #333838;
+  --bs-btn-active-border-color: #333838;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #ffffff;
+  --bs-btn-disabled-bg: #333838;
+  --bs-btn-disabled-border-color: #333838;
+  font-family: "Mozaic GEO";
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.badge-circle {
+  border-radius: 50%;
+  width: 25px;
+  /* Adjust the width and height as needed */
+  height: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #2cb4a5;
+}
+
+#competitions_table > thead {
+  height: 58px;
+  padding: 24px;
+  border: 0px, 0px, 1px, 0px;
+}
+
+#competitions_table > thead > tr > th:nth-child(2) {
+  text-align: start !important;
+}
+
+#competitions_table > tbody tr td:nth-child(2) {
+  text-align: start !important;
+}
+
+.competition_entries table#competitions_table thead tr th:nth-child(1) {
+  text-align: left !important;
+}
+
+.competition_entries table#competitions_table tbody tr td:nth-child(1) {
+  text-align: left !important;
+}
+
+#competitions_table > thead th {
+  font-family: "Mozaic GEO";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #989898;
+  padding: 16px 10px 16px 15px;
+  text-align: center !important;
+}
+
+#competitions_table > tbody tr td {
+  text-align: center !important;
+}
+
+.badge {
+  font-size: 0.4em;
+}
+
+.bg-lighter {
+  background-color: #2cb4a5;
+}
+
+.bg-orange {
+  background-color: #fe7a42;
+}
+
+.bg-grey {
+  background-color: #dadada;
+}
+
+.bg-brand {
+  background-color: #12524b;
+}
+
+#competitions_table td {
+  padding: 16px 10px 16px 15px;
+  text-align: end;
+  vertical-align: middle;
+}
+
+.competition_photo {
+  width: 44px;
+  height: 55px;
+  border-radius: 4px;
+  border: 1px solid #ffffff33;
+}
+
+#competitions_table .text-content,
+#competitions_table .comp_winner .badge {
+  font-family: "Mozaic GEO";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0f1010;
+}
+
+#competitions_table .comp_winner .badge {
+  background-color: #ffbb41;
+  font-weight: 700;
+}
+
+#competitions-plugin-container .sub-text {
+  font-family: "Mozaic GEO";
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #0f1010;
+}
+
+#competitions_table .sub-text span {
+  padding-right: 0.25rem;
+  text-transform: uppercase;
+}
+
+#competitions-plugin-container .sub-text a {
+  color: #0f1010;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.comp-image {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+#competitions-plugin-container a {
+  /* color: unset; */
+  text-decoration: none;
+}
+
+.header_container a:active,
+.header_container a:hover {
+  color: #0f1010;
+}
+
+#competitions_table a {
+  text-decoration: underline;
+}
+
+#competitions_table .normal_text {
+  font-family: "Mozaic GEO";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #0f1010;
+}
+
+#competitions-plugin-container .btn-default {
+  background-color: #dfdcdc;
+  font-family: "Mozaic GEO";
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: right;
+  text-transform: uppercase;
+  padding: 4px 23px 3px 23px;
+  border-radius: 4px;
+  gap: 12px;
+}
+
+.ck.ck-balloon-panel.ck-powered-by-balloon .ck.ck-powered-by {
+  display: none;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  border-radius: unset;
+}
+
+#competitions-plugin-container .nav-tabs .nav-link {
+  font-family: "Mozaic GEO";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0f1010;
+  background: transparent;
+  margin-right: 12px;
+  /* border-top: 4px solid #c8c8c861; */
+  position: relative;
+}
+
+#competitions-plugin-container .nav-tabs .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: 0;
+  border-radius: 10px;
+  left: 0;
+  background-color: #c8c8c861;
+}
+
+#competitions-plugin-container .nav-tabs .nav-link.active-accent {
+  /* border-top: 4px solid #EEC273; */
+  font-weight: 700;
+  background-color: transparent;
+  position: relative;
+}
+
+#competitions-plugin-container .nav-tabs .nav-link.active {
+  font-weight: 700;
+}
+
+#competitions-plugin-container .nav-tabs .nav-link.active-accent::before {
+  background-color: #eec273;
+}
+
+#competitions-plugin-container .nav-tabs .nav-link.active-lighter::before {
+  background-color: #2cb4a5;
+}
+
+#competitions-plugin-container .nav-tabs .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: 0;
+  border-radius: 10px;
+  left: 0;
+}
+
+#competitions-plugin-container .nav-tabs .nav-link.tab-lighter {
+  /* border-top: 4px solid #2CB4A5; */
+  font-weight: 700;
+  opacity: 100% !important;
+}
+
+#competitions-plugin-container .nav-tabs .nav-link.tab-brand {
+  /* border-top: 4px solid #12524B; */
+  font-weight: 700;
+  opacity: 100%;
+}
+
+.ck-editor__editable_inline {
+  min-height: 500px;
+}
+
+#competitions-plugin-container label.error {
+  color: red;
+}
+
+.header_label {
+  font-family: "Mozaic GEO";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0f1010;
+}
+
+#competitions-plugin-container .form-label {
+  font-family: "Mozaic GEO";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #989898;
+}
+
+.tab-content.pt-3 ul {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.tab-content.pt-3 ul li.nav-item {
+  width: 16%;
+}
+
+#wpcontent {
+  height: 100%;
+  padding-left: 20px;
+  background: #8080802b;
+}
+
+#competitions-plugin-container .form-control {
+  height: 50px;
+  border-radius: 4px !important;
+  border: 1px solid #00000033 !important;
+  gap: 4px;
+  padding: 20px 16px;
+}
+
+#competitions-plugin-container #manageScripts {
+  height: 180px !important;
+}
+
+.input-fild input::placeholder {
+  color: #1f1010;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.input-fild {
+  padding-bottom: 14px;
+}
+
+select#format {
+  width: 100%;
+  height: 50px;
+  padding: 0px 16px;
+  color: #1f1010;
+  font-size: 14px;
+  font-weight: 600;
+  max-width: 100%;
+}
+
+.check-label input {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #8c8f94;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-align {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+label.form-label.txt {
+  color: #0f1010 !important;
+  font-size: 15px !important;
+}
+
+.check-label {
+  display: flex;
+}
+
+.row.file-up {
+  margin-top: 50px;
+}
+
+.upload-btn-wrapper,
+.wp_media_preview {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-btn-wrapper img {
+  width: 41px;
+  margin: auto;
+  padding-bottom: 16px;
+}
+
+.btn-upload {
+  color: #0f1010;
+  background-color: #ffbb41;
+  padding: 5px 30px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  font-family: Mozaic GEO;
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: max-content;
+}
+
+.upload-btn-wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.file-bor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #989898;
+  height: 100%;
+  padding: 16px;
+  border-radius: 5px;
+  flex-direction: column;
+}
+
+.form-check {
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 1.5em;
+  margin-bottom: 0.125rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gallery_preview {
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 22px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: -6px;
+  bottom: 0px;
+  background-color: #d0901e;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #ffbb41;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.switchs {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 22px;
+}
+
+.switchs input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switchs {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 22px;
+}
+
+input:checked + .sliders {
+  background-color: #ffbb41;
+}
+
+.sliders:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: -6px;
+  bottom: 0px;
+  background-color: #a7a7a7c2;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.sliders.rounds {
+  border-radius: 34px;
+}
+
+.switchs input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.sliders.rounds {
+  border-radius: 34px;
+}
+
+.sliders.rounds:before {
+  border-radius: 50%;
+}
+
+.sliders {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:focus + .sliders {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .sliders:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  background-color: #d0901e;
+}
+
+#generate_ticket_numbers {
+  font-family: Mozaic GEO;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #0f1010;
+  text-transform: uppercase;
+  text-decoration: unset;
+  padding: 10px 20px;
+}
+
+.lineItemRow {
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px;
+  gap: 16px;
+  border: 1px solid #0000001a;
+}
+
+.deleteRow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.lineItemRow {
+  margin-bottom: 1rem;
+}
+
+#competitions-plugin-container .form-control {
+  height: 50px;
+  border-radius: 4px !important;
+  border: 1px solid #00000033 !important;
+  gap: 4px;
+  color: #1f1010 !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  padding: 0 12px !important;
+}
+
+#short_description {
+  min-height: 110px;
+}
+
+#competitions-plugin-container .form-check-input:checked {
+  /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        linear-gradient(0deg, #FFBB41, #FFBB41); */
+  border: 1px solid #00000033;
+
+  /* #FFBB41 */
+  background-color: #ffbb41;
+  height: 20px;
+  width: 20px;
+  background: #fff !important;
+  color: black;
+  accent-color: white !important;
+}
+
+#competitions-plugin-container .additional_text {
+  font-family: "Mozaic GEO";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+div#gallery-image-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* margin: 10px; */
+  flex-wrap: wrap;
+}
+
+.gallery-img-content img {
+  width: 50px;
+  height: 60px;
+}
+
+.file-featured {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #989898;
+  height: 100%;
+  padding: 16px;
+  border-radius: 5px;
+}
+
+#competitions-plugin-container select.form-control {
+  width: 100% !important;
+  height: 50px !important;
+  padding: 0px 12px !important;
+  color: #1f1010 !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  max-width: 100%;
+}
+
+.lineItemRow .image_editor {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px dashed #00000033;
+  text-align: center;
+}
+
+#competitions-plugin-container .btn-group .btn {
+  padding: 2px 15px;
+  height: 28px;
+  border-radius: 0;
+  text-align: center;
+}
+
+#competitions-plugin-container .btn-group .btn:not(:first-child) {
+  border-left: 1px solid #ffffff36;
+}
+
+#competitions-plugin-container .btn-group .btn:first-child {
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+#competitions-plugin-container .btn-group .btn:last-child {
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar,
+.ck.ck-editor__top .ck-sticky-panel .ck-toolbar.ck-rounded-corners {
+  border-top-left-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+}
+
+.image_preview_container img {
+  width: 58px;
+  height: 38px;
+}
+
+.image_preview_container {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.instant_content .wp-admin input[type="file"] {
+  display: none;
+}
+
+.check-bx input {
+  background-color: red;
+  background-color: #ffffff;
+}
+
+#competitions-plugin-container input[type="checkbox"]:checked::before {
+  content: url(img/check-box.png) !important;
+  margin: 0px !important;
+  height: 24px !important;
+  width: 22px !important;
+  background: #ffbb41;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#competitions-plugin-container
+  .check-bx
+  input[type="checkbox"]:checked::before {
+  height: 24px;
+  width: 24px;
+  background: #fff !important;
+  color: black;
+  accent-color: white !important;
+}
+
+#competitions-plugin-container .form-check-input[type="checkbox"] {
+  border-radius: 3px;
+  height: 24px !important;
+  width: 24px !important;
+  overflow: hidden;
+}
+
+#competitions-plugin-container .form-check-input:focus {
+  border-color: #06060680 !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.form-check {
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 1.5em;
+  margin-bottom: 0.125rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#competitions-plugin-container .form-check-label {
+  font-family: "Mozaic GEO";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0f1010;
+}
+
+#csvModal .csv_modal_content {
+  height: 188px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  border: 2px dashed #989898;
+}
+
+#csvModal .modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: var(--bs-modal-padding);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#csvModal {
+  top: 20%;
+}
+
+.modal-label {
+  font-family: "Mozaic GEO";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0f1010;
+}
+
+#csvModal .close_btn {
+  position: absolute;
+  top: -13px;
+  right: -13px;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  background-color: #ffbb41;
+  z-index: 9999;
+  opacity: 1;
+}
+
+.btn-acc-sm {
+  padding: 5px 22px 3px;
+}
+
+#price_per_ticket-error,
+#cash-error,
+#slider_title3-error {
+  width: inherit;
+}
+
+#reward_wins_content input[type="file"],
+#instant_wins_content input[type="file"] {
+  visibility: hidden;
+  /* display: none; */
+}
+
+#competitions-plugin-container .prct_available,
+#competitions-plugin-container .cash_value,
+#competitions-plugin-container .prize_qty {
+  padding: 5px;
+}
+
+.switchs input[type="checkbox"]:disabled,
+.switch input[type="checkbox"]:disabled {
+  opacity: 0;
+}
+
+.prize_tickets .col-2 {
+  width: 10%;
+  margin-bottom: 10px;
+}
+
+#competitions-plugin-container .prize_tickets .form-control {
+  padding: 5px;
+}
+
+.comp_loader {
+  background-color: transparent;
+  height: 120px;
+  position: fixed;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 99999999;
+}
+
+#competitions-plugin-container .nav-tabs .nav-link.active-accent {
+  opacity: 100%;
+}
+
+#competitions-plugin-container .nav-tabs .nav-link:not(.active) {
+  color: rgba(15, 16, 16, 1);
+  opacity: 50%;
+}
+
+#competitions-plugin-container .nav-tabs .nav-link.tab-brand {
+  opacity: 100%;
+}
+
+#competitions-plugin-container .additional_text {
+  color: #989898;
+}
+
+#competitions-plugin-container a.wp_media_frame.btn {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+#competitions-plugin-container .sub-text a.remove_instant_media {
+  text-decoration: underline;
+}
+
+#competitions-plugin-container .nav-tabs .nav-link.tab-lighter::before {
+  background: #2cb4a5;
+}
+
+#competitions-plugin-container .nav-tabs .nav-link.tab-brand::before {
+  background: #12524b;
+}
+
+#competitions-plugin-container .empty_message {
+  font-family: "Mozaic GEO";
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+#competitions-plugin-container .page-numbers {
+  position: relative;
+  display: block;
+  padding: var(--bs-pagination-padding-y) var(--bs-pagination-padding-x);
+  font-size: var(--bs-pagination-font-size);
+  color: #0f1010;
+  text-decoration: none;
+  background-color: var(--bs-pagination-bg);
+  border: var(--bs-pagination-border-width) solid
+    var(--bs-pagination-border-color);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#competitions-plugin-container .page-numbers:hover {
+  z-index: 2;
+  color: #0f1010;
+  background-color: var(--bs-pagination-hover-bg);
+  border-color: var(--bs-pagination-hover-border-color);
+}
+
+#competitions-plugin-container .page-numbers:focus {
+  z-index: 3;
+  color: #0f1010;
+  background-color: var(--bs-pagination-focus-bg);
+  outline: 0;
+  box-shadow: var(--bs-pagination-focus-box-shadow);
+}
+
+#competitions-plugin-container .current > .page-numbers,
+#competitions-plugin-container .page-numbers.current {
+  z-index: 3;
+  color: #0f1010;
+  background-color: #ffbb41;
+  border-color: #ffbb41;
+}
+
+#competitions-plugin-container .disabled > .page-numbers,
+#competitions-plugin-container .page-numbers.disabled {
+  color: var(--bs-pagination-disabled-color);
+  pointer-events: none;
+  background-color: var(--bs-pagination-disabled-bg);
+  border-color: var(--bs-pagination-disabled-border-color);
+}
+
+#competitions-plugin-container .page-item:not(:first-child) .page-numbers {
+  margin-left: calc(var(--bs-border-width) * -1);
+}
+
+#competitions-plugin-container .page-item:first-child .page-numbers {
+  border-top-left-radius: var(--bs-pagination-border-radius);
+  border-bottom-left-radius: var(--bs-pagination-border-radius);
+}
+
+#competitions-plugin-container .page-item:last-child .page-numbers {
+  border-top-right-radius: var(--bs-pagination-border-radius);
+  border-bottom-right-radius: var(--bs-pagination-border-radius);
+}
+
+#competitions-plugin-container .tablenav {
+  display: flex;
+  justify-content: center;
+}
+
+#competitions-plugin-container a.csv_header_text,
+#competitions-plugin-container a.csv_header_text:hover {
+  font-family: "Mozaic GEO";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-right: 1rem;
+  text-decoration: underline;
+}
+
+.btn-accent.create_ques_btn {
+  padding: 5px 23px 2px;
+}
+
+.seo_content textarea.form-control {
+  height: auto !important;
+}
+
+.question_content #competitions_table .normal-text {
+  font-family: "Mozaic GEO";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 16px 10px 16px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.question_content .sub_text {
+  font-family: "Mozaic GEO";
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: right;
+  color: #0f1010;
+}
+
+.question_content .sub_text a {
+  color: #0f1010;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.selected_answer {
+  color: #0f1010;
+  font-weight: 600 !important;
+}
+
+.link_text,
+.link_text:hover {
+  font-family: "Mozaic GEO";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #0f1010;
+}
+
+.make_winners,
+.make_winners:hover {
+  font-family: "Mozaic GEO";
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #0f1010;
+}
+
+.make_winners {
+  display: none;
+}
+
+.comp_winner:hover .make_winners {
+  display: inline;
+}
+
+.competition_entries .btn-group .btn {
+  padding: 3px 24px 2px 24px !important;
+}
+
+#comp_search {
+  width: 267px;
+  height: 33px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 4px;
+  background: #ffffff;
+  border-left: 1px solid #ffffff1a;
+}
+
+.normal-weight {
+  font-weight: 400 !important;
+}
+
+.competition_entries #competitions_table .normal-text {
+  font-family: "Mozaic GEO";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 16px 10px 16px 15px;
+}
+
+#competitions-plugin-container .dropdown-item {
+  font-family: "Mozaic GEO";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: unset;
+}
+
+#competitions-plugin-container .dropdown-item:hover {
+  font-weight: 900 !important;
+  background-color: unset;
+}
+
+.competition_entries .btn-accent.create_btn {
+  padding: 5px 35px 2px;
+}
+
+.competition_entries .header_content .row div {
+  display: flex;
+  align-items: center;
+}
+
+.question_content .pt-150 {
+  margin-top: 150px;
+}
+
+#competitions-plugin-container .header_content .row {
+  display: flex;
+  align-items: center;
+}
+
+#competitions-plugin-container .page-numbers {
+  padding: 1rem 0.75rem 0.65rem 0.75rem;
+}
+
+.competition_entries .header_content .row div:last-child {
+  justify-content: flex-end;
+}
+
+#reward_entrant_back_btn .order-higher-indicator::before {
+  position: relative;
+  top: 0.11rem;
+  width: 20px;
+  height: 20px;
+}
+
+#reward_entrant_back_btn .order-higher-indicator::before {
+  color: #0f1010;
+}
+
+#reward_entrant_back_btn .order-higher-indicator img {
+  width: 6px;
+  height: 10px;
+  margin-right: 7px;
+}
+
+#reward_entrant_back_btn {
+  padding: 5px 18px 2px;
+  font-family: Mozaic GEO;
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 24px;
+  text-align: left;
+  color: #0f1010;
+}
+
+.winner_heading {
+  font-family: "Mozaic GEO";
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 43.2px;
+  text-align: center;
+  color: #0f1010;
+}
+
+.winner_content {
+  font-family: "Mozaic GEO";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20.8px;
+  color: #0f1010;
+  text-align: center;
+}
+
+.winner_content #winner_name {
+  font-family: "Mozaic GEO";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.8px;
+  text-align: center;
+  color: #0f1010;
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
+}
+
+#makeWinnerModal .btn-cancel {
+  gap: 12px;
+  border-radius: 4px;
+  opacity: 0px;
+  background: #dfdcdc;
+  font-family: "Mozaic GEO";
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 24px;
+  color: #0f1010;
+  border-color: #dfdcdc;
+  width: 130px;
+  height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#makeWinnerModal .make_winner_comp,
+#makeWinnerModal .make_reward_winner {
+  padding: 20px 16px 20px 16px;
+  border-radius: 4px;
+  font-family: "Mozaic GEO";
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 24px;
+  color: #0f1010;
+  background: var(--Btn-Yellow, #ffbb41);
+  border-color: #ffbb41;
+  height: 60px;
+  width: 245px;
+  text-transform: uppercase;
+}
+
+#makeWinnerModal .modal-content {
+  width: 420px;
+}
+
+.sub_header {
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+.sub_header .header-text {
+  margin-bottom: 0px;
+  position: relative;
+  top: 2.5px;
+}
+
+.cke_contents a {
+  text-decoration-color: #fff;
+}
+
+.button-danger,
+.button-danger:hover {
+  color: #b32d2e;
+  border-color: #b32d2e;
+  background: #f6f7f7;
+}
+
+.button-danger {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 2.15384615;
+  min-height: 30px;
+  margin: 0;
+  padding: 0 10px;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  -webkit-appearance: none;
+  border-radius: 3px;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.competitions_content .competitions {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.comp-search-box {
+  float: right;
+}
+
+.users_results {
+  margin-top: 1rem;
+}
+
+.users_results table {
+  margin-bottom: 1rem;
+}
+
+.limit_lock_content .nav-tabs .nav-item.show .nav-link {
+  color: #ffffff;
+  background-color: #333838;
+  border-color: #333838 #333838 #ffffff;
+}
+
+.limit_lock_content .nav-tabs .nav-link.active {
+  color: #0f1010;
+  background-color: #eec273;
+  border-color: #eec273;
+  font-family: "Mozaic GEO";
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.limit_lock_content .nav-link:focus,
+.limit_lock_content .nav-link:hover {
+  color: #ffffff;
+}
+
+.limit_lock_content .nav-tabs {
+  border-bottom: none;
+}
+
+.instant_win_table:not(.dataTable) > thead,
+.limit_lock_table:not(.dataTable) > thead {
+  height: 58px;
+  padding: 24px;
+}
+
+.instant_win_table > thead > tr > th:nth-child(2),
+.limit_lock_table > thead > tr > th:nth-child(2) {
+  text-align: start !important;
+}
+
+.instant_win_table > tbody tr td:nth-child(2),
+.limit_lock_table > tbody tr td:nth-child(2) {
+  text-align: start !important;
+}
+
+.instant_win_table > thead th,
+.limit_lock_table > thead th {
+  font-family: "Mozaic GEO";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #989898;
+  padding: 16px 10px 16px 15px;
+  text-align: center !important;
+}
+
+.instant_win_table > tbody tr td,
+.limit_lock_table > tbody tr td {
+  text-align: center !important;
+}
+
+.instant_win_table td,
+.limit_lock_table td {
+  padding: 16px 10px 16px 15px;
+  text-align: end;
+  vertical-align: middle;
+}
+
+.instant_win_table .text-content,
+.instant_win_table .comp_winner .badge,
+.limit_lock_table .text-content,
+.limit_lock_table .comp_winner .badge {
+  font-family: "Mozaic GEO";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0f1010;
+}
+
+.instant_win_table .comp_winner .badge,
+.limit_lock_table .comp_winner .badge {
+  background-color: #ffbb41;
+  font-weight: 700;
+}
+
+.instant_win_table .sub-text span,
+.limit_lock_table .sub-text span {
+  padding-right: 0.25rem;
+  text-transform: uppercase;
+}
+
+.instant_win_table a,
+.limit_lock_table a {
+  text-decoration: underline;
+}
+
+.instant_win_table .normal_text,
+.limit_lock_table .normal_text {
+  font-family: "Mozaic GEO";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #0f1010;
+}
+
+.limit_lock_table > thead th {
+  font-family: "Mozaic GEO";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.limit_lock_content .nav-link {
+  font-family: "Mozaic GEO";
+  font-weight: 600;
+}
+
+.limit_lock_content {
+  padding: 20px 20px 0px 0px;
+  min-height: 87vh;
+}
+
+.dt-loader {
+  background-color: transparent;
+  height: 120px;
+  position: fixed;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 99999999;
+}
+
+#unpaidInstantWins .hover-cell {
+  position: relative;
+}
+
+#unpaidInstantWins .mark-paid {
+  display: none;
+  cursor: pointer;
+}
+
+#unpaidInstantWins .hover-cell:hover .mark-paid {
+  display: block;
+  cursor: pointer;
+}
+
+#unpaidInstantWins .markaspaidwinner {
+  display: none;
+  cursor: pointer;
+}
+
+#unpaidInstantWins .hover-cell:hover .markaspaidwinner {
+  display: block;
+  cursor: pointer;
+}
+
+#competitions-plugin-container .active > .page-link,
+#competitions-plugin-container .page-link.active {
+  z-index: 3;
+  color: #0f1010;
+  background-color: #ffbb41;
+  border-color: #ffbb41;
+}
+
+#competitions-plugin-container .page-link {
+  color: #0f1010;
+}
+
+#competitions_table .row-actionss .duplicate_com {
+  display: none;
+}
+
+#competitions_table .row-actionss:hover .duplicate_com {
+  display: inline;
+}
+
+.sliders_content .btn-upload {
+  margin-top: 8px;
+}
+
+.sliders_content .itemRow labell:first-child {
+  padding-left: 40px;
+}
+
+/* 29-07-2024 */
+.hide {
+  display: none;
+}
+
+#competitions-plugin-container
+  #claimedInstantWins
+  input[type="checkbox"]:checked::before {
+  background: transparent !important;
+  height: 15px !important;
+  width: 13px !important;
+}
+
+#claimedInstantWins #select-all,
+#claimedInstantWins .user-checkbox {
+  margin: 0 !important;
+  height: 15px !important;
+  width: 13px !important;
+  padding: 0 !important;
+}
+
+#claimedInstantWins #select-all:checked::before,
+#claimedInstantWins .user-checkbox:checked::before {
+  height: 15px !important;
+  width: 13px !important;
+}
+
+/* Full-Screen Overlay */
+#instant-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent background */
+  z-index: 999;
+  /* Ensure it's above other content */
+  display: none;
+  /* Initially hidden */
+}
+
+.instant_content .lineItemRow .col-2 {
+  width: 13%;
+}
+
+.instant_content .lineItemRow .deleteRow {
+  width: 5%;
+}
+
+.instant_content .total_prize_label {
+  font-family: "Mozaic GEO";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #0f1010;
+}
+
+#question-status-div-enabled {
+  position: absolute;
+  /* width: 250px; */
+  text-align: center;
+  background: green;
+  margin: auto;
+  padding: 10px;
+  border-radius: 4px;
+  /* display: flex; */
+  align-items: center;
+  align-content: center;
+  /* left: calc(50% - 250px ); */
+  color: white;
+}
+
+#question-status-div-disabled {
+  position: absolute;
+  /* width: 250px; */
+  text-align: center;
+  background: red;
+  margin: auto;
+  padding: 10px;
+  border-radius: 4px;
+  /* display: flex; */
+  align-items: center;
+  align-content: center;
+  /* left: calc(50% - 250px ); */
+  color: white;
+}
+
+#claimedInstantWins_processing {
+  top: 10% !important;
+}
+
+/* Highlight row with purple background and white text */
+.highlight-row {
+  background-color: #3291a8 !important;
+  color: white !important;
+  font-weight: bold !important;
+}
+
+.highlight-row-magenta {
+  background-color: #a8324e !important;
+  color: white !important;
+  /* font-weight: bold !important; */
+}
+.highlight-row-magenta td ,.highlight-row-magenta td a {
+  /* background-color: #a8324e !important; */
+  color: white !important;
+  /* font-weight: bold !important; */
+}
+
+.highlight-row-blue {
+  background-color: #3291a8 !important;
+  color: white !important;
+  /* font-weight: bold !important; */
+}
+
+
+
+
+.highlight-row td,
+.highlight-row td .link_text {
+  color: #ffffff !important;
+}
+
+/* Remove box-shadow for highlighted row cells */
+.highlight-row > * {
+  box-shadow: none !important;
+}
+
+/* Override Bootstrap background color with transparency */
+.table > tbody > tr > * {
+  background-color: transparent !important;
+}
+
+/* Override background for DataTables specifically */
+/* table.table.dataTable tbody tr {
+    background-color: transparent !important;
+} */
+
+#paidInstantWins tbody tr {
+  background-color: #90ee90 !important; /* Light green */
+}
+
+#unpaidInstantWins .edit-prize-title {
+  display: none;
+  cursor: pointer;
+}
+
+#unpaidInstantWins .hover-cell:hover .edit-prize-title {
+  display: block;
+  cursor: pointer;
+}
+
+#editModaltitle {
+  display: block;
+  /* width: 400px !important;
+	position: fixed !important;
+	top: 200px !important;
+	left: calc(50% - 400px) !important; */
+}
+
+#cancelEditBtn,
+#updatePrizeBtn {
+  cursor: pointer;
+}
+
+#unpaidInstantWins_processing,
+#paidInstantWins_processing,
+#claimedInstantWins_processing {
+  top: 5% !important;
+}
+
+#paidInstantWins .edit-prize-title {
+  display: none;
+  cursor: pointer;
+}
+
+#paidInstantWins .hover-cell:hover .edit-prize-title {
+  display: block;
+  cursor: pointer;
+}
+
+#claimedInstantWins .edit-prize-title {
+  display: none;
+  cursor: pointer;
+}
+
+#claimedInstantWins .hover-cell:hover .edit-prize-title {
+  display: block;
+  cursor: pointer;
+}
+
+.main-com-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+
+#competitions-plugin-container .dropdown-item-instant-li {
+  font-family: "Mozaic GEO";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: unset;
+}
+
+#competitions-plugin-container .dropdown-item-instant-li:hover {
+  font-weight: 900 !important;
+  background-color: unset;
+}
+
+#competitions-plugin-container
+  .dropdown-item-instant-li
+  .dropdown-item-instant {
+  font-family: "Mozaic GEO";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: unset;
+}
+
+.global_content_statstics .staticssvediv {
+  padding: 35px 0;
+}
+
+/* //////////////////////--23-Jan-2025--////////////////////// */
+
+.ticket_sec span.sub-text {
+  display: block;
+  text-align: end;
+}
+
+.ticket_sec .users_search {
+  text-align: end;
+}
+
+.ticket_sec .users_search form {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.global_sec .btn-group {
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+@media (max-width: 1399.98px) {
+  .ticket_sec h3 {
+    margin-bottom: 15px;
+  }
+
+  .ticket_sec span.sub-text {
+    text-align: start;
+    line-height: 20px !important;
+  }
+
+  #competitions-plugin-container .users_results .users {
+    min-width: 1200px;
+  }
+
+  #competitions-plugin-container .users_results {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  label.form-label.web_lab {
+    display: block;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .instant_sec #comp_search {
+    width: 100%;
+  }
+
+  .tab-content.pt-3 ul li.nav-item {
+    width: auto;
+  }
+
+  #competitions-plugin-container .table-view-list {
+    min-width: 1200px;
+  }
+
+  .header_content .btn-group {
+    width: 100%;
+  }
+
+  .header_content h3 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #comp_search {
+    width: 100%;
+  }
+
+  .competition_entries .header_content .row div {
+    display: block;
+    width: 100%;
+    margin: 5px 0 0;
+  }
+
+  .ticket_sec .users_search input {
+    margin: 0 !important;
+  }
+
+  .ticket_sec .users_search form {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .ticket_sec .users_search .btn-accent {
+    height: 40px;
+  }
+
+  .ticket_sec .users_search {
+    margin-top: 16px;
+  }
+  .tab-content.pt-3 ul {
+    margin-top: 14px;
+  }
+
+  #competitions-plugin-container {
+    padding: 20px 10px 0px 0px;
+  }
+
+  #competitions-plugin-container .sub-text {
+    padding: 0;
+  }
+
+  .gallery_video_container {
+    margin-bottom: 0 !important;
+  }
+  #competitions-plugin-container .header-text {
+    font-size: 20px;
+  }
+
+  .row.file-up {
+    margin-top: 0;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .competition_entries .btn-group .btn {
+    margin: 4px 0;
+  }
+  #competitions-plugin-container .nav-tabs .nav-link {
+    font-size: 12px;
+    line-height: 22px;
+    margin-right: 0px;
+    padding: 10px;
+  }
+
+  .header_content .btn-group {
+    margin: 14px 0px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #competitions-plugin-container .form-control {
+    height: 40px;
+    font-size: 13px !important;
+    padding: 0px 10px !important;
+  }
+
+  #competitions-plugin-container select.form-control {
+    height: 40px !important;
+    font-size: 13px !important;
+    padding: 0px 10px !important;
+  }
+
+  .form-check a img {
+    height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header_content .btn-group {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .ticket_sec .users_search .btn-accent {
+    text-align: center;
+  }
+
+  .ticket_sec .users_search input {
+    width: 100%;
+  }
+
+  .tab-content.pt-3 ul {
+    justify-content: left;
+    gap: 5px 10px;
+    flex-wrap: wrap;
+  }
+
+  #competitions-plugin-container .nav-tabs .nav-link:before {
+    display: none;
+  }
+
+  #competitions-plugin-container .nav-tabs .nav-link {
+    background: #dfdcdc;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 13px;
+    padding: 10px 24px;
+  }
+
+  #competitions-plugin-container .nav-tabs .nav-link.active {
+    background: #ffbb41;
+  }
+}

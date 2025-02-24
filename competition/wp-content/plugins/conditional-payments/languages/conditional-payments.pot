@@ -1,0 +1,770 @@
+# Copyright (C) 2024 theDotstore
+# This file is distributed under the same license as the Conditional Payment Methods for WooCommerce Premium (Premium) package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Conditional Payment Methods for WooCommerce Premium "
+"(Premium) 1.1.5\n"
+"Report-Msgid-Bugs-To: https://www.multidots.com/contact/\n"
+"POT-Creation-Date: 2024-05-14 07:08:50+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Sagar Jariwala <sagar.jariwala@multidots.com>\n"
+"Language-Team: Sagar Jariwala <sagar.jariwala@multidots.com>\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: India\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
+
+#: admin/class-conditional-payments-admin.php:67
+msgid "Please enter 3 or more characters"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:69
+msgid "Select some options"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:70
+#: admin/partials/form-dscpw.php:165 admin/partials/form-dscpw.php:591
+msgid "Billing Address"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:71
+#: admin/partials/form-dscpw.php:223 admin/partials/form-dscpw.php:649
+msgid "Shipping Address"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:72
+#: admin/class-conditional-payments-admin.php:80
+#: admin/partials/form-dscpw.php:166 admin/partials/form-dscpw.php:224
+#: admin/partials/form-dscpw.php:592 admin/partials/form-dscpw.php:650
+msgid "First Name"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:73
+#: admin/class-conditional-payments-admin.php:81
+#: admin/partials/form-dscpw.php:167 admin/partials/form-dscpw.php:225
+#: admin/partials/form-dscpw.php:593 admin/partials/form-dscpw.php:651
+msgid "Last Name"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:74
+#: admin/class-conditional-payments-admin.php:82
+#: admin/partials/form-dscpw.php:168 admin/partials/form-dscpw.php:226
+#: admin/partials/form-dscpw.php:594 admin/partials/form-dscpw.php:652
+msgid "Company"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:75
+#: admin/class-conditional-payments-admin.php:83
+#: admin/partials/form-dscpw.php:169 admin/partials/form-dscpw.php:227
+#: admin/partials/form-dscpw.php:595 admin/partials/form-dscpw.php:653
+msgid "Address"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:76
+#: admin/class-conditional-payments-admin.php:84
+#: admin/partials/form-dscpw.php:170 admin/partials/form-dscpw.php:228
+#: admin/partials/form-dscpw.php:596 admin/partials/form-dscpw.php:654
+msgid "Address 2"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:77
+#: admin/class-conditional-payments-admin.php:85
+#: admin/partials/form-dscpw.php:171 admin/partials/form-dscpw.php:229
+#: admin/partials/form-dscpw.php:597 admin/partials/form-dscpw.php:655
+msgid "Country"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:78
+#: admin/class-conditional-payments-admin.php:86
+#: admin/partials/form-dscpw.php:172 admin/partials/form-dscpw.php:230
+#: admin/partials/form-dscpw.php:598 admin/partials/form-dscpw.php:656
+msgid "City"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:79
+#: admin/class-conditional-payments-admin.php:87
+#: admin/partials/form-dscpw.php:173 admin/partials/form-dscpw.php:231
+#: admin/partials/form-dscpw.php:599 admin/partials/form-dscpw.php:657
+msgid "Postcode"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:88
+#: admin/partials/form-dscpw.php:268 admin/partials/form-dscpw.php:286
+#: admin/partials/form-dscpw.php:303 admin/partials/form-dscpw.php:314
+#: admin/partials/form-dscpw.php:322 admin/partials/form-dscpw.php:678
+msgid "Equal to ( = )"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:89
+#: admin/partials/form-dscpw.php:273 admin/partials/form-dscpw.php:287
+#: admin/partials/form-dscpw.php:304 admin/partials/form-dscpw.php:323
+#: admin/partials/form-dscpw.php:679
+msgid "Not Equal to ( != )"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:90
+#: admin/partials/form-dscpw.php:269
+msgid "Less or Equal to ( <= )"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:91
+msgid "Less then ( < )"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:92
+#: admin/partials/form-dscpw.php:271
+msgid "Greater or Equal to ( >= )"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:93
+msgid "Greater then ( > )"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:94
+#: admin/partials/form-dscpw.php:324
+msgid "Is Empty"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:95
+#: admin/partials/form-dscpw.php:325
+msgid "Is Not Empty"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:96
+#: admin/list-tables/class-wc-conditional-payments-table.php:212
+#: admin/list-tables/class-wc-conditional-payments-table.php:304
+msgid "Delete"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:97
+#: admin/partials/form-dscpw.php:93 admin/partials/form-dscpw.php:519
+msgid "Product Specific"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:98
+#: admin/partials/form-dscpw.php:94 admin/partials/form-dscpw.php:520
+msgid "Product"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:99
+#: admin/partials/form-dscpw.php:95 admin/partials/form-dscpw.php:521
+msgid "Variable Product"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:100
+#: admin/partials/form-dscpw.php:126 admin/partials/form-dscpw.php:552
+msgid "Cart Specific"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:101
+#: admin/partials/form-dscpw.php:127 admin/partials/form-dscpw.php:553
+msgid "Cart Subtotal (Before Discount)"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:102
+#: admin/partials/form-dscpw.php:128 admin/partials/form-dscpw.php:554
+msgid "Cart Subtotal (After Discount)"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:103
+#: admin/partials/form-dscpw.php:162 admin/partials/form-dscpw.php:588
+msgid "Shipping Specific"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:104
+#: admin/partials/form-dscpw.php:163 admin/partials/form-dscpw.php:589
+msgid "Shipping Method"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:105
+#: admin/partials/form-dscpw.php:725 admin/partials/form-dscpw.php:773
+msgid "Enable Payments Methods"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:106
+#: admin/partials/form-dscpw.php:726 admin/partials/form-dscpw.php:774
+msgid "Disable Payments Methods"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:107
+#: admin/partials/form-dscpw.php:233 admin/partials/form-dscpw.php:659
+msgid "Time Specific"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:108
+#: admin/partials/form-dscpw.php:234 admin/partials/form-dscpw.php:660
+msgid "Day Of Week"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:109
+#: admin/list-tables/class-wc-conditional-payments-table.php:51
+#: admin/partials/form-dscpw.php:235 admin/partials/form-dscpw.php:661
+msgid "Date"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:114
+#: admin/partials/form-dscpw.php:100 admin/partials/form-dscpw.php:526
+msgid "Product Categories"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:115
+#: admin/partials/form-dscpw.php:101 admin/partials/form-dscpw.php:527
+msgid "Product Tags"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:116
+#: admin/partials/form-dscpw.php:102 admin/partials/form-dscpw.php:528
+msgid "Product Type"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:117
+#: admin/partials/form-dscpw.php:178 admin/partials/form-dscpw.php:604
+msgid "Email"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:118
+#: admin/class-conditional-payments-admin.php:152
+#: admin/class-conditional-payments-admin.php:181
+#: admin/partials/form-dscpw.php:198 admin/partials/form-dscpw.php:206
+#: admin/partials/form-dscpw.php:215 admin/partials/form-dscpw.php:624
+#: admin/partials/form-dscpw.php:632 admin/partials/form-dscpw.php:641
+msgid "Customer"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:119
+#: admin/partials/form-dscpw.php:199 admin/partials/form-dscpw.php:625
+msgid "Logged in / out"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:120
+#: admin/partials/form-dscpw.php:201 admin/partials/form-dscpw.php:627
+msgid "User Role"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:121
+#: admin/partials/form-dscpw.php:200 admin/partials/form-dscpw.php:626
+msgid "User"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:122
+#: admin/partials/form-dscpw.php:133 admin/partials/form-dscpw.php:559
+msgid "Cart Quantity"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:123
+#: admin/partials/form-dscpw.php:134 admin/partials/form-dscpw.php:560
+msgid "Shipping Class"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:124
+#: admin/partials/form-dscpw.php:135 admin/partials/form-dscpw.php:561
+msgid "Coupon"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:125
+#: admin/partials/form-dscpw.php:179 admin/partials/form-dscpw.php:605
+#: admin/partials/form-dscpw.php:610 admin/partials/form-dscpw.php:616
+msgid "Previous Order"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:126
+#: admin/partials/form-dscpw.php:104 admin/partials/form-dscpw.php:530
+msgid "Product Quantity"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:127
+msgid ""
+"You need to select product specific option for product quantity based "
+"option."
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:128
+msgid ""
+"This rule will only work if you have selected any one Product Specific "
+"option. "
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:129
+#: admin/class-conditional-payments-admin.php:165
+#: admin/class-conditional-payments-admin.php:194
+#: admin/partials/form-dscpw.php:463
+msgid "Note: "
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:130
+#: admin/partials/form-dscpw.php:136 admin/partials/form-dscpw.php:562
+msgid "Total Weight"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:131
+#: admin/partials/form-dscpw.php:137 admin/partials/form-dscpw.php:563
+msgid "Number Of Items"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:132
+#: admin/partials/form-dscpw.php:138 admin/partials/form-dscpw.php:564
+msgid "Total Volume"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:133
+#: admin/partials/form-dscpw.php:731 admin/partials/form-dscpw.php:779
+msgid "Add Payment Method Fee"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:134
+msgid "_none"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:135
+msgid "Standard"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:136
+msgid "standard"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:137
+msgid "- Not Taxable -"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:138
+#: admin/class-conditional-payments-admin.php:139
+#: admin/class-conditional-payments-admin.php:166
+#: admin/class-conditional-payments-admin.php:167
+#: admin/class-conditional-payments-admin.php:195
+#: admin/class-conditional-payments-admin.php:196
+msgid "Add only one city in a Line. You can add multiple cities in each new line."
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:140
+#: admin/class-conditional-payments-admin.php:141
+#: admin/class-conditional-payments-admin.php:168
+#: admin/class-conditional-payments-admin.php:169
+#: admin/class-conditional-payments-admin.php:197
+#: admin/class-conditional-payments-admin.php:198
+msgid ""
+"Add only one post/zip code in a Line. You can add multiple postcode in each "
+"new line."
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:142
+#: admin/class-conditional-payments-admin.php:170
+#: admin/class-conditional-payments-admin.php:199
+msgid "This rule will apply when you would apply coupun in front side. "
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:143
+#: admin/class-conditional-payments-admin.php:171
+#: admin/class-conditional-payments-admin.php:200
+msgid "Click Here."
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:145
+#: admin/partials/form-dscpw.php:239 admin/partials/form-dscpw.php:665
+msgid "Time"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:146
+#: admin/partials/form-dscpw.php:103 admin/partials/form-dscpw.php:529
+msgid "Product Visibility"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:148
+#: admin/class-conditional-payments-admin.php:177
+#: admin/partials/form-dscpw.php:108 admin/partials/form-dscpw.php:117
+#: admin/partials/form-dscpw.php:534 admin/partials/form-dscpw.php:543
+msgid "Product Categories (Pro)"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:149
+#: admin/class-conditional-payments-admin.php:178
+#: admin/partials/form-dscpw.php:109 admin/partials/form-dscpw.php:118
+#: admin/partials/form-dscpw.php:535 admin/partials/form-dscpw.php:544
+msgid "Product Tags (Pro)"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:150
+#: admin/class-conditional-payments-admin.php:179
+#: admin/partials/form-dscpw.php:110 admin/partials/form-dscpw.php:119
+#: admin/partials/form-dscpw.php:536 admin/partials/form-dscpw.php:545
+msgid "Product Type (Pro)"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:151
+#: admin/class-conditional-payments-admin.php:180
+#: admin/partials/form-dscpw.php:183 admin/partials/form-dscpw.php:189
+#: admin/partials/form-dscpw.php:609 admin/partials/form-dscpw.php:615
+msgid "Email (Pro)"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:153
+#: admin/class-conditional-payments-admin.php:182
+#: admin/partials/form-dscpw.php:207 admin/partials/form-dscpw.php:216
+#: admin/partials/form-dscpw.php:633 admin/partials/form-dscpw.php:642
+msgid "Logged in / out (Pro)"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:154
+#: admin/class-conditional-payments-admin.php:183
+#: admin/partials/form-dscpw.php:209 admin/partials/form-dscpw.php:218
+#: admin/partials/form-dscpw.php:635 admin/partials/form-dscpw.php:644
+msgid "User Role (Pro)"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:155
+#: admin/class-conditional-payments-admin.php:184
+#: admin/partials/form-dscpw.php:208 admin/partials/form-dscpw.php:217
+#: admin/partials/form-dscpw.php:634 admin/partials/form-dscpw.php:643
+msgid "User (Pro)"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:156
+#: admin/class-conditional-payments-admin.php:185
+#: admin/partials/form-dscpw.php:142 admin/partials/form-dscpw.php:152
+#: admin/partials/form-dscpw.php:568 admin/partials/form-dscpw.php:578
+msgid "Cart Quantity (Pro)"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:157
+#: admin/class-conditional-payments-admin.php:186
+#: admin/partials/form-dscpw.php:143 admin/partials/form-dscpw.php:153
+#: admin/partials/form-dscpw.php:569 admin/partials/form-dscpw.php:579
+msgid "Shipping Class (Pro)"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:158
+#: admin/class-conditional-payments-admin.php:187
+#: admin/partials/form-dscpw.php:144 admin/partials/form-dscpw.php:154
+#: admin/partials/form-dscpw.php:570 admin/partials/form-dscpw.php:580
+msgid "Coupon (Pro)"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:159
+#: admin/class-conditional-payments-admin.php:188
+#: admin/partials/form-dscpw.php:184 admin/partials/form-dscpw.php:190
+msgid "Previous Order (Pro)"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:160
+#: admin/class-conditional-payments-admin.php:189
+#: admin/partials/form-dscpw.php:112 admin/partials/form-dscpw.php:121
+#: admin/partials/form-dscpw.php:538 admin/partials/form-dscpw.php:547
+msgid "Product Quantity (Pro)"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:161
+#: admin/class-conditional-payments-admin.php:190
+#: admin/partials/form-dscpw.php:145 admin/partials/form-dscpw.php:155
+#: admin/partials/form-dscpw.php:571 admin/partials/form-dscpw.php:581
+msgid "Total Weight (Pro)"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:162
+#: admin/class-conditional-payments-admin.php:191
+#: admin/partials/form-dscpw.php:146 admin/partials/form-dscpw.php:156
+#: admin/partials/form-dscpw.php:572 admin/partials/form-dscpw.php:582
+msgid "Number Of Items (Pro)"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:163
+#: admin/class-conditional-payments-admin.php:192
+#: admin/partials/form-dscpw.php:147 admin/partials/form-dscpw.php:157
+#: admin/partials/form-dscpw.php:573 admin/partials/form-dscpw.php:583
+msgid "Total Volume (Pro)"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:164
+#: admin/class-conditional-payments-admin.php:193
+#: admin/partials/form-dscpw.php:735 admin/partials/form-dscpw.php:740
+#: admin/partials/form-dscpw.php:783 admin/partials/form-dscpw.php:788
+msgid "Add Payment Method Fee (Pro)"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:173
+#: admin/class-conditional-payments-admin.php:202
+#: admin/partials/form-dscpw.php:242 admin/partials/form-dscpw.php:247
+#: admin/partials/form-dscpw.php:667 admin/partials/form-dscpw.php:670
+msgid "Time (Pro)"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:174
+#: admin/class-conditional-payments-admin.php:203
+#: admin/partials/form-dscpw.php:111 admin/partials/form-dscpw.php:120
+#: admin/partials/form-dscpw.php:537 admin/partials/form-dscpw.php:546
+msgid "Product Visibility (Pro)"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:285
+#: admin/partials/form-dscpw.php:74
+msgid "Conditions"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:315
+msgid "Conditional paymets rule created."
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:317
+msgid "Conditional paymets rule updated."
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:319
+msgid "Conditional paymets rule deleted."
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:321
+msgid "Conditional paymets rule duplicated."
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:323
+msgid "Conditional paymets rule disabled."
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:325
+msgid "Conditional paymets rule enabled."
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:328
+msgid "There was an error with saving data."
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:330
+#: admin/class-conditional-payments-admin.php:340
+msgid "There was an error with security check."
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:337
+msgid "Settings saved successfully"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:930
+msgid "Sunday"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:931
+msgid "Monday"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:932
+msgid "Tuesday"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:933
+msgid "Wednesday"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:934
+msgid "Thursday"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:935
+msgid "Friday"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:936
+msgid "Saturday"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:1020
+msgid "Featured product"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:1061
+#: admin/class-conditional-payments-admin.php:1062
+msgid "Guest"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:1220
+msgid "Virtual product"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:1221
+msgid "Downloadable product"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:1299
+#: admin/class-conditional-payments-admin.php:1300
+msgid "Select All"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:1722
+#: admin/class-conditional-payments-admin.php:1749
+msgid "Something went wrong"
+msgstr ""
+
+#: admin/class-conditional-payments-admin.php:1747
+msgid "Rule status changed successfully."
+msgstr ""
+
+#: admin/list-tables/class-wc-conditional-payments-table.php:49
+msgid "Title"
+msgstr ""
+
+#: admin/list-tables/class-wc-conditional-payments-table.php:50
+#: admin/partials/form-dscpw.php:55
+msgid "Status"
+msgstr ""
+
+#: admin/list-tables/class-wc-conditional-payments-table.php:130
+msgid "No rule found."
+msgstr ""
+
+#: admin/list-tables/class-wc-conditional-payments-table.php:211
+msgid "Edit"
+msgstr ""
+
+#: admin/list-tables/class-wc-conditional-payments-table.php:228
+#: admin/list-tables/class-wc-conditional-payments-table.php:255
+#: admin/list-tables/class-wc-conditional-payments-table.php:287
+msgid "Everywhere"
+msgstr ""
+
+#: admin/list-tables/class-wc-conditional-payments-table.php:302
+msgid "Disable"
+msgstr ""
+
+#: admin/list-tables/class-wc-conditional-payments-table.php:303
+msgid "Enable"
+msgstr ""
+
+#: admin/partials/class-dscpwc-conditional-payments-page.php:30
+#: admin/partials/class-dscpwc-conditional-payments-page.php:31
+msgid "Conditional Payments"
+msgstr ""
+
+#: admin/partials/class-dscpwc-conditional-payments-page.php:322
+msgid "Error saving conditional payments."
+msgstr ""
+
+#: admin/partials/class-dscpwc-conditional-payments-page.php:410
+msgid "Conditional Payments Rules"
+msgstr ""
+
+#: admin/partials/class-dscpwc-conditional-payments-page.php:414
+msgid "Add New"
+msgstr ""
+
+#: admin/partials/class-dscpwc-conditional-payments-page.php:419
+msgid "Search results for: <strong>%s</strong>"
+msgstr ""
+
+#: admin/partials/class-dscpwc-conditional-payments-page.php:427
+msgid "Search"
+msgstr ""
+
+#: admin/partials/form-dscpw.php:28
+msgid "Edit Conditional Payments Rules"
+msgstr ""
+
+#: admin/partials/form-dscpw.php:42
+msgid "Add Conditional Payments Rules"
+msgstr ""
+
+#: admin/partials/form-dscpw.php:55
+msgid ""
+"Enable or Disable this rule using this button (This rule will work for "
+"customers only if it is enabled)."
+msgstr ""
+
+#: admin/partials/form-dscpw.php:66
+msgid "Rule Name"
+msgstr ""
+
+#: admin/partials/form-dscpw.php:66
+msgid "This rule name is only for the admin purpose."
+msgstr ""
+
+#: admin/partials/form-dscpw.php:74
+msgid "Set conditions for your conditional payments."
+msgstr ""
+
+#: admin/partials/form-dscpw.php:270
+msgid "Less than ( < )"
+msgstr ""
+
+#: admin/partials/form-dscpw.php:272
+msgid "Greater than ( > )"
+msgstr ""
+
+#: admin/partials/form-dscpw.php:343
+msgid ""
+"<p><b style=\"color: red;\">Note: </b>This rule will apply when you would "
+"apply coupun in front side. <a href=\"%s\" target=\"_blank\">Click "
+"Here</a>.</p>"
+msgstr ""
+
+#: admin/partials/form-dscpw.php:366 admin/partials/form-dscpw.php:396
+msgid ""
+"<p><b style=\"color: red;\">Note: </b>Add only one city in a Line. You can "
+"add multiple cities in each new line.</p>"
+msgstr ""
+
+#: admin/partials/form-dscpw.php:375 admin/partials/form-dscpw.php:405
+msgid ""
+"<p><b style=\"color: red;\">Note: </b>Add only one post/zip code in a Line. "
+"You can add multiple postcode in each new line.</p>"
+msgstr ""
+
+#: admin/partials/form-dscpw.php:464
+msgid ""
+"This rule will only work if you have selected any one Product Specific "
+"option."
+msgstr ""
+
+#: admin/partials/form-dscpw.php:701
+msgid "+ Add Condition"
+msgstr ""
+
+#: admin/partials/form-dscpw.php:708
+msgid "Actions"
+msgstr ""
+
+#: admin/partials/form-dscpw.php:708
+msgid "Set actions for your conditional payments."
+msgstr ""
+
+#: admin/partials/form-dscpw.php:812
+msgid "+ Add Action"
+msgstr ""
+
+#: admin/partials/form-dscpw.php:823
+msgid "Set no payment methods message"
+msgstr ""
+
+#: admin/partials/form-dscpw.php:823
+msgid "Set custom message when no payment methods are available for checkout."
+msgstr ""
+
+#: admin/partials/form-dscpw.php:838
+msgid "Save Changes"
+msgstr ""
+
+#: conditional-payments.php:168
+msgid "WooCommerce"
+msgstr ""
+
+#: conditional-payments.php:172
+msgid "%1$s requires %2$s to be installed & activated!"
+msgstr ""
+
+#: includes/class-conditional-payments.php:190
+msgid "Settings"
+msgstr ""
+
+#: includes/class-conditional-payments.php:191
+msgid "Docs"
+msgstr ""
+
+#: includes/class-conditional-payments.php:192
+msgid "Support"
+msgstr ""

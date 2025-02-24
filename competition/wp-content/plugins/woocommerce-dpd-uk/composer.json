@@ -1,0 +1,87 @@
+{
+    "name": "wpdesk/woocommerce-dpd-uk",
+    "authors": [
+        {
+            "name": "Krzysiek",
+            "email": "krzysiek@wpdesk.pl"
+        }
+    ],
+	"config": {
+		"sort-packages": true,
+		"platform": {
+			"php": "7.4"
+		},
+        "allow-plugins": {
+            "cweagans/composer-patches": true,
+            "kylekatarnls/update-helper": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "wpdesk/wp-codeception": true,
+            "wpdesk/wp-wpdesk-composer": true
+        }
+	},
+    "require": {
+        "php": ">=7.4",
+        "wpdesk/wp-wpdesk-helper-override": "^1.1.0"
+    },
+	"autoload": {
+		"classmap": [
+			"classes", "vendor_prefixed"
+		],
+        "psr-4": {
+          "": "src"
+        }
+	},
+	"minimum-stability": "stable",
+    "require-dev": {
+        "octolize/wp-octolize-brand-assets": "^1.0.1",
+        "octolize/wp-octolize-tracker": "^1.2",
+        "octolize/wp-onboarding": "^1.5",
+        "phpunit/phpunit": "<7",
+        "wpdesk/wp-codeception": "^2.0.0",
+        "wpdesk/wp-plugin-flow-paid": "^1",
+        "wpdesk/wp-wpdesk-composer": "^2.14.6"
+    },
+    "autoload-dev": {
+    },
+	"extra": {
+		"php-requires": "7.4",
+		"text-domain": "woocommerce-dpd-uk",
+		"translations-folder": "lang",
+		"translation-file-headers": {
+			"Project-Id-Version": "WooCommerce DPD UK",
+			"Last-Translator": "Grzegorz Rola <grola@octolize.com>",
+			"X-Poedit-WPHeader": "woocommerce-dpd-uk.php"
+		},
+		"po-files": {
+		},
+		"minify-assets": {
+			"js": [
+				"assets/js/admin-order.js"
+			],
+			"css": [
+				"assets/css/admin.css"
+			]
+		},
+		"prefix_psr":true
+	},
+    "scripts": {
+        "test": "echo composer is alive",
+        "phpcs": "phpcs",
+        "phpunit-unit": "phpunit --configuration phpunit-unit.xml --coverage-text --colors=never",
+        "phpunit-unit-fast": "phpunit --configuration phpunit-unit.xml --no-coverage",
+        "phpunit-integration": "phpunit --configuration phpunit-integration.xml --coverage-text --colors=never",
+        "phpunit-integration-fast": "phpunit --configuration phpunit-integration.xml --no-coverage",
+
+	    "docs": "apigen generate"
+    },
+    "repositories": {
+        "octolize": {
+            "type": "composer",
+            "url": "https://gitlab.wpdesk.dev/api/v4/group/wpdesk/-/packages/composer/"
+        },
+        "wpdesk": {
+            "type": "composer",
+            "url": "https://gitlab.wpdesk.dev/api/v4/group/wpdesk/-/packages/composer/"
+        }
+    }
+}

@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Mozaic GEO';
+    src: url('MozaicGEO-Bold.woff2') format('woff2'),
+        url('MozaicGEO-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mozaic GEO';
+    src: url('MozaicGEO-Black.woff2') format('woff2'),
+        url('MozaicGEO-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mozaic GEO';
+    src: url('MozaicGEO-ExtraBlack.woff2') format('woff2'),
+        url('MozaicGEO-ExtraBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mozaic GEO';
+    src: url('MozaicGEO-SemiBold.woff2') format('woff2'),
+        url('MozaicGEO-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mozaic GEO';
+    src: url('MozaicGEO-Thin.woff2') format('woff2'),
+        url('MozaicGEO-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mozaic GEO';
+    src: url('MozaicGEO-Regular.woff2') format('woff2'),
+        url('MozaicGEO-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mozaic GEO';
+    src: url('MozaicGEO-Medium.woff2') format('woff2'),
+        url('MozaicGEO-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mozaic GEO';
+    src: url('MozaicGEO-ExtraBold.woff2') format('woff2'),
+        url('MozaicGEO-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mozaic GEO';
+    src: url('MozaicGEO-Light.woff2') format('woff2'),
+        url('MozaicGEO-Light.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mozaic GEO';
+    src: url('MozaicGEO-ExtraLight.woff2') format('woff2'),
+        url('MozaicGEO-ExtraLight.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

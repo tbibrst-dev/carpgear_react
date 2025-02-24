@@ -1,0 +1,53 @@
+/* @import url(./fonts/Mozaic\ GEO.css); */
+
+@font-face {
+  font-family: "Mozaic GEO";
+  src: url("./fonts/mozaicgeo-extrablack-bf65792617201fc.woff2") format("woff2"),
+    url(".fonts/mozaicgeo-extrablack-bf65792617201fc.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mozaic GEO";
+  src: url("./fonts/mozaicgeo-extralight-bf65792617cdb3b.woff2") format("woff2"),
+    url(".fonts/mozaicgeo-extralight-bf65792617cdb3b.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mozaic GEO";
+  src: url("./fonts/mozaicgeo-light-bf65792617d17f9.woff2") format("woff2"),
+    url(".fonts/mozaicgeo-light-bf65792617d17f9.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mozaic GEO";
+  src: url("./fonts/mozaicgeo-medium-bf65792617daaee.woff2") format("woff2"),
+    url(".fonts/mozaicgeo-medium-bf65792617daaee.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mozaic GEO";
+  src: url("./fonts/mozaicgeo-regular-bf65792616e075e.woff2") format("woff2"),
+    url(".fonts/mozaicgeo-regular-bf65792616e075e.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mozaic GEO";
+  src: url("./fonts/mozaicgeo-semibold-bf65792616e68bd.woff2") format("woff2"),
+    url(".fonts/mozaicgeo-semibold-bf65792616e68bd.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  font-family: "Mozaic GEO", sans-serif;
+}

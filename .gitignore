@@ -1,0 +1,66 @@
+# Node.js & React
+node_modules/
+.next/
+.nuxt/
+.vite/
+dist/
+build/
+.env
+yarn.lock
+package-lock.json
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+*.lock
+.idea/
+.vscode/
+
+# Deployment keys or secrets
+private_key.pem
+*.pem
+.env
+*.crt
+*.key
+
+#Wordpress
+competition/wp-admin/
+competition/wp-content/index.php
+competition/wp-content/languages
+competition/wp-content/plugins/index.php
+competition/wp-content/themes/index.php
+competition/wp-includes/
+competition/index.php
+competition/license.txt
+competition/readme.html
+competition/wp-*.php
+competition/xmlrpc.php
+
+# Configuration
+competition/wp-config.php
+
+# Example themes
+competition/wp-content/themes/twenty*/
+
+# Example plugin
+competition/wp-content/plugins/hello.php
+
+# Uploads
+competition/wp-content/uploads/
+
+# Log files
+competition/*.log
+
+# htaccess
+competition/.htaccess

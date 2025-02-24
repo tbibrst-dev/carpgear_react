@@ -1,0 +1,910 @@
+# Copyright (C) 2024 Octolize
+# This file is distributed under the same license as the Flexible Printing plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Flexible Printing 1.5.22\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/flexible-printing\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-06-30T23:04:08+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.9.0\n"
+"X-Domain: flexible-printing\n"
+
+#. Plugin Name of the plugin
+#: classes/flexible-printing.php:79
+#: classes/log-list-table.php:38
+#: classes/log-list-table.php:122
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:38
+msgid "Flexible Printing"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://octol.io/printing-plugin-site"
+msgstr ""
+
+#. Description of the plugin
+msgid "Print the shipping labels using the PrintNode service directly from your WooCommerce store."
+msgstr ""
+
+#. Author of the plugin
+msgid "Octolize"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://octol.io/printing-author"
+msgstr ""
+
+#: classes/class-flexible-printing-google-print.php:67
+#: classes/flexible-printing.php:29
+msgid "Media size"
+msgstr ""
+
+#: classes/class-flexible-printing-google-print.php:68
+#: classes/flexible-printing.php:30
+msgid "Page orientation"
+msgstr ""
+
+#: classes/class-flexible-printing-google-print.php:69
+#: classes/flexible-printing.php:31
+#: classes/print-node.php:35
+msgid "Duplex"
+msgstr ""
+
+#: classes/class-flexible-printing-google-print.php:70
+#: classes/flexible-printing.php:32
+#: classes/print-node.php:34
+msgid "DPI"
+msgstr ""
+
+#: classes/class-flexible-printing-google-print.php:71
+#: classes/flexible-printing.php:33
+msgid "No duplex"
+msgstr ""
+
+#: classes/class-flexible-printing-google-print.php:72
+#: classes/flexible-printing-printer.php:230
+#: classes/flexible-printing.php:34
+msgid "Long edge"
+msgstr ""
+
+#: classes/class-flexible-printing-google-print.php:73
+#: classes/flexible-printing-printer.php:231
+#: classes/flexible-printing.php:35
+msgid "Short edge"
+msgstr ""
+
+#: classes/class-flexible-printing-google-print.php:74
+#: classes/flexible-printing.php:36
+msgid "Portrait"
+msgstr ""
+
+#: classes/class-flexible-printing-google-print.php:75
+#: classes/flexible-printing.php:37
+msgid "Landscape"
+msgstr ""
+
+#: classes/class-flexible-printing-google-print.php:76
+#: classes/flexible-printing.php:38
+msgid "Auto"
+msgstr ""
+
+#: classes/class-flexible-printing-google-print.php:77
+#: classes/flexible-printing.php:39
+msgid "Color"
+msgstr ""
+
+#: classes/class-flexible-printing-google-print.php:78
+#: classes/flexible-printing.php:40
+msgid "Standard color"
+msgstr ""
+
+#: classes/class-flexible-printing-google-print.php:79
+#: classes/flexible-printing.php:41
+msgid "Collate"
+msgstr ""
+
+#: classes/class-flexible-printing-google-print.php:80
+#: classes/flexible-printing.php:42
+#: classes/print-node.php:39
+msgid "Copies"
+msgstr ""
+
+#: classes/class-flexible-printing-google-print.php:366
+msgid "Printers refreshed"
+msgstr ""
+
+#: classes/class-flexible-printing-google-print.php:382
+#: classes/class-flexible-printing-google-print.php:400
+msgid "Printer settings reseted."
+msgstr ""
+
+#: classes/class-flexible-printing-google-print.php:417
+msgid "Flexible Printing, Google API authentication successful."
+msgstr ""
+
+#: classes/class-flexible-printing-google-print.php:421
+#: classes/class-flexible-printing-google-print.php:427
+msgid "Flexible Printing, Google API authentication: %s."
+msgstr ""
+
+#. Translators: link.
+#: classes/class-flexible-printing-notices.php:34
+msgid "Google Cloud Print service is no longer officially supported by Google. Therefore, we cannot guarantee its proper functioning. %1$sRead more →%2$s"
+msgstr ""
+
+#: classes/class-flexible-printing-plugin.php:223
+msgid "Printing..."
+msgstr ""
+
+#: classes/class-flexible-printing-plugin.php:249
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:198
+msgid "Settings"
+msgstr ""
+
+#: classes/class-flexible-printing-plugin.php:250
+msgid "Documentation"
+msgstr ""
+
+#: classes/class-flexible-printing-plugin.php:251
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:191
+msgid "Support"
+msgstr ""
+
+#: classes/flexible-printing-printer.php:75
+msgid "(GCP)"
+msgstr ""
+
+#: classes/flexible-printing-printer.php:193
+msgid "(PN)"
+msgstr ""
+
+#: classes/flexible-printing-printer.php:212
+msgid "Default (not set)"
+msgstr ""
+
+#: classes/flexible-printing-printer.php:229
+msgid "None"
+msgstr ""
+
+#: classes/flexible-printing.php:152
+#: classes/flexible-printing.php:223
+#: classes/settings-hooks.php:102
+msgid "Default printer"
+msgstr ""
+
+#: classes/flexible-printing.php:192
+msgid "Please set default printer!"
+msgstr ""
+
+#: classes/flexible-printing.php:236
+msgid "Printer not found!"
+msgstr ""
+
+#: classes/integration.php:39
+msgid "Method do_print must be overwritten in integration class."
+msgstr ""
+
+#: classes/integrations.php:47
+#: classes/views/test-print.php:13
+#: classes/views/test-print.php:14
+msgid "Print test page"
+msgstr ""
+
+#: classes/integrations.php:110
+#: classes/integrations.php:132
+msgid "Printed"
+msgstr ""
+
+#: classes/integrations.php:144
+msgid "Unknown integration (%s)!"
+msgstr ""
+
+#: classes/log-list-table.php:17
+msgid "log"
+msgstr ""
+
+#: classes/log-list-table.php:18
+msgid "logs"
+msgstr ""
+
+#: classes/log-list-table.php:53
+#: classes/log-list-table.php:113
+msgid "Print Job"
+msgstr ""
+
+#: classes/log-list-table.php:56
+#: classes/log-list-table.php:114
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Error"
+msgstr ""
+
+#: classes/log-list-table.php:69
+msgid "Time"
+msgstr ""
+
+#: classes/log-list-table.php:70
+msgid "Type"
+msgstr ""
+
+#: classes/log-list-table.php:71
+msgid "User"
+msgstr ""
+
+#: classes/log-list-table.php:72
+msgid "Integration"
+msgstr ""
+
+#: classes/log-list-table.php:73
+#: classes/settings-hooks.php:198
+msgid "Printer"
+msgstr ""
+
+#: classes/log-list-table.php:74
+msgid "Title"
+msgstr ""
+
+#: classes/log-list-table.php:75
+msgid "Message"
+msgstr ""
+
+#: classes/log-list-table.php:112
+msgid "All types"
+msgstr ""
+
+#: classes/log-list-table.php:117
+msgid "All integrations"
+msgstr ""
+
+#: classes/log-list-table.php:125
+msgid "Filter"
+msgstr ""
+
+#: classes/log.php:26
+#: classes/log.php:27
+msgid "Logs"
+msgstr ""
+
+#: classes/log.php:39
+msgid "Flexible Printing - Log"
+msgstr ""
+
+#: classes/log.php:61
+msgid "Not set!"
+msgstr ""
+
+#: classes/print-node.php:33
+msgid "Bin"
+msgstr ""
+
+#: classes/print-node.php:36
+msgid "Medias"
+msgstr ""
+
+#: classes/print-node.php:37
+msgid "Papers"
+msgstr ""
+
+#: classes/print-node.php:38
+msgid "Numbers of pages per page"
+msgstr ""
+
+#: classes/settings-hooks.php:69
+#: classes/settings-hooks.php:97
+msgid "Print Node"
+msgstr ""
+
+#: classes/settings-hooks.php:70
+#: classes/settings-hooks.php:94
+msgid "Google Cloud Print"
+msgstr ""
+
+#: classes/settings-hooks.php:73
+msgid "Printers"
+msgstr ""
+
+#: classes/settings-hooks.php:77
+msgid "Integrations"
+msgstr ""
+
+#: classes/settings-hooks.php:130
+msgid "Google Client ID"
+msgstr ""
+
+#: classes/settings-hooks.php:138
+msgid "Google Client Secret"
+msgstr ""
+
+#: classes/settings-hooks.php:146
+msgid "Authorized redirect URI"
+msgstr ""
+
+#: classes/settings-hooks.php:158
+msgid "API Key"
+msgstr ""
+
+#: classes/settings-hooks.php:169
+msgid "Default Printer"
+msgstr ""
+
+#: classes/settings-hooks.php:173
+msgid "Select printer"
+msgstr ""
+
+#: classes/settings-hooks.php:215
+msgid "Printer settings"
+msgstr ""
+
+#: classes/settings-hooks.php:236
+msgid "Printer has no settings"
+msgstr ""
+
+#: classes/views/do-authenticate.php:4
+msgid "Status"
+msgstr ""
+
+#: classes/views/do-authenticate.php:8
+msgid "Not authenticated"
+msgstr ""
+
+#: classes/views/do-authenticate.php:10
+msgid "Authenticated"
+msgstr ""
+
+#: classes/views/do-authenticate.php:20
+msgid "Save and Authenticate"
+msgstr ""
+
+#: classes/views/do-authenticate.php:22
+msgid "Revoke"
+msgstr ""
+
+#: classes/views/integrations-printer-settings.php:16
+#: classes/views/reset-defaults.php:14
+msgid "Reset default settings"
+msgstr ""
+
+#: classes/views/refresh-printers.php:13
+msgid "Refresh printers"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-octolize-tracker/src/OptInNotice/views/html-notice.php:12
+msgid "Help us improve Octolize plugins' experience"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-octolize-tracker/src/OptInNotice/views/html-notice.php:15
+msgid "Hi %1$s, with your helping hand we can build effective solutions, launch the new features and shape better plugins experience. By agreeing to anonymously share non-sensitive %2$susage data%3$s of our plugins, you will help us develop them in the right direction. No personal data is tracked or stored and you can opt-out any time. Will you give the thumbs up to our efforts?"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-octolize-tracker/src/OptInNotice/views/html-notice.php:22
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:41
+msgid "Allow"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Page.php:47
+msgctxt "Page title"
+msgid "Shipping Extensions"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Page.php:65
+msgctxt "Menu Title"
+msgid ""
+"Shipping\n"
+"Extensions"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:20
+msgid "Flexible Shipping PRO"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:20
+msgid "The best and the most powerful Table Rate shipping plugin for WooCommerce. Define the shipping rules based on numerous conditions and configure even the most complex shipping scenarios with ease."
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:23
+msgid "UPS Live Rates and Access Points PRO"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:23
+msgid "WooCommerce UPS integration packed with many advanced features. Display the dynamically calculated live rates for UPS shipping methods and adjust them to your needs."
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:26
+msgid "UPS Labels and Tracking"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:26
+msgid "Create the shipments, generate the printable UPS shipping labels for the placed orders and track the parcels directly from your WooCommerce store."
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:29
+msgid "FedEx WooCommerce Live Rates PRO"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:29
+msgid "Enable the FedEx live rates for international delivery and integrate it with your shop in less than 5 minutes. Save your time and money – let the shipping cost be calculated automatically."
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:32
+msgid "Distance Based Shipping Rates"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:32
+msgid "Offer shipping rates based on Distance or Total Travel Time calculated by Google Distance Matrix API and don't overpay for shipping."
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:35
+msgid "Flexible Shipping Locations"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:35
+msgid "Calculate the shipping cost based on location. Define your own custom locations, use the WooCommerce defaults or the ones created by 3rd party plugins."
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:38
+msgid "Automate your shipping process. Print the shipping labels on thermal printers via PrintNode service. Let the labels be printed automatically the same time the order is placed."
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:41
+msgid "Flexible Shipping Import / Export"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:41
+msgid "Use the CSV files to import or export your shipping methods. Edit, update, move or backup the ready configurations and shipping scenarios."
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:44
+msgid "DHL Express Live Rates PRO"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:44
+msgid "WooCommerce DHL Express integration packed with many advanced features. Display the dynamically calculated live rates for DHL Express shipping methods and adjust them to your needs."
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:47
+msgid "Multi Vendor Shipping"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:47
+msgid "Define precisely the shipping cost calculation rules for each Vendor / Product Author in your marketplace or multivendor store."
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:50
+msgid "Shipping Packages"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:50
+msgid "Split the WooCommerce cart content into multiple packages based on various conditions like shipping class."
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:53
+msgid "Conditional Shipping Methods"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:53
+msgid "Conditionally display and hide the shipping methods in your WooCommerce store. Define the rules when the specific shipping methods, e.g., live rates should be available to pick and when not to."
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:56
+msgid "Delivery Date Picker"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:56
+msgid "Let your customers choose a convenient delivery date for the ordered products and make the shipping cost dependent on the date they choose."
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:59
+msgid "USPS Live Rates PRO"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:59
+msgid "Serve your customers the automatically and real-time calculated USPS shipping rates. Add the handling fees, insurance and adjust them to your needs with just a few clicks."
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:62
+msgid "Shipping Cost on Product Page PRO"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:62
+msgid "Let your customers calculate and see the shipping cost on product pages based on the entered shipping destination and cart contents. Decide how and when exactly you want the shipping cost calculator to display."
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:65
+msgid "Flexible Shipping Box Packing"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:65
+msgid "Use the advanced box packing WooCommerce algorithm to fit the ordered products into your shipping boxes the most optimal way. Configure the shipping cost based on the type and number of the used shipping boxes."
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:68
+msgid "DPD UK & DPD Local"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:68
+msgid "Ship your DPD orders faster with advanced DPD UK & DPD Local WooCommerce integration. Gather shipping details, download printable shipping labels and track parcels - everything is automated."
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:93
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/views/html-shipping-extensions-page.php:28
+msgid "All"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:93
+msgid "Live Rates"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:93
+msgid "Customizable Rates"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:93
+msgid "Shipping Labels"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/PluginLinks.php:57
+msgctxt "Link on plugin list page"
+msgid "Extensions"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/views/html-shipping-extensions-page.php:22
+msgid "Shipping Extensions by"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/views/html-shipping-extensions-page.php:25
+msgid "Dive into a system of Octolize ecommerce shipping plugins for WooCommerce. Don’t lose your customers, time and money. Let our plugins secure your sales!"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/views/html-shipping-extensions-page.php:31
+msgid "Filter plugins:"
+msgstr ""
+
+#: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/views/html-shipping-extensions-page.php:40
+msgid "Buy plugin →"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:194
+msgid "Docs"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Disabled"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Emergency"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Alert"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Critical"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Warning"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Notice"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Info"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Debug"
+msgstr ""
+
+#. Translators: directory.
+#: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:23
+msgid "Can not enable WP Desk Debug log! Cannot create directory %s or this directory is not writeable!"
+msgstr ""
+
+#. Translators: directory.
+#: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:36
+msgid "Can not enable WP Desk Debug log! Cannot create file %s!"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ActivationForm/views/activation-form-content.php:32
+msgid "Plugin's API key has been successfully activated. You are now fully eligible to receive plugin updates and support."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ActivationForm/views/activation-form-content.php:34
+msgid "Plugin's API key has been successfully activated, but your subscription has expired. In order to receive the upcoming updates and support please renew your subscription."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ActivationForm/views/activation-form-content.php:37
+msgid "In order to receive the upcoming updates and support please enter the plugin's API key obtained after the purchase."
+msgstr ""
+
+#. Translators: my account link and docs link.
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ActivationForm/views/activation-form-content.php:42
+msgid "You can find it in %1$sMy Account / API Keys%2$s tab. %3$sLearn more about activating the API key →%4$s"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ActivationForm/views/activation-form-content.php:54
+msgid "Key: "
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ActivationForm/views/activation-form-content.php:66
+msgid "Deactivate license"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ActivationForm/views/activation-form-content.php:74
+msgid "Renew subscription →"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ActivationForm/views/activation-form-content.php:83
+msgid "Activate license"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ActivationForm/views/activation-form.php:76
+msgid "The action failed with an error: "
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ActivationForm/views/activation-form.php:79
+msgid "Enter license key"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginExternalBlocking.php:33
+msgid "<b>Warning!</b> You're blocking external requests which means you won't be able to get %s updates. Please add %s to %s."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:81
+msgid "Error while connecting to remote server %s. Please contact your hosting provider or try again later. Errors:  "
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:150
+msgid "Error while connecting to remote server %s. Please contact with your hosting provider. Cannot parse response. Response code: %s Message: %s"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/LicenseServer/PluginUpgrade.php:152
+msgid "Error while connecting to remote server %s. Please contact with your hosting provider. Cannot parse response: %s"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/Action/LicenseActivation.php:132
+msgid "Connection failed to the Subscription Key API server. Try again later."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/Action/LicenseActivation.php:141
+msgid "Plugin license activated. "
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/Action/LicenseDeactivation.php:31
+msgid "Plugin license deactivated. "
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/class-wpdesk-helper-list-table.php:27
+msgid "No WP Desk plugins found."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/class-wpdesk-helper-list-table.php:39
+msgid "Plugin"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/class-wpdesk-helper-list-table.php:39
+msgid "Subscription Status"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/class-wpdesk-helper-list-table.php:39
+msgid "Subscription Data"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/class-wpdesk-helper-list-table.php:56
+msgid "Deactivated"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/class-wpdesk-helper-list-table.php:58
+msgid "Activated"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/license-actions.php:14
+msgid "Key:"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/license-actions.php:25
+msgid "Email:"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/license-actions.php:41
+msgid "Activate"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/license-actions.php:47
+msgid "Deactivate"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/licenses.php:27
+msgid "WP Desk Subscriptions"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/licenses.php:37
+msgid "Get your subscription keys <a href=\"%s\" target=\"_blank\">here</a>. You can activate/deactivate API keys <strong>unlimited times on different domains</strong> as long as you have an active subscription."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/LicensePage.php:41
+msgid "Subscriptions"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/WpUpgrader/SubscriptionHandler.php:72
+msgid "Your plugin subscription has expired. In order to update the plugin please %1$srenew your subscription%2$s"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/WpUpgrader/SubscriptionHandler.php:74
+msgid "An active subscription API key is required to download the plugin updates. In order to update the plugin please %1$sactivate your API key%2$s"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/scripts.php:44
+msgid "Plugin deactivation"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/scripts.php:115
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:126
+msgid "Submit &amp; Deactivate"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:20
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:11
+msgid "You are deactivating %s plugin."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:29
+msgid "If you have a moment, please let us know why you are deactivating the plugin (anonymous feedback):"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:38
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:28
+msgid "The plugin suddenly stopped working"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:48
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:38
+msgid "The plugin broke my site"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:58
+msgid "I have found a better plugin"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:63
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:53
+msgid "What's the plugin's name?"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:73
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:63
+msgid "I only needed the plugin for a short period"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:83
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:73
+msgid "I no longer need the plugin"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:93
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:83
+msgid "It's a temporary deactivation. I'm just debugging an issue."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:103
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:93
+msgid "Other"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:108
+msgid "Please let us know how we can improve our plugin"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:117
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:107
+msgid "Cancel"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:120
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:110
+msgid "Skip &amp; Deactivate"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/OptOut.php:41
+msgid "You successfully opted out of collecting usage data by %1$s. If you change your mind, you can always opt in later in the plugin's quick links."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/PluginActionLinks.php:50
+msgid "Opt-in"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/PluginActionLinks.php:53
+msgid "Opt-out"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:23
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:15
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:19
+msgid "Hey %s,"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:26
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:18
+msgid "Please help us improve our plugins! If you opt-in, we will collect some non-sensitive data and usage information anonymously. If you skip this, that's okay! All plugins will work just fine."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:35
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:27
+msgid "Allow & Continue &rarr;"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:40
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:32
+msgid "Skip"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:47
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:39
+msgid "What permissions are being granted?"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:56
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:48
+msgid "Your Site Overview"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:59
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:51
+msgid "WP version, PHP info"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:67
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:59
+msgid "Plugin Usage"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:70
+msgid "Current settings and usage information of %1$s plugins"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:78
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:70
+msgid "Your Store Overview"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:81
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:73
+msgid "Anonymized and non-sensitive store usage information"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:91
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:83
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:27
+msgid "Find out more &raquo;"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:62
+msgid "Current settings and usage information of WP Desk plugins"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:19
+msgid " If you have a moment, please let us know why you are deactivating plugin (anonymous feedback):"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:48
+msgid "I found a better plugin"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:98
+msgid "Kindly tell us the reason so we can improve"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:22
+msgid "We need your help to improve <strong>WP Desk plugins</strong>, so they are more useful for you and the rest of <strong>30,000+ users</strong>. By collecting data on how you use our plugins, you will help us a lot. We will not collect any sensitive data, so you can feel safe."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-opt-out-notice.php:11
+msgid "You successfully opted out of collecting usage data by WP Desk. If you change your mind, you can always opt in later in the plugin's quick links."
+msgstr ""

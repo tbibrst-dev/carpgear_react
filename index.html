@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow">
+    <title>Carp Gear Giveaway</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://development.brstdev.com" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          function handleDismissClick(event) {
+              // Log the clicked element for debugging
+              console.log('Clicked element:', event.target);
+  
+              // Find the closest parent with the 'toaster-container' class
+              const notification = event.target.closest('.toaster-container');
+  
+              if (notification) {
+                  console.log('Toaster container found! Hiding its contents...');
+  
+                  // Hide all children inside the toaster-container
+                  Array.from(notification.children).forEach(child => {
+                      child.style.display = 'none';
+                  });
+              } else {
+                  console.log('No toaster container found for the clicked element.');
+              }
+          }
+  
+          // Observe DOM changes to detect when the toast appears dynamically
+          const observer = new MutationObserver((mutationsList, observer) => {
+              for (const mutation of mutationsList) {
+                  if (mutation.type === 'childList') {
+                      const toasterContainer = document.querySelector('.toaster-container');
+                      if (toasterContainer) {
+                          console.log('Toaster container detected!');
+  
+                          // Attach event listener to handle clicks anywhere within the toaster container
+                          toasterContainer.addEventListener('click', handleDismissClick);
+  
+                          // Once we've attached the event listener, we can stop observing
+                          observer.disconnect();
+                      }
+                  }
+              }
+          });
+  
+          // Start observing the document for added elements (i.e., dynamic toasts)
+          const config = { childList: true, subtree: true };
+          observer.observe(document.body, config);
+      });
+  </script>
+  </body>
+</html>
