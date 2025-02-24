@@ -22,7 +22,7 @@ jobs:
 
       - name: Trigger AWS CodeBuild
         run: |
-          aws codebuild start-build --project-name Live_Carpgear --region eu-west-1
+          aws codebuild start-build --project-name Live_Carpgear --region eu-west-2
 
       - name: Upload Artifact to S3
         run: |
