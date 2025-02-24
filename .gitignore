@@ -8,9 +8,9 @@ build/
 .env
 yarn.lock
 package-lock.json
-.cache
-.pm2
-.npm
+.cache/
+.pm2/
+.npm/
 .htaccess
 
 # Logs
