@@ -3,7 +3,7 @@ name: Deploy to EC2
 on:
   push:
     branches:
-      - master  # Change to your main branch
+      - master
 
 jobs:
   deploy:
@@ -27,7 +27,8 @@ jobs:
         run: aws s3 cp deployment.zip s3://livecarpgeardeployments/deployment.zip
 
       - name: Deploy via AWS CodeDeploy
-        run: aws deploy create-deployment \
-          --application-name Live_Carpgear \
-          --deployment-group-name Live_Carpgear \
-          --s3-location bucket=livecarpgeardeployments,key=deployment.zip,bundleType=zip
+        run: |
+          aws deploy create-deployment \
+            --application-name Live_Carpgear \
+            --deployment-group-name Live_Carpgear \
+            --s3-location bucket=livecarpgeardeployments,key=deployment.zip,bundleType=zip

@@ -502,6 +502,12 @@ class Competitions_Admin
     public static function load_resources($hook)
     {
         global $hook_suffix;
+        // wp_register_script('custom_url.js', plugin_dir_url() . './custom_url.js');
+        wp_register_script('custom_url.js', plugin_dir_url(__FILE__) . '_inc/custom_url.js', array('jquery'), self::get_asset_file_version('_inc/custom_url.js'));
+        wp_enqueue_script('custom_url.js');
+
+
+
 
         if ($hook == 'user-edit.php') {
             wp_register_script('usercompetitions.js', plugin_dir_url(__FILE__) . '_inc/userCompetitions.js', array('jquery'), self::get_asset_file_version('_inc/competitions.js'));

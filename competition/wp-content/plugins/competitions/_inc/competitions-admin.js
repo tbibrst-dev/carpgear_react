@@ -1056,7 +1056,7 @@ $(document).ready(function () {
                 // if (data.step != 'reward') {
                 //     $('.nav-tabs').find(".active").addClass("active-accent");
                 // }
-                window.location.href = 'https://staging.cggprelive.co.uk/competition/wp-admin/admin.php?page=competitions_menu';
+                window.location.href = base_wp_url + '/wp-admin/admin.php?page=competitions_menu';
 
             },
         });
@@ -3237,7 +3237,7 @@ $(document).ready(function () {
 
         //     $('<form action="' + ajax_object.ajax_url + '"><input type="hidden" name="action" value="update_competition_record" /><input type="hidden" name="update_from_temp" value="1"/><input type="hidden" name="record" value="' + comp_record + '"/></form>').appendTo('body').submit();
         // }, 2000);
-        window.location.href = 'https://staging.cggprelive.co.uk/competition/wp-admin/admin.php?page=competitions_menu';
+        window.location.href = base_wp_url + '/wp-admin/admin.php?page=competitions_menu';
 
 
     });

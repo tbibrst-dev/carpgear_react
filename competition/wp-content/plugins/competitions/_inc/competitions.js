@@ -3,6 +3,8 @@ $(document).ready(function () {
         ajax_url:"/competition/wp-admin/admin-ajax.php"
     }
 
+    // console.log('++++++++++++++++++base_wp_url',base_wp_url);
+
     jQuery(document).on('click', '.delete_comp', function (e) {
         $("#deleteModal").modal("show");
         $("#deleteModal").find('.delete_competition').attr('href', $(this).data("url"));
