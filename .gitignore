@@ -68,3 +68,5 @@ competition/*.log
 
 # htaccess
 competition/.htaccess
+
+git.sh
