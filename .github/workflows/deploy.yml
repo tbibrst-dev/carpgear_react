@@ -3,7 +3,7 @@ name: Deploy to EC2
 on:
   push:
     branches:
-      - master
+      - master  # Change to your main branch
 
 jobs:
   deploy:
@@ -11,13 +11,23 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-west-2
+
+      - name: Zip deployment package
+        run: zip -r deployment.zip . -x "*.git*" ".github/*"
+
+      - name: Upload to S3
+        run: aws s3 cp deployment.zip s3://livecarpgeardeployments/deployment.zip
 
       - name: Deploy via AWS CodeDeploy
-        uses: aws-actions/aws-cli-action@v1
-        with:
-          args: >
-            deploy --application-name LiveCarpGearApp
-            --deployment-group-name LiveCarpGearDeployment
-            --revision bucket=livecarpgeardeployments,bundleType=zip,key=deployment.zip
-
+        run: aws deploy create-deployment \
+          --application-name LiveCarpGearApp \
+          --deployment-group-name LiveCarpGearDeployment \
+          --s3-location bucket=livecarpgeardeployments,key=deployment.zip,bundleType=zip
