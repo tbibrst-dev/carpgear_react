@@ -28,6 +28,6 @@ jobs:
 
       - name: Deploy via AWS CodeDeploy
         run: aws deploy create-deployment \
-          --application-name LiveCarpGearApp \
-          --deployment-group-name LiveCarpGearDeployment \
+          --application-name Live_Carpgear \
+          --deployment-group-name Live_Carpgear \
           --s3-location bucket=livecarpgeardeployments,key=deployment.zip,bundleType=zip
