@@ -1,9 +1,9 @@
-name: Deploy to AWS EC2 via CodeDeploy
+kname: Deploy to EC2
 
 on:
   push:
     branches:
-      - master
+      - main  # Change to your main branch
 
 jobs:
   deploy:
@@ -11,28 +11,13 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
 
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v2
+      - name: Deploy via AWS CodeDeploy
+        uses: aws-actions/aws-cli-action@v1
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: eu-west-2  # Set to your AWS region
-
-      - name: Trigger AWS CodeBuild
-        run: |
-          aws codebuild start-build --project-name Live_Carpgear --region eu-west-2
-
-      - name: Upload Artifact to S3
-        run: |
-          aws s3 cp artifacts/deploy.zip s3://livecarpgeardeployments/deployments/latest.zip --region eu-west-2
-
-      - name: Deploy via CodeDeploy
-        run: |
-          aws deploy create-deployment \
-            --application-name Live_Carpgear \
-            --deployment-group-name Live_Carpgear \
-            --s3-location bucket=livecarpgeardeployments,key=deployments/latest.zip,bundleType=zip \
-            --region eu-west-2
+          args: >
+            deploy --application-name LiveCarpGearApp
+            --deployment-group-name LiveCarpGearDeployment
+            --revision bucket=livecarpgeardeployments,bundleType=zip,key=deployment.zip
 
