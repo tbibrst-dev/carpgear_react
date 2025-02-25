@@ -3,6 +3,7 @@ os: linux
 files:
   - source: /
     destination: /var/www/lottery
+    overwrite: true
 hooks:
   AfterInstall:
     - location: scripts/deploy.sh
