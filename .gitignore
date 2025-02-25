@@ -1,10 +1,7 @@
 # Node.js & React
 node_modules/
-.next/
-.nuxt/
 .vite/
 dist/
-build/
 .env
 yarn.lock
 package-lock.json
@@ -50,23 +47,8 @@ competition/license.txt
 competition/readme.html
 competition/wp-*.php
 competition/xmlrpc.php
-
-# Configuration
-competition/wp-config.php
-
-# Example themes
 competition/wp-content/themes/twenty*/
-
-# Example plugin
 competition/wp-content/plugins/hello.php
-
-# Uploads
 competition/wp-content/uploads/
-
-# Log files
-competition/*.log
-
-# htaccess
 competition/.htaccess
-
 git.sh
