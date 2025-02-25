@@ -17,7 +17,7 @@ sudo npm run build
 sudo cp -r dist/* /var/www/html/
 
 # Deploy WordPress (only updating wp-content)
-sudo cp -r competition/wp-content/* /var/www/lottery/competition/wp-content/
+sudo rsync -avz competition/wp-content/ /var/www/lottery/competition/wp-content/
 
 # Restart services
 sudo systemctl restart apache2
