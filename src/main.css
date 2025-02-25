@@ -441,7 +441,7 @@ span.cart-main-num {
 /* header-css-end */
 .banner {
   background: linear-gradient(0deg, rgb(0 0 0 / 0%), rgb(0 0 0)),
-    url(../images/banner.png);
+    url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/banner.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -492,7 +492,7 @@ span.cart-main-num {
   height: 100%;
   top: -21px;
   right: -160px;
-  background-image: url(../images/bidd.png);
+  background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/bidd.png);
   background-repeat: no-repeat;
   background-position: top right;
 }
@@ -581,7 +581,7 @@ section.carp-header .container,
 }
 
 .banner .carousel-control-prev-icon {
-  background-image: url(../images/left.svg);
+  background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/left.svg);
   background-position: center;
   background-repeat: no-repeat;
   width: 13.81px;
@@ -589,7 +589,7 @@ section.carp-header .container,
 }
 
 .banner .carousel-control-next-icon {
-  background-image: url(../images/right.svg);
+  background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/right.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1312,7 +1312,7 @@ button#increases-com {
 /* recent winner section end here */
 /* pricing-section-css-start */
 .prices-section {
-  background-image: url(../images/Rectangle\ 12.png);
+  background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/Rectangle\ 12.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
@@ -1426,7 +1426,7 @@ button#increases-com {
 /* pricing-section-css-end */
 /* get-exclusive-css-start */
 .mob-get-exclusive {
-  background-image: url(/images/get-exclusive.svg);
+  background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/get-exclusive.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2414,7 +2414,7 @@ button.closse-btn {
 }
 
 .image-contact-field {
-  background-image: url(/images/contact-bg.png);
+  background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/contact-bg.png);
   background-repeat: round;
   background-size: cover;
   background-position: unset;
@@ -2753,7 +2753,7 @@ button.closse-btn {
 
 .competion-box-part-left {
   width: 100%;
-  /* background-image: url(../images/competion.png);
+  /* background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/competion.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; */
@@ -2786,7 +2786,7 @@ button.closse-btn {
 }
 
 .image-contact-field-comp {
-  background-image: url(/images/contact-bg.png);
+  background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/contact-bg.png);
   background-repeat: round;
   background-size: cover;
   background-position: unset;
@@ -3130,7 +3130,7 @@ button.enter-btn-comp:hover {
 
 .competion-box-part-left-one {
   width: 100%;
-  /* background-image: url(../images/comptition-2\ \(3\).png);
+  /* background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/comptition-2\ \(3\).png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; */
@@ -3653,7 +3653,7 @@ button.enter-btn-mob-comps:hover {
 .mob-comp-top-pic-three-three {
   height: 152px;
   border-radius: 4px;
-  /* background-image: url(../images/comp-mobile-2.png); */
+  /* background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/comp-mobile-2.png); */
   /* background-repeat: no-repeat; */
   /* background-size: contain; */
   max-width: 118px;
@@ -3697,7 +3697,7 @@ button.enter-btn-mob-comps:hover {
 .mob-comp-top-pic-three-four {
   height: 152px;
   border-radius: 4px;
-  /* background-image: url(../images/comp-mobile-2.png); */
+  /* background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/comp-mobile-2.png); */
   /* background-repeat: no-repeat; */
   /* background-size: contain; */
   max-width: 118px;
@@ -3924,7 +3924,7 @@ span.bottom-add-cart {
 /* .Single-comp-slider-data{
     height: 832px;
     width: 664px;
-    background-image: url(../images/single-comp-slider.png);
+    background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/single-comp-slider.png);
     background-repeat: no-repeat;
     background-size: cover;
 } */
@@ -4003,7 +4003,7 @@ section.win-twenty-bait-main .row>* {
 }
 
 .win-twenty-bait-main-left-bottom-left {
-  background-image: url(/images/win-twent-bait.png);
+  background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/win-twent-bait.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4056,7 +4056,7 @@ section.win-twenty-bait-main .row>* {
 }
 
 .win-twenty-bait-main-left-bottom-right-one {
-  background-image: url(/images/win-twent-bait.png);
+  background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/win-twent-bait.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4086,7 +4086,7 @@ section.win-twenty-bait-main .row>* {
 }
 
 .win-twenty-bait-main-left-bottom-right-two {
-  background-image: url(/images/win-twent-bait.png);
+  background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/win-twent-bait.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4520,7 +4520,7 @@ span.for-line-lef {
 .single-steps-tier-txt::before {
   content: "";
   position: absolute;
-  background-image: url(/images/three-tier.png);
+  background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/three-tier.png);
   top: 6px;
   width: 8px;
   background-repeat: no-repeat;
@@ -5041,7 +5041,7 @@ section.bait-instant-win {
 .bait-instant-win-boxx-flag {
   content: "";
   position: absolute;
-  background-image: url(/images/bait-light.png);
+  background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/bait-light.png);
   background-repeat: no-repeat;
   height: 32px;
   width: 32px;
@@ -5776,7 +5776,7 @@ section.bait-accordion {
 
 /* mob-live-draw-css-starrt */
 .mob-win-twenty-bait-main-bottom-all {
-  background-image: url(/images/mob-live-draw.png);
+  background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/mob-live-draw.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -11010,7 +11010,7 @@ order-details-section {
   }
 
   .navbar-light .navbar-toggler-icon {
-    background-image: url(/images/bars.png) !important;
+    background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/bars.png) !important;
   }
 
   .price-rating-left {
@@ -12484,7 +12484,7 @@ order-details-section {
     top: -47px;
     right: 12px;
     background-color: transparent;
-    background-image: url(../images/close.svg) !important;
+    background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/close.svg) !important;
     background-repeat: no-repeat;
   }
 
@@ -12523,8 +12523,8 @@ order-details-section {
     top: -47px;
     right: 12px;
     background-color: transparent;
-    background-image: url(../images/close.svg) !important;
-    /* background-image: url(../images/close-mob.svg) !important; */
+    background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/close.svg) !important;
+    /* background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/close-mob.svg) !important; */
     background-repeat: no-repeat;
   }
 
@@ -13362,7 +13362,7 @@ order-details-section {
 
   .prices-section {
     background: linear-gradient(0deg, rgb(0 0 0), rgb(0 0 0 / 20%)),
-      url(../images/Frame-77.png);
+      url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/Frame-77.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
@@ -13400,7 +13400,7 @@ order-details-section {
         align-items: end;
         justify-content: center;
         padding-bottom: 20px;
-        background-image: url(../images/mob-top-banner.png) !important;
+        background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/mob-top-banner.png) !important;
         background-size: contain;
         background-repeat: no-repeat;
         box-shadow: 0px 0px 20px 0px rgb(238 194 115 / 30%);
@@ -13437,7 +13437,7 @@ order-details-section {
     height: 100%;
     top: -49px;
     right: -62px;
-    /* background-image: url(../images/bidd.png); */
+    /* background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/bidd.png); */
     background-repeat: no-repeat;
     background-position: top left;
   }
@@ -13448,13 +13448,13 @@ order-details-section {
   }
 
   .prices-section {
-    background-image: url(../images/Frame-77.png);
+    background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/Frame-77.png);
     display: none;
   }
 
   .prices-section {
     /* background: linear-gradient(0deg, rgb(0 0 0), rgb(0 0 0 / 20%)),
-    url(../images/Frame-77.png); */
+    url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/Frame-77.png); */
     background-repeat: no-repeat;
     /* background-size: cover; */
     display: block;
@@ -14064,7 +14064,7 @@ order-details-section {
 
   .banner .swiper-button-next:after {
     /* content: ''; */
-    content: url('../images/slide-right.png');
+    content: url('https://carpgear.s3-accelerate.amazonaws.com/frontend/images/slide-right.png');
     position: absolute;
     color: #202323;
     font-weight: 900;
@@ -14075,7 +14075,7 @@ order-details-section {
 
   .banner .swiper-button-prev:after {
     /* content: ''; */
-    content: url('../images/slide-left.png');
+    content: url('https://carpgear.s3-accelerate.amazonaws.com/frontend/images/slide-left.png');
     position: absolute;
     color: #202323;
     font-weight: 900;
@@ -16899,7 +16899,7 @@ div#Paris a {
 }
 
 .win-twenty-bait-main-only-two .win-twenty-bait-main-left-bottom-only-one {
-  background-image: url(/images/win-twent-bait.png);
+  background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/win-twent-bait.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16944,7 +16944,7 @@ div#Paris a {
 
 .banner-desktop {
   background: linear-gradient(0deg, rgb(0 0 0 / 0%), rgb(0 0 0)),
-    url(../images/banner.png);
+    url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/banner.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16968,7 +16968,7 @@ div#Paris a {
 
 
 .desktop-pricing-vector {
-  background-image: linear-gradient(0deg, rgb(0 0 0 / 0%), rgb(0 0 0)), url(../images/Vector2.png);
+  background-image: linear-gradient(0deg, rgb(0 0 0 / 0%), rgb(0 0 0)), url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/Vector2.png);
   width: 100%;
   height: 172px;
   position: absolute;
@@ -17355,7 +17355,7 @@ div#Paris a {
   transform: translate(-50%, -50%);
   width: 24px;
   height: 24px;
-  background: url('/images/playbutton.svg') no-repeat center center;
+  background: url('https://carpgear.s3-accelerate.amazonaws.com/frontend/images/playbutton.svg') no-repeat center center;
   background-size: contain;
   z-index: 99999;
 }
@@ -17433,7 +17433,7 @@ html {
 
 
 .number-tickets-new-design {
-  background-image: url("/images/ticketSmall.png");
+  background-image: url("https://carpgear.s3-accelerate.amazonaws.com/frontend/images/ticketSmall.png");
   background-position: center;
   height: 54px;
   width: 72px;
@@ -17540,7 +17540,7 @@ html {
 .bait-instant-win-boxx-flag {
   content: "";
   position: absolute;
-  background-image: url(/images/bait-light.png);
+  background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/bait-light.png);
   background-repeat: no-repeat;
   height: 32px;
   width: 32px;
@@ -18134,7 +18134,7 @@ span.ins-slash {
   height: 50px;
   background-color: #202323;
   border-radius: 50%;
-  background-image: url(/images/halfCircle.png);
+  background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/halfCircle.png);
   background-size: contain;
   transform: translateY(-40%);
   background-repeat: no-repeat;
@@ -18188,7 +18188,7 @@ span.ins-slash {
   right: -14px;
   width: 50px;
   height: 50px;
-  background-image: url(/images/halfCircle.png);
+  background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/halfCircle.png);
   background-size: contain;
   transform: translateY(-50%);
   background-repeat: no-repeat;
@@ -18215,7 +18215,7 @@ span.ins-slash {
   right: -14px;
   width: 50px;
   height: 50px;
-  background-image: url(/images/halfCircle.png);
+  background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/halfCircle.png);
   background-size: contain;
   transform: translateY(-50%);
   background-repeat: no-repeat;
@@ -18704,7 +18704,7 @@ span.ins-slash {
 .socialProof-instant-win-boxx-flag {
   content: "";
   position: absolute;
-  background-image: url(/images/bait-light.png);
+  background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/bait-light.png);
   /* background-repeat: no-repeat; */
   height: 32px;
   width: 32px;
@@ -19212,7 +19212,7 @@ span.ins-slash {
     right: -25px;
     width: 46px;
     height: 46px;
-    background-image: url(/images/halfCircle.png);
+    background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/halfCircle.png);
     background-size: contain;
     transform: translateY(-50%);
     background-repeat: no-repeat;
@@ -19253,7 +19253,7 @@ span.ins-slash {
     right: -12px;
     width: 46px;
     height: 46px;
-    background-image: url(/images/halfCircle.png);
+    background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/halfCircle.png);
     background-size: contain;
     transform: translateY(-50%);
     background-repeat: no-repeat;
@@ -19267,7 +19267,7 @@ span.ins-slash {
     right: -22px;
     width: 46px;
     height: 46px;
-    /* background-image: url(/images/halfCircle.png); */
+    /* background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/halfCircle.png); */
     background-size: contain;
     transform: translateY(-50%);
     background-repeat: no-repeat;
@@ -19988,7 +19988,7 @@ span.ins-slash {
   /* .bait-instant-win-boxx-flag {
     content: "";
     position: absolute;
-    background-image: url(/images/bait-light.png);
+    background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/bait-light.png);
     background-repeat: no-repeat;
     height: 32px;
     width: 32px;
@@ -19999,7 +19999,7 @@ span.ins-slash {
   .bait-instant-win-boxx-flag {
     content: "";
     position: absolute;
-    background-image: url(/images/bait-light.png);
+    background-image: url(https://carpgear.s3-accelerate.amazonaws.com/frontend/images/bait-light.png);
     background-repeat: no-repeat;
     height: 32px;
     width: 32px;
@@ -20992,14 +20992,14 @@ button.accordion-button {
   height: 1.25rem;
   margin-left: auto;
   content: "";
-  background-image: url("/images/arrowclosemobile.svg");
+  background-image: url("https://carpgear.s3-accelerate.amazonaws.com/frontend/images/arrowclosemobile.svg");
   background-repeat: no-repeat;
   background-size: 1.25rem;
   transition: transform .2s ease-in-out;
 }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url("/images/arrowopenmobile.svg");
+  background-image: url("https://carpgear.s3-accelerate.amazonaws.com/frontend/images/arrowopenmobile.svg");
   transform: rotate(0deg);
 }
 

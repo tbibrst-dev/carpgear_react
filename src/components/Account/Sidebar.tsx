@@ -18,11 +18,17 @@ const Sidebar = () => {
   const user = useSelector((state: RootState) => state.userReducer.user);
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const token = import.meta.env.VITE_TOKEN; // Store token securely in .env file
+
 
   const handleLogout = async () => {
     try {
       const response = await axios.get(
-        `?rest_route=/api/v1/logout&token=${user?.token}`
+        `?rest_route=/api/v1/logout&token=${user?.token}`,{
+          headers: {
+            Authorization: `Bearer ${token}`,
+          }}
+
       );
       if (response.data.status === "TRUE") {
 

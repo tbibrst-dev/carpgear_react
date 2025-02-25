@@ -48,6 +48,8 @@ const ChatComponent: React.FC<PropsTypes> = () => {
   const [pinnedMessageShow, setPinnedMessageShow] = useState<any>();
   const [groupNew, setGroupNew] = useState<CometChat.Group | undefined>(undefined);
   const [showGroupDetailsModal, setShowGroupDetailsModal] = useState<boolean>(false);
+  const S3_BASE_URL = import.meta.env.VITE_STATIC_IMAGES_URL;
+
 
   const COMETCHAT_CONSTANTS = {
     APP_ID: "263121674dc8214a",
@@ -711,7 +713,7 @@ const ChatComponent: React.FC<PropsTypes> = () => {
                           setShowGroupDetailsModal(true);
                         }}
                       >
-                        <img src="https://cggprelive.co.uk/images/groupinfo.svg" style={{ width: "20px", height: "20px", cursor: "pointer", marginRight: "15px" }} />
+                        <img src={`${S3_BASE_URL}/images/groupinfo.svg`} style={{ width: "20px", height: "20px", cursor: "pointer", marginRight: "15px" }} />
                       </span>
 
                    </>
@@ -795,9 +797,9 @@ const ChatComponent: React.FC<PropsTypes> = () => {
               // messageListView: messageListConfig,
               messageComposerConfiguration: new MessageComposerConfiguration({
                 hideVoiceRecording: true,
-                emojiIconURL: "images/smileemoji.svg",
-                attachmentIconURL: "images/paperclip2.svg",
-                sendButtonIconURL: "images/send-message-1.svg",
+                emojiIconURL: `${S3_BASE_URL}/images/smileemoji.svg`,
+                attachmentIconURL: `${S3_BASE_URL}/images/paperclip2.svg`,
+                sendButtonIconURL: `${S3_BASE_URL}/images/send-message-1.svg`,
               }),
               messagesStyle: messagesStyle,
               detailsConfiguration: new DetailsConfiguration({}),

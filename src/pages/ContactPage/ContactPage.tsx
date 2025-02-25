@@ -11,22 +11,9 @@ const ContactPage = () => {
   const [metaDesc, setMetaDesc] = useState<string>("");
   const [metaTitle, setMetaTitle] = useState<string>("");
 
-  const [metaTags, setMetaTags] = useState(null);
 
-  useEffect(() => {
-      const fetchMetaTags = async () => {
-          const response = await fetch(`https://cggprelive.co.uk/competition/index.php/wp-json/rankmath/v1/getHead?url=https://cggprelive.co.uk/competition/index.php/contact-us`);
-          const data = await response.json();
-          if (data.success) {
-              setMetaTags(data.head);
-          } else {
-              console.error('Error fetching meta tags:', data);
-          }
-      };
-      fetchMetaTags();
-  }, []);
 
-  console.log('metaTags++++',metaTags);
+
 
   useEffect(() => {  
     const fetchMetaData = async () => {

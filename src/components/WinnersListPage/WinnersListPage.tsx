@@ -10,24 +10,37 @@ const WinnersList = () => {
     const [hasMore, setHasMore] = useState(true);
     const observer = useRef<IntersectionObserver>();
 
+    const token = import.meta.env.VITE_TOKEN; // Store token securely in .env file
+
     useEffect(() => {
         const fetchWinners = async (page: number) => {
+            setIsLoading(true); // Ensure loading state is set before fetching
+
             try {
-                
-                // const res = await axios.get(`/wp-json/wp/v2/winners?_embed&type=winners&status=publish&filter[orderby]=date&order=desc&per_page=8&page=${page}`);
-                const res = await axios.get(`/wp/v2/winners?_embed&type=winners&status=publish&filter[orderby]=date&order=desc&per_page=8&page=${page}`);  //only for cgg live
+                const res = await axios.get(`/wp/v2/winners`, {
+                    params: {
+                        _embed: true,
+                        type: "winners",
+                        status: "publish",
+                        "filter[orderby]": "date",
+                        order: "desc",
+                        per_page: 8,
+                        page: page,
+                    },
+                    headers: {
+                        Authorization: `Bearer ${token}`,
+                    },
+                });
+
                 if (res.data.length === 0) {
                     setHasMore(false);
                 } else {
-                    setWinners(prevWinners => [...prevWinners, ...res.data]);
+                    setWinners((prevWinners) => [...prevWinners, ...res.data]);
                 }
             } catch (error) {
-                console.error('Error fetching winners:', error);
-                setIsLoading(false);
-
+                console.error("Error fetching winners:", error);
             } finally {
                 setIsLoading(false);
-
             }
         };
 
@@ -57,7 +70,7 @@ const WinnersList = () => {
         const parser = new DOMParser();
         const decoded = parser.parseFromString(str, 'text/html').documentElement.textContent;
         return decoded;
-      };
+    };
 
     return (
         <div className='main-div-winner-list-page'>

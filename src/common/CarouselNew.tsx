@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import axios from 'axios';
 import Loader from "./Loader";
 import { SLIDER_SPEED } from "../utils";
+import { getMediaUrl } from "../utils/imageS3Url";
 
 
 
@@ -13,6 +14,8 @@ const Carousel = () => {
   const [competitions, setCompetitions] = useState<any[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const SLIDER_TRANSIITON_SPEED = import.meta.env.VITE_SLIDER_TRANSIITON_SPEED
+  const S3_BASE_URL = import.meta.env.VITE_STATIC_IMAGES_URL;
+
 
 
   useEffect(() => {
@@ -104,7 +107,7 @@ const Carousel = () => {
                             <div
                               className="carosel-all-desktop"
                               style={{
-                                backgroundImage: `linear-gradient(180deg, rgba(15, 16, 16, 0) 28.71%, #0F1010 100%), url(${competition.desktop_image})`,
+                                backgroundImage: `linear-gradient(180deg, rgba(15, 16, 16, 0) 28.71%, #0F1010 100%), url(${getMediaUrl(competition.desktop_image)})`,
                                 height: `${DESKTOP_HEIGHT}`
                               }}
                               onClick={() => onclickHandle(competition.link)}
@@ -178,7 +181,7 @@ const Carousel = () => {
                           <div
                             className="carosel-all"
                             style={{
-                              backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0) 27%, #000000 81.5%), url(${competition.mobile_image})`,
+                              backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0) 27%, #000000 81.5%), url(${getMediaUrl(competition.mobile_image)})`,
                               height: `${MOBILE_HEIGHT}`,
                               zIndex:999
 
@@ -203,10 +206,10 @@ const Carousel = () => {
                             </div>
 
                             <div className="fish-bar">
-                              <img src="images/bidd.png" alt="" />
+                              <img src={`${S3_BASE_URL}/images/bidd.png`} alt="" />
                             </div>
                             <div className="fish-bar-two">
-                              <img src="images/mob-stick.svg" alt="" />
+                              <img src={`${S3_BASE_URL}/images/mob-stick.svg`} alt="" />
                             </div>
                           </div>
                         </SwiperSlide>

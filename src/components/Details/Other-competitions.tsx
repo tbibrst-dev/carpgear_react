@@ -10,6 +10,8 @@ import {
   isDrawTomorrow,
   truncateText,
 } from "../../utils";
+import { getMediaUrl } from "../../utils/imageS3Url";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/scrollbar";
@@ -302,7 +304,7 @@ const OtherComps: React.FC<PropsType> = ({
                           );
                         }}>
                           <img
-                            src={competition.image}
+                            src={getMediaUrl(competition.image)}
                             alt="other-comps-image"
                           />
                           <div className="top-tag">

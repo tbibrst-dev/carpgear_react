@@ -4,6 +4,8 @@ import { useGetSettingsQuery } from "../../redux/queries";
 const HowItWorks = () => {
   const [workSteps, setWorkSteps] = useState<string[]>([]);
   const { data } = useGetSettingsQuery();
+  const S3_BASE_URL = import.meta.env.VITE_STATIC_IMAGES_URL;
+
 
   useEffect(() => {
     if (data) {
@@ -29,7 +31,7 @@ const HowItWorks = () => {
             <div className="select-your-prize">
               <div className="parent-prize">
                 <div className="logo-prize">
-                  <img src="/images/present-icon.svg" alt="present image" />
+                  <img src={`${S3_BASE_URL}/images/present-icon.svg`} alt="present image" />
                   <h4>Step 1 </h4>
                 </div>
                 <div
@@ -55,7 +57,7 @@ const HowItWorks = () => {
             <div className="select-your-prize">
               <div className="parent-prize">
                 <div className="logo-prize">
-                  <img src="/images/Vector (2).svg" alt="present image" />
+                  <img src={`${S3_BASE_URL}/images/Vector (2).svg`} alt="present image" />
                   <h4>Step 2</h4>
                 </div>
                 <div
@@ -81,7 +83,7 @@ const HowItWorks = () => {
             <div className="select-your-prize">
               <div className="parent-prize">
                 <div className="logo-prize">
-                  <img src="/images/Mic Mult 1.svg" alt="present image" />
+                  <img src={`${S3_BASE_URL}/images/Mic Mult 1.svg`} alt="present image" />
                   <h4>Step 3</h4>
                 </div>
                 <div

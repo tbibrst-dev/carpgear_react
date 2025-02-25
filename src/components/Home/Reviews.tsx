@@ -17,6 +17,8 @@ interface ReviewsResponse {
 
 const Reviews = () => {
   const [reviews, setReviews] = useState<ReviewsResponse | null>(null);
+  const S3_BASE_URL = import.meta.env.VITE_STATIC_IMAGES_URL;
+
 
   useEffect(() => {
     const fetchAllReviews = async () => {
@@ -28,7 +30,6 @@ const Reviews = () => {
         const data = response.data.body;
         // Check if the data is a string and parse it
         const parsedReviews = typeof data === "string" ? JSON.parse(data) : data;
-        console.log("Parsed Reviews:", parsedReviews);
         setReviews(parsedReviews);
       } catch (error) {
         console.log("Error fetching reviews:", error);
@@ -51,7 +52,7 @@ const Reviews = () => {
           <div className="review-ratings">
             <div className="price-rating-lefts">
               <div className="price-ratings-lefts-one">
-                <img src="images/stars.svg" alt="star image" />
+                <img src={`${S3_BASE_URL}/images/stars.svg`} alt="star image" />
               </div>
               <div className="price-ratings-lefts-two">
                 <p>
@@ -59,7 +60,7 @@ const Reviews = () => {
                 </p>
               </div>
               <div className="price-ratings-lefts-two">
-                <img src="images/reviewsio-logo.svg" alt="Reviews.io logo" />
+                <img src={`${S3_BASE_URL}/images/reviewsio-logo.svg`} alt="Reviews.io logo" />
               </div>
             </div>
           </div>

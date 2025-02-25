@@ -7,6 +7,7 @@ import "swiper/css/scrollbar";
 import { Scrollbar, Navigation } from "swiper/modules";
 import { Link, NavigateFunction, useNavigate } from "react-router-dom";
 import { truncateText } from "../../utils";
+import { getMediaUrl } from "../../utils/imageS3Url";
 import { useDispatch, useSelector } from "react-redux";
 import {
   setCurrentCompetition,
@@ -345,8 +346,8 @@ const SwiperSlideComponent: React.FC<PropTypes> = ({
                       );
                     }}>
                       <img
-                        //src={competition.image}
-                        src={competition.images_thumb && competition.images_thumb != null ? "https://cggprelive.co.uk/competition/wp-content/uploads/thumbs/list" + competition.images_thumb : competition.image}
+                        src={getMediaUrl(competition.image)}
+                        // src={competition.images_thumb && competition.images_thumb != null ? "https://cggprelive.co.uk/competition/wp-content/uploads/thumbs/list" + competition.images_thumb : competition.image}
                         alt="competition image"
                         loading="lazy"
                       />

@@ -16,6 +16,8 @@ const Pricing = () => {
 
   const totalPrizeValue = localStorage.getItem('totalPrizeValue');
   const totalWinner = localStorage.getItem('totalWinner');
+  const S3_BASE_URL = import.meta.env.VITE_STATIC_IMAGES_URL;
+
 
 
 
@@ -48,7 +50,7 @@ const Pricing = () => {
             <div className="review-ratings-mob">
               <div className="price-rating-lefts-mob">
                 <div className="price-ratings-left-mob">
-                  <img src="images/stars.svg" />
+                  <img src={`${S3_BASE_URL}/images/stars.svg`} />
                 </div>
                 <div className="price-ratings-lefts-two">
                   <p>
@@ -56,7 +58,7 @@ const Pricing = () => {
                   </p>
                 </div>
                 <div className="price-ratings-lefts-two">
-                  <img src="images/reviewsio-logo.svg" />
+                  <img src={`${S3_BASE_URL}/images/reviewsio-logo.svg`} />
                 </div>
               </div>
             </div>
@@ -65,7 +67,7 @@ const Pricing = () => {
           {/* Mobile-price-section-end */}
           <div className="price-section-all">
             <div className="price-part">
-              <img src="images/troffee.svg" alt="" />
+              <img src={`${S3_BASE_URL}/images/troffee.svg`} alt="" />
               <div className="price-txt">
                 {/* <h4>{ totalWinner}</h4> */}
                 <h4>{ ((Number(apidata?.data?.winner_stat) || 0) + Number(totalWinner)).toLocaleString()  }</h4>
@@ -74,21 +76,21 @@ const Pricing = () => {
               </div>
             </div>
             <div className="price-part">
-              <img src="images/gift.svg" alt="" />
+              <img src={`${S3_BASE_URL}/images/gift.svg`} alt="" />
               <div className="price-txt">
               <h4>£{((Number(apidata?.data?.prizes_stat) || 0) + Number(totalPrizeValue)).toLocaleString()}</h4>
                 <p>Prizes</p>
               </div>
             </div>
             <div className="price-part">
-              <img src="images/heart.svg" alt="" />
+              <img src={`${S3_BASE_URL}/images/heart.svg`} alt="" />
               <div className="price-txt">
               <h4>£{Number(apidata?.data?.donated_stat)?.toLocaleString() ?? ""}</h4>
                 <p>Donated</p>
               </div>
             </div>
             <div className="price-part">
-              <img src="images/ok.svg" alt="" />
+              <img src={`${S3_BASE_URL}/images/ok.svg`} alt="" />
               <div className="price-txt">
                 {/* <h4>{ apidata?.data?.followers_stat ?? ""}</h4> */}
                 <h4>{Number(apidata?.data?.followers_stat)?.toLocaleString() ?? ""}</h4>
@@ -131,7 +133,7 @@ const Pricing = () => {
               <div className="single-compi-top-rating-all">
                 <div className="single-compi-top-rating-left">
                   <div className="single-compi-top-rating-left-one">
-                    <img src="images/stars.svg" alt="" />
+                    <img src={`${S3_BASE_URL}/images/stars.svg`} alt="" />
                   </div>
                   <div className="single-compi-top-rating-left-two">
                     <p>
@@ -141,7 +143,7 @@ const Pricing = () => {
                   <div className="single-compi-top-rating-left-three">
                     <a href="">
                       {" "}
-                      <img src="images/reviewsio-logo.svg" alt="" />{" "}
+                      <img src={`${S3_BASE_URL}/images/reviewsio-logo.svg`} alt="" />{" "}
                     </a>
                   </div>
                 </div>
@@ -152,7 +154,7 @@ const Pricing = () => {
                       target="_blank"
                     >
                       {" "}
-                      <img src="images/single-comp-top.svg" alt="" />
+                      <img src={`${S3_BASE_URL}images/single-comp-top.svg`} alt="" />
                     </a>
                   </div>
                   <div className="single-compi-top-rating-right-one">
@@ -161,7 +163,7 @@ const Pricing = () => {
                       target="_blank"
                     >
                       {" "}
-                      <img src="images/single-comp-top-1.svg" alt="" />{" "}
+                      <img src={`${S3_BASE_URL}images/single-comp-top-1.svg`} alt="" />{" "}
                     </a>
                   </div>
                 </div>

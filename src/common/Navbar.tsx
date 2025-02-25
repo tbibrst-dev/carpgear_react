@@ -55,6 +55,8 @@ const Navbar = () => {
   const cartItems = useSelector((state: RootState) => state.cart.cartItems);
   const [cartQuantity, setCartQuantity] = useState<number>(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const S3_BASE_URL = import.meta.env.VITE_STATIC_IMAGES_URL;
+
 
 
   const calculateCartQuantity = (items: CompetitionType[]) => {
@@ -115,7 +117,7 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-lg navbar-light ">
               <div className="container-fluid">
                 <Link className="navbar-brand" to="/" >
-                  <img src="/images/CGG-Logo-High-Res.png" alt="logo" />
+                  <img src={`${S3_BASE_URL}/images/CGG-Logo-High-Res.png`} alt="logo" />
                 </Link>
                 <div className="head-item">
                   <div className="mobile-show">
@@ -222,13 +224,13 @@ const Navbar = () => {
                                 href="https://apps.apple.com/us/app/carp-gear-giveaways/id1513020494"
                                 target="_blank"
                               >
-                                <img src="/images/single-comp-top.svg" alt="" />{" "}
+                                <img src={`${S3_BASE_URL}/images/single-comp-top.svg`} alt="" />{" "}
                               </a>
                               <a
                                 href="https://play.google.com/store/apps/details?id=co.uk.carpgeargiveaways.app"
                                 target="_blank"
                               >
-                                <img src="/images/single-comp-top-1.svg" alt="" />
+                                <img src={`${S3_BASE_URL}/images/single-comp-top-1.svg`} alt="" />
                               </a>
                             </div>
                           </div>
@@ -238,7 +240,7 @@ const Navbar = () => {
                             <a href="#" title="payment">
                               {" "}
                               <img
-                                src="/images/Payment-IconsFooter3x.png"
+                                src={`${S3_BASE_URL}/images/Payment-IconsFooter3x.png`}
                                 alt="Payment-Icons"
                                 width="211px"
                                 height="26px"

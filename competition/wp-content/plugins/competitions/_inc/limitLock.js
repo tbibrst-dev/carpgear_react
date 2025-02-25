@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    var ajax_object ={
+        ajax_url:"/competition/wp-admin/admin-ajax.php"
+    }
+
     var dataTableColumns = {
         "limits": [
             { 'data': 'user_id', 'name': 'user_id' },

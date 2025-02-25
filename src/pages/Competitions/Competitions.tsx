@@ -46,44 +46,7 @@ const CompetitionsPage = () => {
     fetchMetaData();
   }, [category]);
 
-  useEffect(() => {
-    const fetchMetaTags = async () => {
-      try {
-        const page = category === "instant_win_comps"
-          ? "instant_win"
-          : category === "drawn_next_competition"
-            ? "drawn_next"
-            : category === "singular_competition"
-              ? "singular_competition"
-              : category === "the_accessories_and_bait"
-                ? "the_accessories_and_bait"
-                : category === "finished_and_sold_out"
-                  ? "finished_and_sold_out"
-                  : "all";
-        const response = await fetch(`https://cggprelive.co.uk/wp-json/rankmath/v1/getHead?url=https://cggprelive.co.uk/competitions/${page}`, {
-          headers: {
-            'Content-Type': 'application/json',
-            // 'Authorization': 'Bearer YOUR_API_TOKEN', // Uncomment if API needs auth token
-          },
-        });
-
-        if (!response.ok) {
-          throw new Error(`Error: ${response.statusText}`);
-        }
-
-
-        console.log('rankmath', response);
-
-
-      } catch (err) {
-        console.log('rankmath', err)
-      } finally {
-        console.log('done');
-      }
-    };
-
-    fetchMetaTags();
-  }, [category]);
+  
 
   return (
     <Fragment>

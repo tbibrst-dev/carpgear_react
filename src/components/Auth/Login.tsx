@@ -24,6 +24,8 @@ const Login = () => {
   });
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const navigate = useNavigate();
+  const token = import.meta.env.VITE_TOKEN; // Store token securely in .env file
+
 
   const handleSubmit = async () => {
     // e.preventDefault();
@@ -51,7 +53,15 @@ const Login = () => {
       const response = await axios.post("?rest_route=/api/v1/login", {
         username: email,
         password,
-      });
+      },
+      {
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`, // Ensure user?.token exists before using it
+        },
+      }
+    
+    );
       if (response.data.success) {
         dispatch(setUserState(response.data.data));
         const encodedToken = encryptToken(response.data.data.token);

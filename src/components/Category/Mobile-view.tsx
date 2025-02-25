@@ -6,6 +6,8 @@ import {
   isNewlyLaunched,
   truncateText,
 } from "../../utils";
+import { getMediaUrl } from "../../utils/imageS3Url";
+
 import CountdownTimer from "../../common/Countdown";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -18,7 +20,7 @@ import { RootState } from "../../redux/store";
 import { Dispatch } from "@reduxjs/toolkit";
 import { useCallback, useEffect, useState } from "react";
 import { NavigateFunction, useNavigate } from "react-router";
-import {showErrorToast} from "../../showErrorToast";
+import { showErrorToast } from "../../showErrorToast";
 
 import Slider from '@mui/material/Slider';
 
@@ -134,7 +136,7 @@ const MobileViewComps: React.FC<PropsType> = ({
   const hideTimer = parseInt(competition.hide_timer) ? true : false;
 
 
-  const [activeColors, setActiveColors] = useState<{[key: string | number]: boolean}>({});
+  const [activeColors, setActiveColors] = useState<{ [key: string | number]: boolean }>({});
 
   const getColor = useCallback((id: string | number) => {
     return activeColors[id] ? '#2CB4A5' : '#2CB4A5';
@@ -142,7 +144,7 @@ const MobileViewComps: React.FC<PropsType> = ({
 
 
   const handleButtonPress = (id: number, isActive: boolean) => {
-    setActiveColors(prev => ({...prev, [id]: isActive}));
+    setActiveColors(prev => ({ ...prev, [id]: isActive }));
   };
 
   const handleSliderChange = (id: number, newValue: number | number[]) => {
@@ -155,45 +157,45 @@ const MobileViewComps: React.FC<PropsType> = ({
         handleQuantityChangeWrapper(id, Math.abs(difference), action);
       }
     }
-    setActiveColors(prev => ({...prev, [id]: true}));
+    setActiveColors(prev => ({ ...prev, [id]: true }));
   };
 
-   const handleSliderChangeCommitted = (id: any) => {
-    setActiveColors(prev => ({...prev, [id]: false}));
+  const handleSliderChangeCommitted = (id: any) => {
+    setActiveColors(prev => ({ ...prev, [id]: false }));
   };
-  
+
 
   return (
     <div
-     
+
     >
       {" "}
       <div className="mob-comp-parts">
         <div className="mob-comp-top-section">
-          <div className="mob-comp-top-pic"  onClick={() =>
-        navigateCompetition(
-          competition.id,
-          competition.category,
-          competition.title,
-          navigate
-        )
-      }>
-            <img 
-            //src={competition.image}
-        src={competition.images_thumb_cat && competition.images_thumb_cat != null ? "https://cggprelive.co.uk/competition/wp-content/uploads/thumbs/home"+ competition.images_thumb_cat : competition.image  }
+          <div className="mob-comp-top-pic" onClick={() =>
+            navigateCompetition(
+              competition.id,
+              competition.category,
+              competition.title,
+              navigate
+            )
+          }>
+            <img
+              src={getMediaUrl(competition.image)}
+            // src={competition.images_thumb_cat && competition.images_thumb_cat != null ? "https://cggprelive.co.uk/competition/wp-content/uploads/thumbs/home"+ competition.images_thumb_cat : competition.image  }
 
-             />
+            />
 
-             
+
           </div>
           <div className="mob-comp-top-text cursor-pointer" onClick={() => {
-                      navigateCompetition(
-                        competition.id,
-                        competition.category,
-                        competition.title,
-                        navigate
-                      );
-                    }}>
+            navigateCompetition(
+              competition.id,
+              competition.category,
+              competition.title,
+              navigate
+            );
+          }}>
             <h2>{truncateText(competition.title, 90)}</h2>
             <h4>
               {
@@ -300,68 +302,67 @@ const MobileViewComps: React.FC<PropsType> = ({
         ) : (
           <div className="mob-comp-shw"></div>
         )}
-        
-          <div className="mob-comp-progress-all">
-            <div className="mob-progs-71">
-              <div
-                className="mob-progs-71-shade"
-                style={{
-                  width: `${calculatePercentage(
-                    Number(competition.total_ticket_sold),
-                    Number(competition.total_sell_tickets)
-                  )}%`,
-                }}
-              ></div>
 
-          {
-          !hideTicketCount ? 
-              <h5>
-                <div className="mob-progs-lef">
-                  <svg
-                    width="12"
-                    height="8"
-                    viewBox="0 0 12 8"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 2.94024V1.52288C12 0.963074 11.5462 0.509277 10.9865 0.509277H1.01348C0.453773 0.509254 0 0.963051 0 1.52286V2.94968C0.514617 3.02361 0.910641 3.46503 0.910641 4.00013C0.910641 4.53523 0.514617 4.9767 0 5.05043V6.47745C0 7.03707 0.453773 7.49086 1.01348 7.49086H10.9865C11.5462 7.49086 12 7.03707 12 6.47745V5.05988C11.4369 5.03354 10.9881 4.56987 10.9881 4.00015C10.9881 3.43046 11.4369 2.96679 12 2.94024ZM2.84801 6.85137H2.49933V5.94195H2.84801V6.85137ZM2.84801 5.25361H2.49933V4.34421H2.84801V5.25361ZM2.84801 3.6559H2.49933V2.74629H2.84801V3.6559ZM2.84801 2.05819H2.49933V1.14877H2.84801V2.05819Z"
-                      fill="white"
-                    />
-                  </svg>
-                  <h4>{competition.total_ticket_sold}</h4>
-                </div>
-                <div className="mob-progs-rgt">
-                  <h4>{competition.total_sell_tickets}</h4>
-                </div>
-              </h5>: " "}
-
-
-            </div>
-            <div className="mob-progs-per">
-              <h4>
-                {calculatePercentage(
+        <div className="mob-comp-progress-all">
+          <div className="mob-progs-71">
+            <div
+              className="mob-progs-71-shade"
+              style={{
+                width: `${calculatePercentage(
                   Number(competition.total_ticket_sold),
                   Number(competition.total_sell_tickets)
-                )}
-                %
-              </h4>
-            </div>
-          </div>
-       
+                )}%`,
+              }}
+            ></div>
 
-        {new Date(competition.draw_date) < new Date() || competition?.category == 'finished_and_sold_out' ||  (competition?.total_sell_tickets == competition?.total_ticket_sold) ? (
+            {
+              !hideTicketCount ?
+                <h5>
+                  <div className="mob-progs-lef">
+                    <svg
+                      width="12"
+                      height="8"
+                      viewBox="0 0 12 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 2.94024V1.52288C12 0.963074 11.5462 0.509277 10.9865 0.509277H1.01348C0.453773 0.509254 0 0.963051 0 1.52286V2.94968C0.514617 3.02361 0.910641 3.46503 0.910641 4.00013C0.910641 4.53523 0.514617 4.9767 0 5.05043V6.47745C0 7.03707 0.453773 7.49086 1.01348 7.49086H10.9865C11.5462 7.49086 12 7.03707 12 6.47745V5.05988C11.4369 5.03354 10.9881 4.56987 10.9881 4.00015C10.9881 3.43046 11.4369 2.96679 12 2.94024ZM2.84801 6.85137H2.49933V5.94195H2.84801V6.85137ZM2.84801 5.25361H2.49933V4.34421H2.84801V5.25361ZM2.84801 3.6559H2.49933V2.74629H2.84801V3.6559ZM2.84801 2.05819H2.49933V1.14877H2.84801V2.05819Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <h4>{competition.total_ticket_sold}</h4>
+                  </div>
+                  <div className="mob-progs-rgt">
+                    <h4>{competition.total_sell_tickets}</h4>
+                  </div>
+                </h5> : " "}
+
+
+          </div>
+          <div className="mob-progs-per">
+            <h4>
+              {calculatePercentage(
+                Number(competition.total_ticket_sold),
+                Number(competition.total_sell_tickets)
+              )}
+              %
+            </h4>
+          </div>
+        </div>
+
+
+        {new Date(competition.draw_date) < new Date() || competition?.category == 'finished_and_sold_out' || (competition?.total_sell_tickets == competition?.total_ticket_sold) ? (
           <div className="finish-btns">
             <button type="button" className="closse-btn">
               {competition?.total_sell_tickets == competition?.total_ticket_sold && new Date(competition.draw_date) > new Date() ? 'SOLD OUT' : 'CLOSED'}
             </button>
           </div>
         ) :
-        <div
-        className={`mob-comp-btnss ${
-          disbaleTickets ? "change-opacity" : ""
-        }`}
-      >
+          <div
+            className={`mob-comp-btnss ${disbaleTickets ? "change-opacity" : ""
+              }`}
+          >
             <div className="mob-comp-button-all-new">
               <div className="mob-comp-btn-lefts-card">
                 {/* <div className="increase-quantity">
@@ -452,7 +453,7 @@ const MobileViewComps: React.FC<PropsType> = ({
                       onClick={(e) => e.stopPropagation()}
                       disabled
                     /> */}
-                     <span className="tickets-number">
+                    <span className="tickets-number">
                       {quantities[competition.id]} {quantities[competition.id] > 1 ? ` Tickets` : ` Ticket`}
                     </span>
                   </div>

@@ -9,11 +9,26 @@ const RecentWinners = () => {
   const [winners, setWinners] = useState<any>([]);
   const [isLoading, setIsLoading] = useState(true);
 
+  const token = import.meta.env.VITE_TOKEN; // Store token securely in .env file
+  
   useEffect(() => {
     const fetchWinners = async () => {
       try {
-        // const res = await axios.get('/wp-json/wp/v2/winners?_embed&type=winners&status=publish&filter[orderby]=date&order=desc&per_page=5');
-        const res = await axios.get('/wp/v2/winners?_embed&type=winners&status=publish&filter[orderby]=date&order=desc&per_page=5');  //only for cgg live
+        // const res = await axios.get('/wp/v2/winners?_embed&type=winners&status=publish&filter[orderby]=date&order=desc&per_page=5');  //only for cgg live
+        const res = await axios.get(`/wp/v2/winners`, {
+          params: {
+              _embed: true,
+              type: "winners",
+              status: "publish",
+              "filter[orderby]": "date",
+              order: "desc",
+              per_page: 5,
+          },
+          headers: {
+              Authorization: `Bearer ${token}`,
+          },
+      });
+        
         setWinners(res.data);
       } catch (error) {
         console.error('Error fetching winners:', error);

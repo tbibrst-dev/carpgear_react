@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    var ajax_object ={
+        ajax_url:"/competition/wp-admin/admin-ajax.php"
+    }
+
     jQuery(document).on('click', '.delete_comp', function (e) {
         $("#deleteModal").modal("show");
         $("#deleteModal").find('.delete_competition').attr('href', $(this).data("url"));
@@ -129,15 +133,16 @@ $(document).ready(function () {
                 show_pinned_message: $("#showpinnedMessage").is(":checked") ? 1 : 0,
             };
 
-
+            let ajaxUrl = ajax_object && ajax_object.ajax_url ? ajax_object.ajax_url : "/wp-admin/admin-ajax.php";
             console.log('data++++',data);
+            console.log('data++++ajaxUrl',ajaxUrl);
         
             jQuery.ajax({
                 type: "POST",
-                url: ajax_object.ajax_url, // Ensure this is set in your WordPress enqueue
+                url: ajaxUrl, // Ensure this is set in your WordPress enqueue
                 data: data,
                 success: function (response) {
-                    console.log(response);
+                    console.log("++++++++++++++++++", response);
                     alert('Records Saved successfully');
                     location.reload();
                 },

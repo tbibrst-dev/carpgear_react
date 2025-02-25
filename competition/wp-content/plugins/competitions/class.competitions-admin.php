@@ -200,6 +200,9 @@ class Competitions_Admin
         add_action("wp_ajax_mark_as_paid_unclaim", array('Competitions_Admin', 'mark_as_paid_unclaim'));
         add_action("wp_ajax_change_prize_title", array('Competitions_Admin', 'change_prize_title'));
         add_action("wp_ajax_validate_comp_id", array('Competitions_Admin', 'validate_comp_id'));
+
+        error_log(admin_url('admin-ajax.php'));
+
     }
 
     public static function admin_init()
@@ -2587,6 +2590,8 @@ class Competitions_Admin
     {
         global $wpdb;
 
+        // wp_send_json_success(array('message' => 'testing'));
+        // die('here');
         // Get the table name with prefix
         $table_name = $wpdb->prefix . 'global_settings';
 
@@ -2610,8 +2615,8 @@ class Competitions_Admin
         $show_pinned_message = isset($_REQUEST['show_pinned_message']) ? intval($_REQUEST['show_pinned_message']) : 0;
 
         // Log sanitized values for debugging
-        // error_log('pinned_message: ' . print_r($pinned_message, true));
-        // error_log('show_pinned_message: ' . print_r($show_pinned_message, true));
+        error_log('pinned_message: ' . print_r($pinned_message, true));
+        error_log('show_pinned_message: ' . print_r($show_pinned_message, true));
 
         // Prepare data for insert or update
         $data = array(

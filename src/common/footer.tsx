@@ -17,6 +17,8 @@ const Footer = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [apiSuccess, setApiSuccess] = useState<string>("");
   const [apiError, setApiError] = useState<string>("");
+  const S3_BASE_URL = import.meta.env.VITE_STATIC_IMAGES_URL;
+
 
   const handleSubscribe = async () => {
     let errors: Errors = {};
@@ -68,11 +70,10 @@ const Footer = () => {
       <div className="footer-section">
         <div className="container">
           <div
-            className={`${
-              pathname === "/"
+            className={`${pathname === "/"
                 ? "image-contact-field"
                 : "image-contact-field-comp"
-            }`}
+              }`}
           >
             <div className="form-footer">
               <h2>Sign up to our mailing list</h2>
@@ -171,13 +172,13 @@ const Footer = () => {
                       href="https://apps.apple.com/us/app/carp-gear-giveaways/id1513020494"
                       target="_blank"
                     >
-                      <img src="/images/single-comp-top.svg" alt="" />{" "}
+                      <img src={`${S3_BASE_URL}/images/single-comp-top.svg`} alt="" />{" "}
                     </a>
                     <a
                       href="https://play.google.com/store/apps/details?id=co.uk.carpgeargiveaways.app"
                       target="_blank"
                     >
-                      <img src="/images/single-comp-top-1.svg" alt="" />
+                      <img src={`${S3_BASE_URL}/images/single-comp-top-1.svg`} alt="" />
                     </a>
                   </div>
                   <div className="copy-right-left-two">
@@ -265,11 +266,12 @@ const Footer = () => {
                   <a href="#" title="payment">
                     {" "}
                     <img
-                      src="/images/Payment-IconsFooter.png"
-                      srcSet="/images/Payment-IconsFooter.png 1x, /images/Payment-IconsFooter2x.png 2x,"  
-                      alt="Payment-Icons"
+                      src={`${S3_BASE_URL}/images/Payment-IconsFooter.png`}
+                      srcSet={`${S3_BASE_URL}/images/Payment-IconsFooter.png 1x,${S3_BASE_URL}/images/Payment-IconsFooter2x.png 2x`}
+                      alt="Payment Icons"
                     />
-                    
+
+
                   </a>
                 </div>
               </div>
@@ -294,7 +296,7 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-            <Link
+              <Link
                 to="/legal-terms?tab=2"
                 onClick={() =>
                   localStorage.setItem(LEGAL_TERMS_ACTIVE_INDEX, "2")
@@ -302,7 +304,7 @@ const Footer = () => {
                 title="Privacy Policy & Cookie Policy"
               >
                 Website Terms of Use
-                </Link>
+              </Link>
             </li>
             <li>
               <Link
@@ -340,7 +342,7 @@ const Footer = () => {
             Images Found On This Website are Copyright Protected! Do NOT
             Download or Use For Commercial Use!
           </h6>
-          
+
         </div>
       </div>
     </>

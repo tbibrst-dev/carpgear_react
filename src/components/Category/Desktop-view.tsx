@@ -5,6 +5,8 @@ import {
   isDrawTomorrow,
   truncateText,
 } from "../../utils";
+import { getMediaUrl } from "../../utils/imageS3Url";
+
 import CountdownTimer from "../../common/Countdown";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -182,8 +184,8 @@ const DesktopViewComps: React.FC<PropsType> = ({
         }
       >
         <img
-          //src={competition.image}
-          src={competition.images_thumb_cat && competition.images_thumb_cat != null ? "https://cggprelive.co.uk/competition/wp-content/uploads/thumbs/home" + competition.images_thumb_cat : competition.image}
+          src={getMediaUrl(competition.image)}
+          // src={competition.images_thumb_cat && competition.images_thumb_cat != null ? "https://cggprelive.co.uk/competition/wp-content/uploads/thumbs/home" + competition.images_thumb_cat : competition.image}
 
           alt="" />
         {competition.promotional_messages && <div className="bottom-tag-all-comp bottom-tag-new">

@@ -180,22 +180,7 @@ const InstantWinsComps = () => {
 
 
 
-  const [metaTags, setMetaTags] = useState(null);
-
-  useEffect(() => {
-      const fetchMetaTags = async () => {
-          const response = await fetch(`https://cggprelive.co.uk/competition/index.php/wp-json/rankmath/v1/getHead?url=https://cggprelive.co.uk/competitions/instant_win_comps`);
-          const data = await response.json();
-          if (data.success) {
-              setMetaTags(data.head);
-          } else {
-              console.error('Error fetching meta tags:', data);
-          }
-      };
-      fetchMetaTags();
-  }, []);
-
-  console.log('metaTags++++',metaTags);
+ 
   return (
     <>
       <div className="comp-banner">
