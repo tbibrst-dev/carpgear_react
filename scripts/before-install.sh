@@ -4,4 +4,4 @@ set -euo pipefail
 cd /var/www/lottery || exit 1
 shopt -s dotglob extglob
 
-rm -rf !(competition|.*)
+sudo rm -rf !(competition|.*)
