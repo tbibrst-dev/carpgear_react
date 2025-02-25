@@ -1,3 +1,7 @@
-#!/bin/bash
-# Navigate to the deployment directory
-cd /var/www/lottery && shopt -s extglob dotglob && rm -rf !(competition|.*)
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd /var/www/lottery || exit 1
+shopt -s dotglob extglob
+
+rm -rf !(competition|.*)
