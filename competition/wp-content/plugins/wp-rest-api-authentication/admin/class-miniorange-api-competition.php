@@ -686,6 +686,8 @@ class Miniorange_API_Competition
 
         $prepared_query = $wpdb->prepare($query, $prepared_query_args);
 
+        error_log("+++getother+++".print_r($prepared_query,true));
+
         $results = $wpdb->get_results($prepared_query, ARRAY_A);
 
         $response = array(
