@@ -158,7 +158,7 @@ const BasketModal = () => {
                 const disbaleTickets = parseInt(competition.disable_tickets)
                 ? true
                 : false;
-                if (!isMobile && competition.via_mobile_app == 0 && !disbaleTickets) {
+                if ( !disbaleTickets) {
                   return (
                     <div
                       key={competition.id}
