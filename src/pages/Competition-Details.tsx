@@ -98,10 +98,10 @@ const CompetitionDetailsPage = () => {
         //   return values;
         // }
 
-        interface VideoItem {
-          youtube: string;
-          thumb: string;
-        }
+        // interface VideoItem {
+        //   youtube: string;
+        //   thumb: string;
+        // }
 
         // Define the structure of the transformed array
         interface GalleryVideo {
@@ -110,12 +110,12 @@ const CompetitionDetailsPage = () => {
         }
 
         // Function to map over array and extract necessary values
-        function getAllValues(arr: VideoItem[]): GalleryVideo[] {
-          return arr.map(item => ({
-            video: item.youtube,
-            thumb: item.thumb,
-          }));
-        }
+        // function getAllValues(arr: VideoItem[]): GalleryVideo[] {
+        //   return arr.map(item => ({
+        //     video: item.youtube,
+        //     thumb: item.thumb,
+        //   }));
+        // }
 
 
         if (!res.error) {
@@ -130,9 +130,12 @@ const CompetitionDetailsPage = () => {
           let videosArr: GalleryVideo[] = [];
           const parsedVideos = JSON.parse(videosString);
           if (parsedVideos && typeof parsedVideos == 'object') {
-            const videoArray = Object.values(parsedVideos) as VideoItem[];  // Convert object to array
+            const videoArray = Object.values(parsedVideos) as { vimeo?: string; youtube?: string; thumb: string }[];
 
-            videosArr = getAllValues(videoArray);  // Process the array
+            videosArr = videoArray.map(item => ({
+              video: item.vimeo || item.youtube || "",  // Use Vimeo if available, otherwise YouTube
+              thumb: item.thumb
+            })).filter(item => item.video); // Remove empty entries
           }
 
           const slideSortingString = res.data.data.slider_sorting;
@@ -330,6 +333,7 @@ const CompetitionDetailsPage = () => {
   }
 
 
+  const S3_BASE_URL = import.meta.env.VITE_STATIC_IMAGES_URL;
 
   return (
     <Fragment>
@@ -357,7 +361,7 @@ const CompetitionDetailsPage = () => {
                     target="_blank"
                   >
                     {" "}
-                    <img src="/images/get-exc-2.png" />
+                    <img src={`${S3_BASE_URL}/images/get-exc-2.png`} />
                   </a>
                   <a
                     href="https://play.google.com/store/apps/details?id=co.uk.carpgeargiveaways.app"
@@ -365,7 +369,7 @@ const CompetitionDetailsPage = () => {
                   "
                   >
                     {" "}
-                    <img src="/images/get-exc-1.png" />{" "}
+                    <img src={`${S3_BASE_URL}/images/get-exc-1.png`} />{" "}
                   </a>
                 </div>
               </div>

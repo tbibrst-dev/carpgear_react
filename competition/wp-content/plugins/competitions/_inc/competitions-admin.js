@@ -3109,6 +3109,10 @@ $(document).ready(function () {
             }
         }
 
+        if ($("#globalcustom").prop('checked') == false) {
+            updateComp = false;
+        }
+
 
         if ($("#enable_instant_wins").prop('checked') == true) {
 

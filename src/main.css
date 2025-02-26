@@ -16767,7 +16767,7 @@ div#Paris a {
   cursor: pointer;
   background-position: center;
   aspect-ratio: 1440 / 700 !important;
-  height: 100% !important;
+  /* height: 100% !important; */
 }
 
 

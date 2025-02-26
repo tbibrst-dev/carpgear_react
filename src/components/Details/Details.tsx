@@ -13,6 +13,8 @@ import { Swiper as SwiperClass } from "swiper/types"; // Import the correct type
 import { showErrorToast } from "../../showErrorToast";
 const SLIDER_TRANSIITON_SPEED = import.meta.env.VITE_SLIDER_TRANSIITON_SPEED;
 import { Tooltip } from 'react-tooltip';
+import { getMediaUrl } from "../../utils/imageS3Url";
+
 
 import {
   CART_HEADER,
@@ -890,6 +892,7 @@ const Details: React.FC<PropsType> = ({
   const startDate = new Date(competition.sale_start_date + ' ' + competition.sale_start_time);
   const endDate = new Date(competition.sale_end_date + ' ' + competition.sale_end_time);
 
+  const S3_BASE_URL = import.meta.env.VITE_STATIC_IMAGES_URL;
 
   return (
     <div>
@@ -937,7 +940,7 @@ const Details: React.FC<PropsType> = ({
                           <SwiperSlide className="swiper-slide" key={index}>
                             <div className="Single-comp-slider-data">
                               {image.type == "image" ? (
-                                <img src={image.src} alt="single competition" />
+                                <img src={getMediaUrl(image.src)} alt="single competition" />
                               ) : (
                                 <div className="swiper-video-container">
                                   <ReactPlayer
@@ -964,7 +967,7 @@ const Details: React.FC<PropsType> = ({
                         <SwiperSlide className="swiper-slide">
                           <div className="Single-comp-slider-data">
                             <img
-                              src={competition.image}
+                              src={getMediaUrl(competition.image)}
                               alt="single competition"
                             />
                           </div>
@@ -986,16 +989,16 @@ const Details: React.FC<PropsType> = ({
                       sortedGalleryItems.map((image, index) => (
                         <SwiperSlide className="swiper-slide" key={index}>
                           {image.type === "image" ? (
-                            <img src={image.src} alt="thumbnail" />
+                            <img src={getMediaUrl(image.src)} alt="thumbnail" />
                           ) : (
                             <div className="video-thumb">
                               {!image.thumb ? (
                                 <img
-                                  src="/images/blackDefault.png"
+                                  src={`${S3_BASE_URL}/images/blackDefault.png`}
                                   alt="thumbnail"
                                 />
                               ) : (
-                                <img src={image.thumb} alt="thumbnail" />
+                                <img src={getMediaUrl(image.thumb)} alt="thumbnail" />
                               )}
                               <div className="play-icon"></div>
                             </div>
@@ -1004,7 +1007,7 @@ const Details: React.FC<PropsType> = ({
                       ))
                     ) : (
                       <SwiperSlide className="swiper-slide">
-                        <img src={competition.image} alt="thumbnail" />
+                        <img src={getMediaUrl(competition.image)} alt="thumbnail" />
                       </SwiperSlide>
                     )}
                   </Swiper>

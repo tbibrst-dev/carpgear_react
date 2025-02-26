@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { InstantWinTickets, RewardsType } from "../../types";
 import DOMPurify from "dompurify";
 // import { truncateText } from "../../utils";
+import { getMediaUrl } from "../../utils/imageS3Url";
 
 interface PropsType {
   instantWins: RewardsType[];
@@ -44,7 +45,8 @@ const InstantWinsSingle: React.FC<PropsType> = ({
 
   const ChunkedRewardWins = chunkArray(rewardWins, 5);
 
-  console.log("innerWidth", innerWidth);
+  const S3_BASE_URL = import.meta.env.VITE_STATIC_IMAGES_URL;
+
 
   return (
     <section className="bait-instant-win" id="instant-win">
@@ -56,7 +58,7 @@ const InstantWinsSingle: React.FC<PropsType> = ({
               <div className="bait-reward-center">
                 <h2>
                   <div className="bait-instant-win-head-title">
-                    <img src="/images/bait-instant.png" />
+                    <img src={`${S3_BASE_URL}/images/bait-instant.png`} />
                     <svg
                       className="bait-instant-icon"
                       width="24"
@@ -179,7 +181,7 @@ const InstantWinsSingle: React.FC<PropsType> = ({
                           fill="white"
                         ></rect>
                       </svg>
-                      <img src="/images/bait-reward.png" />
+                      <img src={`${S3_BASE_URL}/images/bait-reward.png`} />
                       <h2>Reward Wins</h2>
                     </div>
                   </h2>
@@ -229,7 +231,7 @@ const InstantWinsSingle: React.FC<PropsType> = ({
                           "line-select-b"
                         }`}
                       >
-                        <img src={reward.image} alt="" />
+                        <img src={getMediaUrl(reward.image)} alt="" />
                         <div className="bait-reward-links-act">
                           <h4>{index + 1}</h4>
                         </div>
@@ -312,7 +314,7 @@ const InstantWinsSingle: React.FC<PropsType> = ({
                                 "line-select-b"
                               }`}
                             >
-                              <img src={reward.image} alt="" />
+                              <img src={getMediaUrl(reward.image)} alt="" />
                               <div className="bait-reward-links-act">
                                 <h4>{trueIndex}</h4>
                               </div>
