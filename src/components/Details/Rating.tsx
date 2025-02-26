@@ -1,4 +1,6 @@
 const Rating = () => {
+  const S3_BASE_URL = import.meta.env.VITE_STATIC_IMAGES_URL;
+
   return (
     <div>
       <div className="single-compi-top-rating">
@@ -6,7 +8,7 @@ const Rating = () => {
           <div className="single-compi-top-rating-all">
             <div className="single-compi-top-rating-left">
               <div className="single-compi-top-rating-left-one">
-                <img src="/images/stars.svg" alt="" />
+                <img src={`${S3_BASE_URL}/images/stars.svg`} alt="" />
               </div>
               <div className="single-compi-top-rating-left-two">
                 <p>
@@ -16,7 +18,7 @@ const Rating = () => {
               <div className="single-compi-top-rating-left-three">
                 <a href="#">
                   {" "}
-                  <img src="/images/reviewsio-logo.svg" alt="logo" />{" "}
+                  <img src={`${S3_BASE_URL}/images/reviewsio-logo.svg`} alt="logo" />{" "}
                 </a>
               </div>
             </div>
@@ -27,7 +29,7 @@ const Rating = () => {
                   target="_blank"
                 >
                   {" "}
-                  <img src="/images/single-comp-top.svg" alt="" />
+                  <img src={`${S3_BASE_URL}/images/single-comp-top.svg`} alt="" />
                 </a>
               </div>
               <div className="single-compi-top-rating-right-one">
@@ -36,7 +38,7 @@ const Rating = () => {
                   target="_blank"
                 >
                   {" "}
-                  <img src="/images/single-comp-top-1.svg" alt="" />{" "}
+                  <img src={`${S3_BASE_URL}/images/single-comp-top-1.svg`} alt="" />{" "}
                 </a>
               </div>
             </div>
