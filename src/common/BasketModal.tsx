@@ -156,7 +156,6 @@ const BasketModal = () => {
             ) : recommendComps.length > 0 ? (
               recommendComps.map((competition, index) => {
                 const disbaleTickets = parseInt(competition.disable_tickets);
-                console.log('+++++++++',disbaleTickets);
                 // Skip rendering if tickets are disabled
                 if (disbaleTickets) return null;
                 return (
