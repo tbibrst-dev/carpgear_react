@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "Pulling latest code from GitHub..."
+sudo -i
 cd /var/www/lottery
 
 # Reset any local changes
@@ -10,8 +11,8 @@ sudo git reset --hard
 sudo git pull origin master
 
 # Install dependencies & build React
-sudo npm install
-sudo npm run build
+sudo /root/.nvm/versions/node/v20.18.3/bin/npm install
+sudo /root/.nvm/versions/node/v20.18.3/bin/npm run build
 
 # Copy React build to Apache server root
 sudo cp -r dist/* /var/www/html/

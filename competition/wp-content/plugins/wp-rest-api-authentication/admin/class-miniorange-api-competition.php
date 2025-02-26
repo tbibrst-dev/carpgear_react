@@ -665,9 +665,9 @@ class Miniorange_API_Competition
             $prepared_query_args[] = $status;
         }
 
-        if (!empty($category)) {
-            $prepared_query_args[] = $category;
-        }
+        // if (!empty($category)) {
+        //     $prepared_query_args[] = $category;
+        // }
 
         if (!empty($current_comp)) {
             $prepared_query_args[] = $current_comp;

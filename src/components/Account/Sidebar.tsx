@@ -36,6 +36,9 @@ const Sidebar = () => {
         navigate("/");
         dispatch(setUserState(null));
         localStorage.removeItem(AUTH_TOKEN_KEY);
+        localStorage.removeItem('NONCE');
+        localStorage.removeItem('NONCE_TIMESTAMP');
+        localStorage.removeItem('UPDATE_CART_KEY');
         dispatch(setPurchasedTickets([]));
         const responseid = await CometChatUIKit.logout();
         console.log('responseid', responseid);
