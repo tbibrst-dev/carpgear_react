@@ -51,4 +51,5 @@ competition/wp-content/themes/twenty*/
 competition/wp-content/plugins/hello.php
 competition/wp-content/uploads/
 competition/.htaccess
+competition/wp-content/plugins/competitions/_inc/custom_url.js
 git.sh
