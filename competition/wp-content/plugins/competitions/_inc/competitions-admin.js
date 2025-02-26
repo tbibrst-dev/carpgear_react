@@ -2422,23 +2422,23 @@ $(document).ready(function () {
                     }
                 } else {
 
-                    // let formData = $("#savQuestionContent").serializeArray();
+                    let formData = $("#savQuestionContent").serializeArray();
 
-                    // let data = {
-                    //     action: 'save_temp_competition_record',
-                    // };
+                    let data = {
+                        action: 'save_temp_competition_record',
+                    };
 
-                    // $(formData).each(function (index, field) {
-                    //     data[field.name] = field.value;
-                    // });
+                    $(formData).each(function (index, field) {
+                        data[field.name] = field.value;
+                    });
 
-                    // data.save_original = false;
+                    data.save_original = false;
 
-                    // data.correct_answer = $('.correct-answer:checked').closest(".ans_content").find(".question-ans").val();
+                    data.correct_answer = $('.correct-answer:checked').closest(".ans_content").find(".question-ans").val();
 
-                    // saveTempCompetition(data);
+                    saveTempCompetition(data);
 
-                    // return true;
+                    return true;
 
                 }
 
@@ -3110,7 +3110,7 @@ $(document).ready(function () {
         }
 
         if ($("#globalcustom").prop('checked') == false) {
-            updateComp = false;
+            updateComp = true;
         }
 
 
