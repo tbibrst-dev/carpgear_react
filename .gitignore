@@ -47,7 +47,6 @@ competition/license.txt
 competition/readme.html
 competition/wp-*.php
 competition/xmlrpc.php
-competition/wp-content/themes/twenty*/
 competition/wp-content/plugins/hello.php
 competition/wp-content/uploads/
 competition/.htaccess

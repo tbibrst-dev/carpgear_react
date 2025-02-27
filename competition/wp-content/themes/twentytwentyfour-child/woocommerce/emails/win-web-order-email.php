@@ -1,0 +1,60 @@
+<?php
+
+if (!defined('ABSPATH')) {
+    exit; // Exit if accessed directly.
+}
+
+$email_heading = "";
+do_action('woocommerce_email_header', $email_heading, $email);
+?>
+<link href="https://development.brstdev.com/competition/fonts/MozaicGEO.css" rel="stylesheet" />
+<div style="width: 100%; max-width: 450px; margin: auto;">
+    <div style="display: block; gap: 24px;">
+
+      
+        <p
+            style="font-family: 'Roboto', sans-serif;text-align: center; color: #fff !important; font-size: 16px; font-weight: 100; line-height: 22.35px;">
+            Well done, you legend! we have processed your prize, and it's on its way!
+
+        </p>
+
+        <div style="margin-top:24px;">
+            <p
+                style="margin-bottom:0px;text-align: center;text-transform: uppercase;font-family: 'Roboto', sans-serif;font-size: 12px;font-weight: 400;line-height: 24px;color: #FFFFFF;opacity: 50%;">
+                Competition
+            </p>
+            <p class="competition-title"
+                style="margin-top:0px;text-transform: uppercase;font-family: 'Roboto', sans-serif;font-size: 15px;font-weight: 600;line-height: 18px;text-align: center;color: #fff;">
+                <?php printf(esc_html($comp_title)); ?>
+            </p>
+        </div>
+
+        <div class="instant-win-prize-details-container"
+            style="max-width: 450px; padding: 12px; background: #202323; border-radius: 8px; border: 1px solid #FFFFFF1A; margin-top: 20px; background-color: #FFFFFF1A;">
+            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"
+                style="width: 100%; height: 100%;">
+                <tr>
+                    <td style="width: 100px; padding: 0;">
+                        <img src="<?php printf(esc_html($image)); ?>" alt=""
+                            style="width: 100px;  border-radius: 4px; display: block;" />
+                    </td>
+                    <td style="padding-left: 15px; vertical-align: middle;">
+                        <h1
+                            style="color: #FFFFFF; margin: 10px 0; font-size: 18px; font-family: 'Roboto', sans-serif; font-weight: 900; line-height: 22px;">
+                            <?php printf(esc_html($title)); ?>
+                        </h1>
+                        <div
+                            style="opacity: 50%; display: inline-block; padding: 4px 8px; border-radius: 4px; background-color: #333838; border: 1px solid #282b2b;">
+                            <p
+                                style="font-family: 'Roboto', sans-serif; font-size: 12px; font-weight: 400; line-height: 13.2px; color: #FFFFFF; margin: 0; text-transform: uppercase; opacity: 75%;">
+                                TICKET NUMBER: <?php printf(esc_html($ticket_number)); ?>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+   
+</div>
