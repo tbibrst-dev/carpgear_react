@@ -147,9 +147,9 @@ foreach ($com_winners as $com_winner) {
 
             <div class="row">
 
-                <h3 class="col-xxl-2 col-md-4 mb-2 text-white w-97">Entries</h3>
+                <h3 class="col-md-1 text-white w-97">Entries</h3>
 
-                <div class="col-xxl-5 col-md-8 mb-2">
+                <div class="col-md-6">
                     <div class="btn-group" role="group" aria-label="Status Filter">
                         <a href="<?php echo admin_url('admin.php?page=entrants&id=' . $record); ?>"
                             class="btn btn-sm btn-accent">Entrants</a>
@@ -166,7 +166,7 @@ foreach ($com_winners as $com_winner) {
                     </div>
                 </div>
 
-                <div class="col-xxl-3 col-md-6 mb-2">
+                <div class="col-md-3">
                     <form action="" method="get">
                         <input type="hidden" name="page" value="entrants" />
                         <input type="hidden" name="id" value="<?php echo $record; ?>" />
@@ -175,7 +175,7 @@ foreach ($com_winners as $com_winner) {
                     </form>
                 </div>
 
-                <div class="col-xxl-2 col-md-6 mb-2 text-end">
+                <div class="col-md-2 text-end">
                     <div class="dropdown">
                         <button class="btn btn-secondary btn-accent create_btn dropdown-toggle" type="button"
                             data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="6,6" id="dropdownExportBtn">
