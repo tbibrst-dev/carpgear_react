@@ -179,8 +179,7 @@ $open_competitions = $wpdb->get_results($query, ARRAY_A);
                             <div class="form-group">
                                 <label class="modal-label">Drag & drop a file or</label>
                                 <br />
-
-                                <label for="csvFile" class="btn btn-sm btn-accent btn-acc-sm">Choose a file</label>
+                                <!-- <label for="csvFile" class="btn btn-sm btn-accent btn-acc-sm">Choose a file</label> -->
                                 <input type="file" id="csvFile" accept=".csv" >
                             </div>
 

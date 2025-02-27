@@ -1355,6 +1355,7 @@ $(document).ready(function () {
     var usedTickets = [];
     console.log("Drag and drop script loaded!");
 
+
     document.getElementById('csvFile').addEventListener('change', handleCSVFile);
     // document.addEventListener("DOMContentLoaded", function () {
         

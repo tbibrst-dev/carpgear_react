@@ -17,7 +17,7 @@ import { useSelector } from "react-redux";
 import { showErrorToast } from '../../showErrorToast';
 
 import { RootState } from "../../redux/store";
-import { isMobile } from 'react-device-detect';
+// import { isMobile } from 'react-device-detect';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 
@@ -81,7 +81,7 @@ const Competitions = () => {
 
       console.log('res---',res);
 
-      if (res.data.success === "true") {
+      if (res.data.success == "true"  || res.data.success == true) {
         const initialQuantities: { [key: number]: number } = {};
         // const newCompetitions = [...competitions, ...res.data.data];
         res.data.data.forEach((competition: CompetitionType) => {
@@ -255,7 +255,7 @@ const Competitions = () => {
     };
   }, []);
 
-  console.log("Fetching page:", page);
+  console.log("Fetching page competitions:", competitions);
 
   return (
     <>
@@ -331,7 +331,7 @@ const Competitions = () => {
                     {competitions.length > 0
                       ? competitions?.map((competition) => (
 
-                        !isMobile && competition.via_mobile_app == 0 ?
+                         
                           <DesktopViewComps
                             key={competition.id}
                             quantities={quantities}
@@ -344,7 +344,7 @@ const Competitions = () => {
                               handleQuantityChangeInput
                             }
                           />
-                          : ""
+                          
 
                       ))
                       : !fetching && (
