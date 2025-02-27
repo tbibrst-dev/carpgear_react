@@ -170,20 +170,28 @@ $open_competitions = $wpdb->get_results($query, ARRAY_A);
     <div class="modal fade" id="csvModal" tabindex="-1" aria-labelledby="csvModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="btn-close close_btn" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
-                    <div class="csv_modal_content">
-                        <div class="form-group">
-                            <label class="modal-label">Drag & drop a file or</label>
-                            <br />
-                            <label for="csvFile" class="btn btn-sm btn-accent btn-acc-sm">Choose a file</label>
-                            <input type="file" id="csvFile" accept=".csv" class="d-none">
+                <div id="drop-zone" class="drop-zone">
+                    <div class="modal-body">
+
+                        <button type="button" class="btn-close close_btn" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                        <div class="csv_modal_content">
+                            <div class="form-group">
+                                <label class="modal-label">Drag & drop a file or</label>
+                                <br />
+
+                                <label for="csvFile" class="btn btn-sm btn-accent btn-acc-sm">Choose a file</label>
+                                <input type="file" id="csvFile" accept=".csv" >
+                            </div>
+
                         </div>
                     </div>
+
                 </div>
             </div>
+
         </div>
     </div>
+</div>
 
 </div>

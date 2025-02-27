@@ -1806,7 +1806,7 @@ class Miniorange_API_Authentication_Admin
 			}
 
 			$response = wp_remote_post(
-				'https://stagingbackend.cggprelive.co.uk/index.php/wp-json/?rest_route=/wc/store/v1/cart/add-item',
+				FRONTEND_URL.'index.php/wp-json/?rest_route=/wc/store/v1/cart/add-item',
 				array(
 					'body' => json_encode($body),
 					'headers' => $headers
@@ -1996,7 +1996,7 @@ class Miniorange_API_Authentication_Admin
 			$cookies = implode("; ", $cookies);
 
 			$response = wp_remote_post(
-				'https://stagingbackend.cggprelive.co.uk/index.php/wp-json/?rest_route=/wc/store/v1/cart/update-item',
+				FRONTEND_URL.'index.php/wp-json/?rest_route=/wc/store/v1/cart/update-item',
 				array(
 					'body' => json_encode($body),
 					'headers' => [
@@ -2080,7 +2080,7 @@ class Miniorange_API_Authentication_Admin
 			$cookies = implode("; ", $cookies);
 
 			$response = wp_remote_get(
-				'https://stagingbackend.cggprelive.co.uk/index.php/wp-json/?rest_route=/wc/store/v1/cart/items',
+				FRONTEND_URL.'index.php/wp-json/?rest_route=/wc/store/v1/cart/items',
 				array(
 					'headers' => [
 						'X-WC-Store-api-nonce' => $nonce,
@@ -2154,7 +2154,7 @@ class Miniorange_API_Authentication_Admin
 			$cookies = implode("; ", $cookies);
 
 			$response = wp_remote_post(
-				'https://stagingbackend.cggprelive.co.uk/index.php/wp-json/?rest_route=/wc/store/v1/cart/remove-item',
+				FRONTEND_URL.'/index.php/wp-json/?rest_route=/wc/store/v1/cart/remove-item',
 				array(
 					'body' => json_encode($body),
 					'headers' => [
@@ -2204,7 +2204,7 @@ class Miniorange_API_Authentication_Admin
 
 			// Clear all items from the WooCommerce cart
 			$clear_cart_response = wp_remote_post(
-				'https://stagingbackend.cggprelive.co.uk/index.php/wp-json/?rest_route=/wc/store/v1/cart/empty',
+				FRONTEND_URL.'index.php/wp-json/?rest_route=/wc/store/v1/cart/empty',
 				array(
 					'headers' => [
 						'X-WC-Store-api-nonce' => $nonce,

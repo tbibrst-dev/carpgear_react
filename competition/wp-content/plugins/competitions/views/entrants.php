@@ -143,7 +143,7 @@ foreach ($com_winners as $com_winner) {
 ?>
 <div id="competitions-plugin-container" class="competition_entries">
     <div class="header_content">
-        <div class="container-fluid">
+        <div class="container-fluid admin-tab-entrants">
 
             <div class="row">
 

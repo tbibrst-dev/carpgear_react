@@ -251,7 +251,7 @@ if (isset($_REQUEST['remove_temp']) && $_REQUEST['remove_temp'] > 0) {
                         admin_url('admin.php')
                     );
 
-                    $view_url = "https://cggprelive.co.uk/competition/details/";
+                    $view_url = FRONTEND_URL."competition/details/";
 
                     $result = preg_split('/\W+/', $record['title']);
 

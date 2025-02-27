@@ -1353,8 +1353,48 @@ $(document).ready(function () {
     }
 
     var usedTickets = [];
+    console.log("Drag and drop script loaded!");
 
     document.getElementById('csvFile').addEventListener('change', handleCSVFile);
+    // document.addEventListener("DOMContentLoaded", function () {
+        
+    //     const dropZone = document.getElementById("drop-zone");
+    //     const fileInput = document.getElementById("csvFile");
+    
+    //     // Prevent default behavior for drag events
+    //     ["dragenter", "dragover", "dragleave", "drop"].forEach(eventName => {
+    //         dropZone.addEventListener(eventName, (e) => {
+    //             e.preventDefault();
+    //             e.stopPropagation();
+    //         });
+    //     });
+    
+    //     // Highlight drop zone when file is dragged over
+    //     ["dragenter", "dragover"].forEach(eventName => {
+    //         dropZone.addEventListener(eventName, () => {
+    //             dropZone.classList.add("highlight");
+    //         });
+    //     });
+    
+    //     // Remove highlight when dragging leaves or file is dropped
+    //     ["dragleave", "drop"].forEach(eventName => {
+    //         dropZone.addEventListener(eventName, () => {
+    //             dropZone.classList.remove("highlight");
+    //         });
+    //     });
+    
+    //     // Handle file drop
+    //     dropZone.addEventListener("drop", (e) => {
+    //         const files = e.dataTransfer.files;
+    //         if (files.length) {
+    //             fileInput.files = files; // Assign dropped file to input
+    //             handleCSVFile({ target: fileInput }); // Trigger the existing file handling function
+    //         }
+    //     });
+    
+    //     // Handle file selection via click (already in your code)
+    //     fileInput.addEventListener("change", handleCSVFile);
+    // });
 
     function handleCSVFile(event) {
 
@@ -3044,12 +3084,6 @@ $(document).ready(function () {
     }
 
 
-    // $("#save_as_draft_edit").on("click", function (e) {
-    //     e.preventDefault();
-
-    //     window.location.href = 'https://cggprelive.co.uk/competition/wp-admin/admin.php?page=competitions_menu';
-
-    // })
 
 
     $("#save_comp").on("click", function (e) {

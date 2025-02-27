@@ -347,7 +347,6 @@ const SwiperSlideComponent: React.FC<PropTypes> = ({
                     }}>
                       <img
                         src={getMediaUrl(competition.image)}
-                        // src={competition.images_thumb && competition.images_thumb != null ? "https://cggprelive.co.uk/competition/wp-content/uploads/thumbs/list" + competition.images_thumb : competition.image}
                         alt="competition image"
                         loading="lazy"
                       />

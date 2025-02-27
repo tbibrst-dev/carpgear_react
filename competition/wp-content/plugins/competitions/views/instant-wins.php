@@ -266,7 +266,7 @@ $records = $wpdb->get_results($query, ARRAY_A);
 ?>
 <div id="competitions-plugin-container" class="competition_entries">
     <div class="header_content">
-        <div class="container-fluid">
+        <div class="container-fluid admin-tab-entrants">
 
             <div class="row">
                 <h3 class="col-md-1 text-white w-97">Entries</h3>

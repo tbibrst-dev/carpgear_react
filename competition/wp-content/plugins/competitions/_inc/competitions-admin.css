@@ -1823,6 +1823,11 @@ div#gallery-image-container {
   gap: 5px;
 }
 
+
+.admin-tab-entrants .col-md-6{
+  padding-left: 50px;
+}
+
 @media (max-width: 1399.98px) {
   .ticket_sec h3 {
     margin-bottom: 15px;

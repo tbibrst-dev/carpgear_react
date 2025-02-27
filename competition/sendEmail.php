@@ -7,120 +7,13 @@
     
     require_once ('wp-load.php');
 
-    // $url = "https://cggprelive.co.uk/competition/index.php/wp-json/wp/v2/winners?_embed&type=winners&status=publish&filter[orderby]=date&order=desc&&filter[posts_per_page]=5";
-    
-    // $response = wp_remote_get($url);
-    
-    // if (is_array($response) && !is_wp_error($response)) {
-    //     $headers = $response['headers']; // array of http header lines
-    //     $body = json_decode($response['body'], true); // use the content
-    // }
-    
-    // echo "<pre>";
-    // print_r($body);
-    // echo "</pre>";
-    // exit;
+  
     
     require_once ("wp-content/plugins/competitions/class.competitions.php");
 
     global $wpdb;
 
-    //Competitions_Admin::competitionRewardPrizeLevelReachedNotification();
     
-    //exit;
-    
-    /*$body = [
-        "input_1_1" => "Team",
-        "input_1_2" => "Dev",
-        "input_2" => "testing@gmail.com",
-        "input_3" => "9080980991"
-    ];
-
-    $form_id = 1;
-    $input_values = array('form_id' => 1);
-    $input_values['1.3'] = 'Team';
-    $input_values['1.6'] = 'Dev';
-    $input_values['2'] = 'testing@gmail.com';
-    $input_values['4'] = '9080980991';
-    $input_values['3'] = 'This is a test content';
-    //$input_values['gform_save'] = true;
-    
-    $result = GFAPI::add_entry($input_values, $form_id);
-    if (!is_wp_error($result)) {
-        $resume_token = rgar($result, 'resume_token');
-        $resume_message = rgar($result, 'confirmation_message');
-    }
-    echo '<pre>';
-    print_r($result);
-    echo '</pre>';
-    exit;
-
-    $response = wp_remote_post(
-        'https://cggprelive.co.uk/competition/wp-json/gf/v2/forms/1/submissions',
-        array(
-            'body' => json_encode($body),
-            'headers' => [
-                'Content-Type' => 'application/json',
-            ]
-        )
-    );
-
-    //$response = wp_remote_retrieve_body($response);
-    
-    echo '<pre>';
-    print_r($result);
-    echo '</pre>';
-    exit;
-
-
-    require_once ("wp-content/plugins/competitions/class.competitions.php");
-
-    global $wpdb;
-
-    Competitions_Admin::competitionSoldOutNotification();
-
-    exit;
-
-    $args = array(
-        'role' => 'administrator',
-    );
-    $users = get_users($args);
-
-    foreach ($users as $user) {
-        echo $user->user_email;
-    }
-    echo '<pre>';
-    print_r($users);
-    echo '</pre>';
-    exit;
-
-    //echo date("Y-m-d");
-    
-    exit;
-
-    $users = get_users(array('fields' => array('ID')));
-
-    foreach ($users as $user) {
-
-        echo $user->ID;
-        if ($user->ID == '1' || $user->ID == '9' || $user->ID == '6' || $user->ID == '5' || $user->ID == '7')
-            continue;
-        $userMeta = get_user_meta($user->ID);
-
-        if (!isset($userMeta['limit_value']))
-            update_user_meta($user->ID, 'limit_value', false);
-        if (!isset($userMeta['limit_duration']))
-            update_user_meta($user->ID, 'limit_duration', false);
-        if (!isset($userMeta['lockout_period']))
-            update_user_meta($user->ID, 'lockout_period', false);
-        if (!isset($userMeta['current_spending']))
-            update_user_meta($user->ID, 'current_spending', false);
-        if (!isset($userMeta['lock_account']))
-            update_user_meta($user->ID, 'lock_account', false);
-        if (!isset($userMeta['locking_period']))
-            update_user_meta($user->ID, 'locking_period', false);
-    }
-    exit;*/
 
     $mailSent = 0;
 

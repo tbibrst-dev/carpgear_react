@@ -4795,7 +4795,7 @@ class Competitions_Admin
                                     </svg> '
                                 : ''
                             ) . $prize_result['ticket_number'] .
-                                "<a class='mark-paid' href='#' data-url='#' data-id='" . $prize_result['id'] . "'  data-set='" . $prize_result['ctype'] . "'>Mark as paid</a>",
+                                "<a class='mark-paid' href='#' data-url='#' data-id='" . $prize_result['id'] . "'  data-set='" . $prize_result['ctype'] . "'></a>",
                             'order_id' => $order_id,
                             'title' => ($prize_result['edited_title'] && $prize_result['edited_title'] != '' ?  $prize_result['edited_title'] : $prize_result['prize_title']) . '<span class="edit-prize-title"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
                             <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"/>
@@ -5123,8 +5123,8 @@ class Competitions_Admin
                         "
                     
 
-                    SELECT cw.ticket_number,cw.id, cw.edited_title AS edited_title ,cw.prize_type AS prize_title, cw.prize_type, c.web_order AS webOrder, c.title AS comp_title, 
-                    ct.order_id, u.display_name, u.user_email,u.id AS user_id ,'Cash' AS ctype ,cpd.address_line1, cpd.address_line2,cpd.city,cpd.state,cpd.code,cpd.order_id , 'cash' AS mode ,  c.id AS main_comp_id
+                    SELECT cw.ticket_number,cw.id as main_id, cw.edited_title AS edited_title ,cw.prize_type AS prize_title, cw.prize_type, c.web_order AS webOrder, c.title AS comp_title, 
+                    ct.order_id, u.display_name, u.user_email,u.id AS user_id ,cw.prize_type AS ctype  , 'cash' AS mode ,  c.id AS main_comp_id,cw.claimed_as
                     FROM {$wpdb->prefix}competition_winners AS cw
                     INNER JOIN {$wpdb->prefix}competitions AS c ON c.id = cw.competition_id
                     INNER JOIN {$wpdb->prefix}competition_tickets AS ct ON ct.competition_id = cw.competition_id                    
@@ -5220,7 +5220,22 @@ class Competitions_Admin
                                     $billing_address .= " " . $query_claimed_address_results[0]['code'];
                             }
 
+                            // Prepare the SQL query with placeholders for values
+                            $query_zempler = $wpdb->prepare(
+                                "
+                                    SELECT * 
+                                    FROM {$wpdb->prefix}zempler_payments 
+                                    WHERE comptetion_id = %d 
+                                    AND prize_id = %d 
+                                    
+                                    ",
 
+                                $prize_result['main_comp_id'],
+                                $prize_result['main_id']
+                            );
+
+                            // Execute the query
+                            $query_zempler_data = $wpdb->get_results($query_zempler, ARRAY_A);
 
                             $data[] = [
                                 'id' => '<input type="checkbox" class="user-checkbox" data-id="' . $prize_result['order_id'] . '" data-compid="' . $prize_result['main_comp_id'] . '" />',
@@ -5235,6 +5250,7 @@ class Competitions_Admin
                                 <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"/>
                               </svg> </span>',
                                 'type' => $prize_result['ctype'],
+                                'claimed' => $prize_result['claimed_as'],
                                 'user_name' => $prize_result['display_name'],
                                 'user_email' => $prize_result['user_email'],
                                 'phone' => $user_data['billing_phone'][0],
@@ -5290,8 +5306,8 @@ class Competitions_Admin
 
                     $query = $wpdb->prepare(
                         "
-                    SELECT ipt.ticket_number,ipt.id, ipt.edited_title_instant AS edited_title, ip.title AS prize_title, ip.type, ip.web_order_instant AS webOrder , c.title AS comp_title, 
-                    ct.order_id, u.display_name, u.user_email,u.id AS user_id,'Prize' AS ctype  , 'instant' AS mode , c.id AS main_comp_id
+                    SELECT ipt.ticket_number,ipt.id as main_id, ipt.edited_title_instant AS edited_title, ip.title AS prize_title, ip.type, ip.web_order_instant AS webOrder , c.title AS comp_title, 
+                    ct.order_id, u.display_name, u.user_email,u.id AS user_id,ip.type AS ctype  , 'instant' AS mode , c.id AS main_comp_id,ipt.claimed_as
                     FROM {$wpdb->prefix}comp_instant_prizes_tickets AS ipt
                     INNER JOIN {$wpdb->prefix}competitions AS c ON c.id = ipt.competition_id
                     INNER JOIN {$wpdb->prefix}competition_tickets AS ct ON ct.competition_id = ipt.competition_id
@@ -5308,7 +5324,7 @@ class Competitions_Admin
                     UNION
                     
                     SELECT rw.ticket_number,rw.id,  rw.edited_title_reward AS edited_title, r.title AS prize_title, r.type, r.web_order_reward AS webOrder, c.title AS comp_title, 
-                    ct.order_id, u.display_name, u.user_email,u.id AS user_id ,'Prize' AS ctype , 'reward' AS mode , c.id AS main_comp_id
+                    ct.order_id, u.display_name, u.user_email,u.id AS user_id ,r.type AS ctype , 'reward' AS mode , c.id AS main_comp_id,rw.claimed_as
                     FROM {$wpdb->prefix}comp_reward_winner AS rw
                     INNER JOIN {$wpdb->prefix}competitions AS c ON c.id = rw.competition_id
                     INNER JOIN {$wpdb->prefix}competition_tickets AS ct ON ct.competition_id = rw.competition_id
@@ -5402,19 +5418,37 @@ class Competitions_Admin
                                     $billing_address .= " " . $query_claimed_address_results[0]['code'];
                             }
 
+                              // Prepare the SQL query with placeholders for values
+                              $query_zempler = $wpdb->prepare(
+                                "
+                                    SELECT * 
+                                    FROM {$wpdb->prefix}zempler_payments 
+                                    WHERE comptetion_id = %d 
+                                    AND prize_id = %d 
+                                    
+                                    ",
+
+                                $prize_result['main_comp_id'],
+                                $prize_result['main_id']
+                            );
+
+                            // Execute the query
+                            $query_zempler_data = $wpdb->get_results($query_zempler, ARRAY_A);
+
                             $data[] = [
-                                'id' => '<input type="checkbox" class="user-checkbox" data-id="' . $prize_result['order_id'] . '" data-compid="' . $prize_result['main_comp_id'] . '" />',
+                                'id' => '<input type="checkbox" class="user-checkbox" data-id="' . $prize_result['order_id'] . '"   data-mainid="' . $prize_result['main_id'] . '"  data-compid="' . $prize_result['main_comp_id'] . '"/>',
                                 'ticket_number' => ($prize_result['webOrder'] == 1 ?
                                     '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
                                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
                                 </svg> '
                                     : ''
-                                ) . $prize_result['ticket_number'] . "<a class='mark-paid' href='#' data-url='#' data-id='" . $prize_result['id'] . "'  data-set='" . $prize_result['mode'] . "'></a>",
+                                ) . $prize_result['ticket_number'] . "<a class='mark-paid' href='#' data-url='#' data-id='" . $prize_result['main_id'] . "'  data-set='" . $prize_result['mode'] . "'></a>",
                                 'order_id' => $order_id,
                                 'title' => ($prize_result['edited_title'] && $prize_result['edited_title'] != '' ?  $prize_result['edited_title'] : $prize_result['prize_title']) . '<span class="edit-prize-title"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
                                 <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"/>
                               </svg> </span>',
                                 'type' => $prize_result['ctype'],
+                                'claimed' => $prize_result['claimed_as'],
                                 'user_name' => $prize_result['display_name'],
                                 'user_email' => $prize_result['user_email'],
                                 'phone' => $user_data['billing_phone'][0],

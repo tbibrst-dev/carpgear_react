@@ -653,8 +653,8 @@ const BasketDynamic: React.FC<PropsTypes> = ({
                               <span>
                               £{strikePrice.toFixed(2)}
 
-                                </span> 
-                                Total
+                                </span> Total
+                                
                             </>
                           ) : (
                             <><span>£{totalPrice.toFixed(2)}</span> Total</>
