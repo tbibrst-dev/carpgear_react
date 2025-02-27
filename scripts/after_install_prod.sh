@@ -1,6 +1,7 @@
 #!/bin/bash
 cd /var/www/lottery
 
+#Installing_Node
 /usr/bin/npm install
 /usr/bin/node run build
 

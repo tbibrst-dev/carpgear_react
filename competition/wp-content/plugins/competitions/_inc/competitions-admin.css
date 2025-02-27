@@ -884,10 +884,14 @@ div#gallery-image-container {
 #csvModal .csv_modal_content {
   height: 188px;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   width: 100%;
   justify-content: center;
   border: 2px dashed #989898;
+}
+
+#csvModal .csv_modal_content #csvFile{
+  height:  188px;
 }
 
 #csvModal .modal-body {
