@@ -182,7 +182,6 @@ const DesktopViewComps: React.FC<PropsType> = ({
       >
         <img
           src={getMediaUrl(competition.image)}
-          // src={competition.images_thumb_cat && competition.images_thumb_cat != null ? "https://cggprelive.co.uk/competition/wp-content/uploads/thumbs/home" + competition.images_thumb_cat : competition.image}
 
           alt="" />
         {competition.promotional_messages && <div className="bottom-tag-all-comp bottom-tag-new">

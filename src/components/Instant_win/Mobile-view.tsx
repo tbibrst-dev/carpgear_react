@@ -20,6 +20,7 @@ import { useCallback, useEffect, useState } from "react";
 import { NavigateFunction, useNavigate } from "react-router";
 // import toast from "react-hot-toast";
 import {showErrorToast} from "../../showErrorToast";
+import { getMediaUrl } from "../../utils/imageS3Url";
 
 import Slider from "@mui/material/Slider";
 
@@ -180,8 +181,7 @@ const MobileViewComps: React.FC<PropsType> = ({
             }
           >
             <img
-            // src={competition.image}
-        src={competition.images_thumb_cat && competition.images_thumb_cat != null ? "https://cggprelive.co.uk/competition/wp-content/uploads/thumbs/home"+ competition.images_thumb_cat : competition.image  }
+            src={getMediaUrl(competition.image)}
              
              />
           </div>
