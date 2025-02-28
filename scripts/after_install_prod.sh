@@ -2,12 +2,15 @@
 echo "Switching to Document Root"
 cd /var/www/lottery
 
+#Removing Node_Modules
+#rm -rf  node_modules/
+
 # Installing Node dependencies
 echo "Installing Node dependencies..."
-/usr/bin/npm install
+/usr/bin/npm install --legacy-peer-deps
 
 echo "Building React app..."
-/usr/bin/node run build
+/usr/bin/npm run build
 
 # Copy React build to Apache server root
 echo "Copying React build to Apache server root..."

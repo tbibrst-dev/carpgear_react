@@ -13,6 +13,7 @@
 error_reporting(E_ALL & ~E_DEPRECATED & ~E_STRICT);
 ini_set('display_errors', 1);
 
+
 // Development
 // error_reporting(E_ALL);
 // ini_set('display_errors', 1);
@@ -66,7 +67,7 @@ $config['images'] = array(
 $config['backends'][] = array(
     'name' => 'default',
     'adapter' => 'local',
-    'baseUrl' => FRONTEND_URL. 'competition/wp-content/uploads/',
+    'baseUrl' => $GLOBALS['FRONTEND_URL']. 'competition/wp-content/uploads/',
     //  'root'         => '', // Can be used to explicitly set the CKFinder user files directory.
     'chmodFiles' => 0777,
     'chmodFolders' => 0777,
