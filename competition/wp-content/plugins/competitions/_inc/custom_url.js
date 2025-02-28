@@ -1,1 +1,0 @@
-var base_wp_url = "https://staging.cggprelive.co.uk/competition";
