@@ -17330,6 +17330,8 @@ div#Paris a {
 .thumbnail-swiper img {
   height: 101px !important;
   border-radius: 8px;
+  object-fit: cover;
+  cursor: pointer;
 }
 
 .thumbnail-swiper .swiper-slide-thumb-active {

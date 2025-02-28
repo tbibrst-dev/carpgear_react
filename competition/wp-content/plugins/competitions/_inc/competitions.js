@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    var ajax_object ={
-        ajax_url:"/competition/wp-admin/admin-ajax.php"
+    var ajax_object = {
+        ajax_url: "/competition/wp-admin/admin-ajax.php"
     }
 
     // console.log('++++++++++++++++++base_wp_url',base_wp_url);
@@ -100,7 +100,7 @@ $(document).ready(function () {
                     location.reload();
                 },
             });
-           
+
 
 
         })
@@ -125,7 +125,7 @@ $(document).ready(function () {
                 },
             });
 
-            
+
         })
 
         $(".managePinnedMessage").on("click", function () {
@@ -136,9 +136,9 @@ $(document).ready(function () {
             };
 
             let ajaxUrl = ajax_object && ajax_object.ajax_url ? ajax_object.ajax_url : "/wp-admin/admin-ajax.php";
-            console.log('data++++',data);
-            console.log('data++++ajaxUrl',ajaxUrl);
-        
+            console.log('data++++', data);
+            console.log('data++++ajaxUrl', ajaxUrl);
+
             jQuery.ajax({
                 type: "POST",
                 url: ajaxUrl, // Ensure this is set in your WordPress enqueue
@@ -154,7 +154,7 @@ $(document).ready(function () {
                 },
             });
         });
-        
+
 
 
     }
@@ -490,7 +490,13 @@ $(document).ready(function () {
 
             let compData = currentElem.data();
 
+            console.log('here main', compData);
+
+
             let newValue = $(this).closest("div").find(".add_tickets_input").val();
+
+            console.log('here newValue', newValue);
+
 
             let InputValue = parseInt(newValue);
             let TicketToAdd = 0;
@@ -500,78 +506,162 @@ $(document).ready(function () {
             let AlreadyHaveTickets = compData.purchased;
 
 
-            // if no ticket add in input
-            if (InputValue == '' || InputValue == 0) {
-                alert("Please add some value to add tickets");
-                return true;
-            }
+            // // if no ticket add in input
+            // if (InputValue == '' || InputValue == 0) {
+            //     alert("Please add some value to add tickets");
+            //     return true;
+            // }
 
-            //if competiton is closed or finished
-            if (compData.status == 'Closed' || compData.status == 'Finished') {
-                alert("Oops! You cannot buy for " + compData.status + " Competition");
-                return true;
-            }
+            // //if competiton is closed or finished
+            // if (compData.status == 'Closed' || compData.status == 'Finished') {
+            //     alert("Oops! You cannot buy for " + compData.status + " Competition");
+            //     return true;
+            // }
 
 
-            //if reamining tickets not availbale
-            if (RemainingTickets == 0) {
-                alert("Oops! It seems all tickets are sold for this competition. We will credit your account with points for each ticket over the limit.");
-                TicketToAdd = 0;
-                PointsToAdd = InputValue;
-            }
+            // //if reamining tickets not availbale
+            // if (RemainingTickets == 0) {
+            //     alert("Oops! It seems all tickets are sold for this competition. We will credit your account with points for each ticket over the limit.");
+            //     TicketToAdd = 0;
+            //     PointsToAdd = InputValue;
+            // }
 
             //if reamining tickets are available greater then added tickets
-            if (RemainingTickets >= InputValue) {
+            // if (RemainingTickets >= InputValue) {
 
-                if (AlreadyHaveTickets >= MaxTicketsPerPerson) {
-                    alert("Oops! It seems you've already bought " + compData.purchased + " tickets for this competition. We will credit your account with points for each ticket over the limit.");
-                    PointsToAdd = InputValue;
-                    TicketToAdd = 0;
-                }
+            //     console.log('here 1');
 
-                let ticketsCanbeAdd = MaxTicketsPerPerson - AlreadyHaveTickets;
-                if (ticketsCanbeAdd == 0) {
-                    alert("Oops! It seems you've already bought " + compData.purchased + " tickets for this competition. We will credit your account with points for each ticket over the limit.");
-                    PointsToAdd = InputValue;
-                    TicketToAdd = 0;
-                }
+            //     if (AlreadyHaveTickets >= MaxTicketsPerPerson) {
+            //         alert("Oops! It seems you've already bought " + compData.purchased + " tickets for this competition. We will credit your account with points for each ticket over the limit.");
+            //         PointsToAdd = InputValue;
+            //         TicketToAdd = 0;
+            //     }
+            //     let ticketsCanbeAdd = MaxTicketsPerPerson - AlreadyHaveTickets;
+            //     if (ticketsCanbeAdd == 0) {
+            //         alert("Oops! It seems you've already bought " + compData.purchased + " tickets for this competition. We will credit your account with points for each ticket over the limit.");
+            //         PointsToAdd = InputValue;
+            //         TicketToAdd = 0;
+            //     } else {
 
-
-            }
+            //         if (ticketsCanbeAdd < InputValue) {
+            //             let allowedticekt = InputValue - ticketsCanbeAdd;
+            //             let allowedpoints = InputValue - allowedticekt;
+            //             PointsToAdd = allowedpoints;
+            //             TicketToAdd = allowedticekt;
+            //         } else {
+            //             TicketToAdd = InputValue;
+            //             PointsToAdd = 0;
+            //         }
+            //     }
+            // }
 
             //if reamining tickets are less then available  added tickets
-            if (RemainingTickets < InputValue && RemainingTickets > 0) {
+            // if (RemainingTickets < InputValue && RemainingTickets > 0) {
+            //     console.log('here 2');             
 
+            //     if (AlreadyHaveTickets >= MaxTicketsPerPerson) {
+            //         alert("Oops! It seems you've already bought " + compData.purchased + " tickets for this competition. We will credit your account with points for each ticket over the limit.");
+            //         PointsToAdd = InputValue;
+            //         TicketToAdd = 0;
+            //         console.log('here 3');
+            //     }
+
+            //     let ticketsCanbeAdd = MaxTicketsPerPerson - AlreadyHaveTickets;
+            //     if (ticketsCanbeAdd == 0) {
+            //         alert("Oops! It seems you've already bought " + compData.purchased + " tickets for this competition. We will credit your account with points for each ticket over the limit.");
+            //         PointsToAdd = InputValue;
+            //         TicketToAdd = 0;
+            //         console.log('here 4');
+            //     } else {
+
+            //         if (RemainingTickets > ticketsCanbeAdd) {
+            //             TicketToAdd = ticketsCanbeAdd;
+            //             PointsToAdd = MaxTicketsPerPerson - TicketToAdd;
+            //             alert("Oops! It seems you've already bought " + compData.purchased + " tickets for this competition. We will credit your account with points for each ticket over the limit.");
+            //             console.log('here 5');
+            //         } else {
+
+            //             TicketToAdd = ticketsCanbeAdd - RemainingTickets;
+            //             PointsToAdd = (MaxTicketsPerPerson - TicketToAdd) + RemainingTickets;
+            //             alert("Oops! It seems you've already bought " + compData.purchased + " tickets for this competition. We will credit your account with points for each ticket over the limit.");
+            //             console.log('here 6');
+            //         }
+            //     }
+            // }
+
+
+
+            // if (RemainingTickets < InputValue && RemainingTickets > 0) {
+            //     console.log('here 2');
+
+            //     let ticketsCanBeAdded = Math.min(MaxTicketsPerPerson - AlreadyHaveTickets, RemainingTickets);
+
+            //     if (AlreadyHaveTickets >= MaxTicketsPerPerson) {
+            //         alert("Oops! It seems you've already bought " + compData.purchased + " tickets for this competition. We will credit your account with points for each ticket over the limit.");
+            //         PointsToAdd = InputValue;
+            //         TicketToAdd = 0;
+            //         console.log('here 3');
+            //     } else {
+            //         TicketToAdd = ticketsCanBeAdded;  // Assign the max tickets that can be added
+            //         PointsToAdd = InputValue - TicketToAdd;  // Convert excess tickets to points
+
+            //         if (PointsToAdd > 0) {
+            //             alert("Oops! Only " + TicketToAdd + " tickets could be added. The remaining " + PointsToAdd + " will be credited as points.");
+            //         }
+
+            //         console.log('here 4', { TicketToAdd, PointsToAdd });
+            //     }
+            // }
+
+
+            // Check for invalid input
+            if (!InputValue || InputValue <= 0) {
+                alert("Please add some value to add tickets.");
+                return true;
+            }
+
+            // Check if competition is closed or finished
+            if (compData.status === 'Closed' || compData.status === 'Finished') {
+                alert("Oops! You cannot buy tickets for a " + compData.status + " competition.");
+                return true;
+            }
+
+            // If no tickets are left, convert all input into points
+            if (RemainingTickets === 0) {
+                alert("Oops! All tickets are sold. We will credit your account with points instead.");
+                PointsToAdd = InputValue;
+            } else {
+                let ticketsCanBeAdded = Math.min(MaxTicketsPerPerson - AlreadyHaveTickets, RemainingTickets);
+
+                // If the user has already bought max tickets, convert all input to points
                 if (AlreadyHaveTickets >= MaxTicketsPerPerson) {
-                    alert("Oops! It seems you've already bought " + compData.purchased + " tickets for this competition. We will credit your account with points for each ticket over the limit.");
-                    PointsToAdd = InputValue;
-                    TicketToAdd = 0;
-                }
-
-                let ticketsCanbeAdd = MaxTicketsPerPerson - AlreadyHaveTickets;
-                if (ticketsCanbeAdd == 0) {
-                    alert("Oops! It seems you've already bought " + compData.purchased + " tickets for this competition. We will credit your account with points for each ticket over the limit.");
+                    alert("Oops! You've already bought " + compData.purchased + " tickets. Your input will be credited as points.");
                     PointsToAdd = InputValue;
                     TicketToAdd = 0;
                 } else {
-
-                    if (RemainingTickets >= ticketsCanbeAdd) {
-                        TicketToAdd = ticketsCanbeAdd;
-                        PointsToAdd = MaxTicketsPerPerson - TicketToAdd;
-                        alert("Oops! It seems you've already bought " + compData.purchased + " tickets for this competition. We will credit your account with points for each ticket over the limit.");
+                    // If user requests more than available tickets
+                    if (InputValue > RemainingTickets) {
+                        TicketToAdd = ticketsCanBeAdded;
+                        PointsToAdd = InputValue - TicketToAdd;
+                    } else if (InputValue > ticketsCanBeAdded) {
+                        // If user requests more than their allowed limit
+                        TicketToAdd = ticketsCanBeAdded;
+                        PointsToAdd = InputValue - TicketToAdd;
                     } else {
-
-                        TicketToAdd = ticketsCanbeAdd - RemainingTickets;
-                        PointsToAdd = (MaxTicketsPerPerson - TicketToAdd) + RemainingTickets;
-                        alert("Oops! It seems you've already bought " + compData.purchased + " tickets for this competition. We will credit your account with points for each ticket over the limit.");
+                        // If user requests within limit and availability
+                        TicketToAdd = InputValue;
+                        PointsToAdd = 0;
                     }
 
-
-
+                    if (PointsToAdd > 0) {
+                        alert(`Oops! Only ${TicketToAdd} tickets could be added. The remaining ${PointsToAdd} will be credited as points.`);
+                    }
                 }
-
-
             }
+
+                    location.reload();
+
+
             let params = {
                 competition_id: compData.id,
                 ticketsToAdd: TicketToAdd,
@@ -580,7 +670,6 @@ $(document).ready(function () {
                 action: "add_tickets_to_competition"
             };
 
-            console.log('params++++', params)
 
             $(".show_loader").removeClass("d-none");
 
