@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Switching to Directory"
+echo "Switching to Document Root"
 cd /var/www/lottery
 
 # Installing Node dependencies
