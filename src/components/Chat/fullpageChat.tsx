@@ -589,7 +589,7 @@
 //     }
 //     return defaultData;
 //   }
-  
+
 
 //   return (
 //     <div className="cometChatWrapperfullpage">
@@ -822,9 +822,13 @@
 // // Function to generate a consistent color from a string (username)
 
 
-const ChatComponent: React.FC<PropsTypes> = () => {
-  return(
+const ChatComponent = () => {
+
+  return (
     <></>
   )
 }
+
+
+
 export default ChatComponent;
