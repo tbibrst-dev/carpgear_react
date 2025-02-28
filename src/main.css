@@ -5768,6 +5768,7 @@ section.bait-accordion {
   border-radius: 8px 8px 0px 0px;
   height: 400px;
   width: 100%;
+  object-fit: cover;
 }
 
 /* bait-reward-wins-mob-css-start */

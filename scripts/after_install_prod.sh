@@ -3,11 +3,11 @@ echo "Switching to Document Root"
 cd /var/www/lottery
 
 #Removing Node_Modules
-#rm -rf  node_modules/
+rm -rf  node_modules/
 
 # Installing Node dependencies
 echo "Installing Node dependencies..."
-/usr/bin/npm install --legacy-peer-deps
+/usr/bin/npm install -f
 
 echo "Building React app..."
 /usr/bin/npm run build
