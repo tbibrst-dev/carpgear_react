@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "Switching to Directory"
 cd /var/www/lottery
 
 # Installing Node dependencies
