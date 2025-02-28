@@ -37,6 +37,8 @@ const ClaimPrize: React.FC = () => {
   const user_id = queryParams.get('user_id') ?? '';
 
   const navigate = useNavigate();
+  const formID = import.meta.env.VITE_FILLOUT_ID;
+  console.log('formID',formID);
 
 
   useEffect(() => {
@@ -95,7 +97,6 @@ const ClaimPrize: React.FC = () => {
     navigate('/account/financial-details');
   }
 
-  console.log('data++++', data);
   return (
     <>
       {/* winner-confirmation-banner-start */}
@@ -134,7 +135,7 @@ const ClaimPrize: React.FC = () => {
           </div>
         ) : (
           <FilloutStandardEmbed
-            filloutId="7NRMLrAPMsus"
+            filloutId= {formID}
             inheritParameters
             parameters={{
               competition_name: competition_name,
