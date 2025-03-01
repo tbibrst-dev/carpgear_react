@@ -3946,6 +3946,7 @@ span.bottom-add-cart {
   height: 639px;
   width: 639px;
   object-fit: cover;
+  aspect-ratio: 200 / 191;
 }
 
 .Single-comp-slider-data img {
@@ -17332,6 +17333,7 @@ div#Paris a {
   border-radius: 8px;
   object-fit: cover;
   cursor: pointer;
+  aspect-ratio: 200 / 191;
 }
 
 .thumbnail-swiper .swiper-slide-thumb-active {
