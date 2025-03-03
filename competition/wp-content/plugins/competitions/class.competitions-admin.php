@@ -4112,6 +4112,7 @@ class Competitions_Admin
                             $reward_data['comp_title'] = $competition['title'];
 
                             $reward_data['reward_link'] = $reward_link;
+                            $reward_data['comp_id'] = $competition['id'];
 
                             $content = self::get_reward_price_level_reached_html($mailer, $reward_data, $subject);
 
@@ -4267,7 +4268,10 @@ class Competitions_Admin
                 'comp_title' => $email_data['comp_title'],
                 'ticket_number' => $email_data['ticket_number'],
                 'prcnt_available' => $email_data['prcnt_available'],
-                'reward_link' => $email_data['reward_link']
+                'reward_link' => $email_data['reward_link'],
+                'comp_id' => $email_data['comp_id']
+                
+
                 
             )
         );
