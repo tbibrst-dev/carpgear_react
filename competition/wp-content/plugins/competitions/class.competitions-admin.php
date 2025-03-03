@@ -6385,7 +6385,7 @@ class Competitions_Admin
         }
         $users_data = array();
 
-        // error_log('Order Object: ' . print_r($selected_rows, true));
+        error_log('Order Object: ' . print_r($selected_rows, true));
 
         foreach ($selected_rows as $row) {
             $users_data[] = array(
@@ -6401,7 +6401,9 @@ class Competitions_Admin
             );
         }
 
-        $user = get_user_by('email', $row['email']);
+
+
+        $user = get_user_by('email', $row['tel']);
 
         if ($user) {
             // User found, get user ID
@@ -6421,9 +6423,17 @@ class Competitions_Admin
             )
         );
 
+        error_log('Order Object results: ' . print_r($results, true));
+        error_log('Order Object results: ' . print_r($user_id, true));
+        error_log('Order Object result user s: ' . print_r($user, true));
+        error_log('Order Object results: ' . print_r($ticketNumber, true));
+        error_log('Order Object results: ' . print_r($compid, true));
+        error_log('Order Object email: ' . print_r($row['email'], true));
+        error_log('Order Object email +++++: ' . print_r($selected_rows[0]['email'], true));
+
+
         if (!empty($results)) {
             $order = wc_get_order($row['orderId']);
-            // error_log('Order Object results: ' . print_r($results, true));
             // error_log('Order Object: ' . print_r($order, true));
             // error_log('user_id: ' . print_r($user_id, true));
 
