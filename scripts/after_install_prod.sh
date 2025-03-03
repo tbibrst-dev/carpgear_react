@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Switching to Document_Root"
+echo "Switching to Document Root"
 cd /var/www/lottery
 
 #Removing Node_Modules
