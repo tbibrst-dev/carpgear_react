@@ -72,11 +72,16 @@ $symbol = get_woocommerce_currency_symbol();
     </div>
 
     <?php
-    $reward_link = FRONTEND_URL. "competition/details/". $title."-" .$comp_id;
+    $reward_link_ = FRONTEND_URL. "competition/details/". $comp_title."-" .$comp_id;
+
+    error_log("link+++++++++++".print_r($reward_link,true));
+    error_log("link+++++++++++".print_r($reward_link,true));
+    error_log("link+++++++++++".print_r($reward_link,true));
+    error_log("comp_title+++++++++++".print_r($comp_title,true));
     ?>
 
     <p>
-        <a href="<?php echo $reward_link; ?>"
+        <a href="<?php echo $reward_link_; ?>"
             style="display:block;text-align: center;font-family: 'Roboto', sans-serif;max-width: 450px;max-height: 60px;text-decoration:none;padding: 20px 16px;border-radius: 4px;border: none;outline: none;background-color: #ffbb41;text-transform: uppercase;color: #0f1010;line-height: 24px;font-size: 18px;font-weight: 900;margin-top: 10px;">
             View Competition</a>
     </p>

@@ -4254,6 +4254,8 @@ class Competitions_Admin
 
         $template = 'emails/reward-price-reached-email.php';
 
+        error_log('+++++++++++++++reward'.print_r($email_data,true));
+
         return wc_get_template_html(
             $template,
             array(
