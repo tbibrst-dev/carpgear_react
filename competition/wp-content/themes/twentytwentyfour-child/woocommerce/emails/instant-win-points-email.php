@@ -16,7 +16,7 @@ do_action('woocommerce_email_header', $email_heading, $email);
           <td style="text-align: center; vertical-align: middle; padding: 0;">
             <h1
               style="line-height: 100%; color: #fff; font-size: 36px; text-transform: uppercase; margin: 0; font-weight: 900; display: inline-block;">
-              <img src="<?php echo bloginfo('stylesheet_directory') . '/images/Group.png'; ?>"
+              <img src="<?php echo S3_UPLOADS_BASEURL_THEME . '/images/Group.png'; ?>"
                 style="height: 25px; vertical-align: unset; margin-right:0px" />
               Instant win
             </h1>

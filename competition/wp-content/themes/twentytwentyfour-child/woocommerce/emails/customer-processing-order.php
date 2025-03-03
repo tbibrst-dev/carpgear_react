@@ -33,7 +33,7 @@ do_action('woocommerce_email_header', $email_heading, $email); ?>
 	<div style="display: block; gap: 24px;">
 		<div style="text-align: center;">
 			<img style="margin-bottom:15px;"
-				src="<?php echo bloginfo('stylesheet_directory') . '/images/check_1.png'; ?>" alt="Logo">
+				src="<?php echo S3_UPLOADS_BASEURL_THEME . '/images/check_1.png'; ?>" alt="Logo">
 
 			<h2
 				style="text-align: center; color: white !important;font-family: 'Roboto', sans-serif;font-size: 18px;font-weight: 900;line-height: 19.8px;">

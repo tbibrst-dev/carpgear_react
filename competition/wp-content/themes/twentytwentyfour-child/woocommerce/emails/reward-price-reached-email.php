@@ -21,7 +21,7 @@ $symbol = get_woocommerce_currency_symbol();
                     <td style="padding: 0;">
                         <h1
                             style="color: #fff; font-size: 30px; text-transform: uppercase; text-align: center; margin: 0; font-weight: 900; line-height: 39.6px;">
-                            <img src="<?php echo bloginfo('stylesheet_directory') . '/images/Frame 151.png'; ?>"
+                            <img src="<?php echo S3_UPLOADS_BASEURL_THEME . '/images/Frame 151.png'; ?>"
                                 style="height: 25px;vertical-align: middle;margin-right:0px;margin-bottom: 5px;" />
                                 <span>Reward Level Reached</span>
                         </h1>
