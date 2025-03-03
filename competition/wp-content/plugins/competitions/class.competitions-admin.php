@@ -4265,7 +4265,9 @@ class Competitions_Admin
                 'image' => $email_data['image'],
                 'comp_title' => $email_data['comp_title'],
                 'ticket_number' => $email_data['ticket_number'],
+                'prcnt_available' => $email_data['prcnt_available'],
                 'reward_link' => $email_data['reward_link']
+                
             )
         );
     }

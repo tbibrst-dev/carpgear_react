@@ -7,7 +7,86 @@ if (!defined('ABSPATH')) {
 $email_heading = "";
 do_action('woocommerce_email_header', $email_heading, $email);
 ?>
-<link href="https://development.brstdev.com/competition/fonts/MozaicGEO.css" rel="stylesheet" />
+<style>
+    @font-face {
+    font-family: 'Mozaic GEO';
+    src: url('mozaicgeo-black-900-webfont.woff2') format('woff2'),
+         url('mozaicgeo-black-900-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Mozaic GEO';
+    src: url('mozaicgeo-extrabold-800-webfont.woff2') format('woff2'),
+         url('mozaicgeo-extrabold-800-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Mozaic GEO';
+    src: url('mozaicgeo-bold-700-webfont.woff2') format('woff2'),
+         url('mozaicgeo-bold-700-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Mozaic GEO';
+    src: url('mozaicgeo-semibold-600-webfont.woff2') format('woff2'),
+         url('mozaicgeo-semibold-600-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Mozaic GEO';
+    src: url('mozaicgeo-medium-500-webfont.woff2') format('woff2'),
+         url('mozaicgeo-medium-500-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Mozaic GEO';
+    src: url('mozaicgeo-regular-400-webfont.woff2') format('woff2'),
+         url('mozaicgeo-regular-400-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Mozaic GEO';
+    src: url('mozaicgeo-light-300-webfont.woff2') format('woff2'),
+         url('mozaicgeo-light-300-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'Mozaic GEO';
+    src: url('mozaicgeo-extralight-200-webfont.woff2') format('woff2'),
+         url('mozaicgeo-extralight-200-webfont.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Mozaic GEO';
+    src: url('mozaicgeo-thin-100-webfont.woff2') format('woff2'),
+         url('mozaicgeo-thin-100-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+
+}
+</style>
 <div style="width: 100%; max-width: 450px; margin: auto;">
     <div style="display: block; gap: 24px;">
 
