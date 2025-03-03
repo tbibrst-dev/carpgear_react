@@ -4100,10 +4100,8 @@ class Competitions_Admin
 
                             $subject = "Reward " . $reward_record['title'] . " unlocked! - Carp Gear Giveaways";
 
-                            // $reward_link = admin_url('admin.php?page=reward_prizes_entrants&id=' . $competition['id'] . '&reward=' . $reward_record['id'] . '&limit=' . $limit);
                             $reward_link = FRONTEND_URL. "competition/details/". $competition['title'] ."-" .$competition['id']; 
 
-                            error_log("reward_link". print_r($reward_link,true));
 
                             $mailSent = 0;
 
