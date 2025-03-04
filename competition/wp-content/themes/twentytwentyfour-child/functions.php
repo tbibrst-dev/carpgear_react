@@ -2342,4 +2342,12 @@ add_action('wp_enqueue_scripts', 'enqueue_custom_checkout_script');
 
 
 
+function get_current_url() {
+   $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https" : "http";
+   $current_url = $protocol . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+   return $current_url;
+}
+
+error_log('++++++++++++++++++++++++url+++++++++++'. print_r(get_current_url(),true));
+
 ?>
